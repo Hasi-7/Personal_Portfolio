@@ -1,0 +1,53 @@
+.pageTitle {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.intro {
+  max-width: 640px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.videoSection { margin-bottom: var(--space-xl); }
+
+.annotationSection { max-width: 800px; margin: 0 auto; }
+
+.annotationHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.dividerLine { flex: 1; height: 1px; background-color: var(--color-border); }
+
+.annotationLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.graphicContainer {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.designGraphic {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.annotationBody { font-size: 1.0625rem; line-height: 1.85; }
