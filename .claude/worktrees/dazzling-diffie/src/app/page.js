@@ -13,7 +13,7 @@ export default function Home() {
 
         <ScrollReveal delay={100}>
           <h1 className={styles.name}>
-            <TypeWriter text="[YOUR NAME]" speed={90} />
+            <TypeWriter text="Muhammad Hasnain Heryani" speed={90} />
           </h1>
         </ScrollReveal>
 

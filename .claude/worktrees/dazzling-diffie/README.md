@@ -1,4 +1,4 @@
-# [YOUR NAME] — Engineering Portfolio
+# Muhammad Hasnain Heryani — Engineering Portfolio
 
 Personal engineering design portfolio. Built with Next.js 14 for ESC102 (Praxis II) at the University of Toronto, designed to grow as a long-term project portfolio.
 
