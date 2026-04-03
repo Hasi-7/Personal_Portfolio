@@ -15,6 +15,6 @@ export const NAV_LINKS = [
 ];
 
 export const SITE_META = {
-  title: '[YOUR NAME] — Engineering Portfolio',
+  title: 'Muhammad Hasnain Heryani — Engineering Portfolio',
   description: 'Personal engineering design portfolio — Engineering Science, University of Toronto.',
 };

@@ -1,39 +1,44 @@
 ---
-title: "Praxis I — Community Partner Design Project"
+title: "Praxis I - Left-Handed Whiteboard Writing Support"
 slug: "praxis-i"
 type: "Human-Centred Design"
-date: "2025-09-01"
-description: "A human-centred design project addressing real community needs through stakeholder engagement and iterative prototyping."
-summary: "Collaborated with a community partner organisation to identify, frame, and address a real-world design challenge using the full engineering design process."
+date: "2025-09"
+description: "A first-year design project focused on reducing whiteboard smudging for left-handed writers in the EngSci common room through stakeholder research, concept divergence, and prototype testing."
+summary: "In ESC101, my team designed and evaluated ways to help left-handed students write on whiteboards without smudging ink or forcing awkward wrist positions, ultimately recommending a roller-support wrist cuff concept."
 ctmfs:
+  - design-brief
   - stakeholder-mapping
   - how-might-we
+  - analogical-thinking
   - brainstorming
   - concept-sketching
+  - requirements-list
+  - pairwise-comparison
   - pugh-chart
+  - prototype-testing
   - one-pager
 ---
 
-## Context
+## Summary
 
-In Praxis I (ESC101), our team was paired with a community partner organisation facing a genuine operational challenge. The project spanned the full semester and required us to move through the entire engineering design process — from problem identification through to a validated prototype.
+### Context
 
-The challenge was deliberately open-ended: we weren't given a problem to solve, but a partner to work with. Our job was to understand their context, identify meaningful opportunities for intervention, and design a solution that addressed real needs rather than assumed ones.
+In Praxis I, my team worked on a design opportunity centered on left-handed writing in the EngSci common room. The issue was not only that left-handed students smudge fresh marker ink on vertical whiteboards, but that they often have to twist their wrist into awkward positions to avoid doing it. That made the problem feel bigger than just messy handwriting. It was also about comfort, legibility, and whether left-handed students could use the whiteboard as naturally as everyone else. Our stakeholder group included left-handed EngSci students as the primary users, right-handed students writing right-to-left scripts such as Arabic, the people reading what was written on the board, and U of T facilities staff responsible for the space.
 
-## What We Designed
+The project had some pretty clear physical and ergonomic constraints. The design had to work with the whiteboards and Expo dry-erase markers already in the common room, avoid damaging or staining the board, keep visible smudging below a perceptible threshold, and stay light enough to use comfortably. It also had to preserve normal writing speed, because a design that stops smudging but makes writing slow or awkward does not really solve the problem.
 
-After extensive stakeholder engagement — including interviews, site visits, and observational research — we identified a key friction point in our partner's workflow. We framed the design opportunity using "How Might We" statements and explored the solution space through structured divergent thinking.
+### Outcomes
 
-Our final design was a [placeholder: describe the specific solution]. The solution was validated through user testing with the community partner's staff and iterated based on their feedback.
+Our final recommended concept was a roller-support design: a wrist cuff with a small support platform and a polystyrene sphere mounted through a ball transfer unit. The idea was to support the writer's wrist on the board without dragging through the ink. When we compared it against the dummy marker, platform, and air-cushion alternatives, it came out as the strongest overall option because it balanced writing speed, ergonomics, low visible smudging, and acceptable weight better than the others.
 
-## Key Outcomes
+Testing backed that up. In our writing-speed proxy test, the roller concept performed only 0.99 standard deviations below baseline, while the platform and dummy marker caused much larger slowdowns. In the smudging test, the roller produced a Delta E of 2.95, which stayed below the threshold for a clearly perceptible difference. It also passed the wrist-angle and weight requirements, with measured wrist deviations of 13.3 degrees and 14.8 degrees and an estimated total weight of 307.2 g.
 
-- Conducted 8+ stakeholder interviews to map the problem space
-- Generated 40+ concepts through structured brainstorming sessions
-- Used a Pugh Chart to systematically evaluate and down-select concepts
-- Built and tested a functional prototype with end users
-- Delivered a final one-page summary and presentation to the community partner
+## Process Annotation
 
-## Reflection
+This project was one of the first times I really felt how much design work happens before you can even say you have a solution. At the start, our team spent a lot of time trying to understand the opportunity properly, then used diverging tools like wishing, free writing, SCAMPER, concept sketching, and reference designs to get past the obvious answer of "just make the ink dry faster." That gave us a much wider set of directions, from dummy markers to air-cushion systems to a rolling support inspired by the mechanics of a ball mouse. I think that part of the project mattered because it stopped us from locking onto the first idea that sounded clever.
 
-This project was my first real experience with human-centred design in an engineering context. The most valuable lesson was learning that the quality of your solution is bounded by the quality of your problem framing. We spent nearly half the project understanding the problem before we started solving it, and that investment paid off — our final design addressed the actual pain point, not just the surface-level symptoms we initially observed.
+One of the biggest shifts was rescoping the problem. We moved away from the broader idea of preventing accidental contact with the whiteboard surface and refined it into preventing accidental contact with fresh marker ink. That sounds like a small wording change, but it changed the direction of the whole project. It made the design brief more honest, made our requirements more testable, and helped us focus on the thing stakeholders actually cared about instead of forcing every concept to avoid the board entirely.
+
+I also learned that some concepts sound good right up until you actually test them. The air cushion was creative, but once we looked at weight and complexity it became hard to defend. The platform was simple, but it interfered too much with natural writing. The dummy marker had real strengths too, especially in keeping ink away from the hand, but it slowed writing down too much. The roller support was not perfect either, since it still allowed some contact with ink, but it performed best overall when we looked across our requirements, pairwise comparison, and Pugh charts. That was probably the main thing I took from Praxis I: a strong design choice is not the one that sounds the cleanest in theory, but the one that holds up when you test it against what actually matters.
+
+## CTMFs Used

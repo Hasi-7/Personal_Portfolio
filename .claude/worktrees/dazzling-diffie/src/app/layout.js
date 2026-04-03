@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: '[YOUR NAME] — Engineering Portfolio',
+  title: 'Muhammad Hasnain Heryani — Engineering Portfolio',
   description: 'Personal engineering design portfolio — Engineering Science, University of Toronto.',
 };
 

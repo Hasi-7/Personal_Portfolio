@@ -5,11 +5,48 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'About — Engineering Portfolio',
-  description: 'About [YOUR NAME] — Engineering Science at the University of Toronto.',
+  description: 'About Muhammad Hasnain Heryani — Engineering Science at the University of Toronto.',
 };
 
 export default async function AboutPage() {
   const about = await getAbout();
+  const technicalSkills = [
+    {
+      title: 'AI/ML Core',
+      items: [
+        'Supervised & Unsupervised Learning',
+        'Deep Learning (Transformers, CNNs, RLHF)',
+        'LLM Fine-Tuning (LLaMA 2, Mistral)',
+        'Retrieval-Augmented Generation (RAG)',
+        'Hyperparameter Tuning (Optuna)',
+        'AI Agent Development',
+      ],
+    },
+    {
+      title: 'AI Frameworks & Tools',
+      items: [
+        'LangChain',
+        'LangGraph',
+        'Hugging Face',
+        'OpenAI API',
+        'CrewAI',
+        'MLflow',
+        'Cursor IDE',
+      ],
+    },
+    {
+      title: 'Programming & Deployment',
+      items: [
+        'Python',
+        'C',
+        'SQL',
+        'FastAPI',
+        'Docker',
+        'Git',
+        'Model Deployment',
+      ],
+    },
+  ];
 
   return (
     <div className="section">
@@ -38,7 +75,6 @@ export default async function AboutPage() {
                   <dt>Program</dt>   <dd>Engineering Science</dd>
                   <dt>Year</dt>      <dd>First Year (EngSci)</dd>
                   <dt>University</dt><dd>University of Toronto</dd>
-                  <dt>Context</dt>   <dd>ESC102 — Praxis II</dd>
                 </dl>
               </div>
             </ScrollReveal>
@@ -48,15 +84,35 @@ export default async function AboutPage() {
                 <p className="section-label">Interests</p>
                 <ul className={styles.interestList}>
                   {[
-                    'Hardware / Software Intersection',
-                    'Engineering Design Methodology',
-                    'Structural Analysis',
+                    'Machine Learning/AI',
+                    'Robotics',
                     'Embedded Systems',
+                    'Hardware and Software Integration',
                     'Human-Centred Design',
                   ].map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={290}>
+              <div className={`${styles.card} ${styles.skillsCard}`}>
+                <p className="section-label">Technical Skills</p>
+                <p className={styles.skillsIntro}>Technologies and tools I work with</p>
+
+                <div className={styles.skillGroups}>
+                  {technicalSkills.map((group) => (
+                    <section key={group.title} className={styles.skillGroup}>
+                      <h2 className={styles.skillGroupTitle}>{group.title}</h2>
+                      <div className={styles.skillChips}>
+                        {group.items.map((item) => (
+                          <span key={item} className={styles.skillChip}>{item}</span>
+                        ))}
+                      </div>
+                    </section>
+                  ))}
+                </div>
               </div>
             </ScrollReveal>
           </aside>

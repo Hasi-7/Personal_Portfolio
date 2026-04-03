@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.left}>
-          <span className={styles.name}>[YOUR NAME]</span>
+          <span className={styles.name}>Muhammad Hasnain Heryani</span>
           <span className={styles.sep}>·</span>
           <span className={styles.program}>Engineering Science, University of Toronto</span>
         </div>

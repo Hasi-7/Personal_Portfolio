@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} no-print`}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoText}>[YOUR NAME]</span>
+          <span className={styles.logoText}>Muhammad Hasnain Heryani</span>
           <span className={styles.logoDot}>.</span>
         </Link>
 

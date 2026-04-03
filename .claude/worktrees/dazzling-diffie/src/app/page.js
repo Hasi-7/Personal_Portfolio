@@ -25,7 +25,7 @@ export default function Home() {
 
         <ScrollReveal delay={300}>
           <p className={styles.statement}>
-            Exploring the intersection of rigorous analysis and human-centred design.
+            A first year engineering student, interested in robotics and machine learning
           </p>
         </ScrollReveal>
 

@@ -126,7 +126,7 @@ The print stylesheet automatically switches to a light background with dark text
 
 | Placeholder | Location | What to change |
 |---|---|---|
-| `[YOUR NAME]` | `src/components/Navbar/Navbar.js`, `src/components/Footer/Footer.js`, `src/app/layout.js`, hero `TypeWriter` text in `src/app/page.js` | Your full name |
+| `Muhammad Hasnain Heryani` | `src/components/Navbar/Navbar.js`, `src/components/Footer/Footer.js`, `src/app/layout.js`, hero `TypeWriter` text in `src/app/page.js` | Your full name |
 | `YOUR_VIDEO_ID` | `content/position.md` frontmatter | Your unlisted YouTube video ID |
 | `[placeholder: ...]` | All three project markdown files | Your actual project details |
 

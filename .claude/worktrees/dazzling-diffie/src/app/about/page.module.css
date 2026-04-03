@@ -20,6 +20,10 @@
   margin-bottom: var(--space-md);
 }
 
+.skillsCard {
+  padding-bottom: calc(var(--space-lg) + var(--space-xs));
+}
+
 .infoList {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -53,7 +57,7 @@
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
-  padding-left: var(--space-md);
+  padding-left: calc(var(--space-md) + 0.35rem);
   position: relative;
 }
 
@@ -62,6 +66,51 @@
   position: absolute;
   left: 0;
   color: var(--color-accent);
+}
+
+.skillsIntro {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+}
+
+.skillGroups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skillGroupTitle {
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.skillChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.skillChip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-bg-secondary));
+  color: color-mix(in srgb, var(--color-accent) 65%, white);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.35;
 }
 
 @media (max-width: 900px) {
