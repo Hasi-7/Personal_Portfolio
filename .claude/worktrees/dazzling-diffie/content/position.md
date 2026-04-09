@@ -1,6 +1,6 @@
 ---
 title: "Position Statement"
-youtubeVideoId: "YOUR_VIDEO_ID"
+youtubeVideoId: "JYUHDenGcJY"
 ---
 
 As an engineering student, I approach design with a deep curiosity about how things work — both the technical systems we build and the human contexts they operate within. My engineering practice is grounded in the belief that meaningful design emerges at the intersection of rigorous analysis and genuine empathy for the people a design serves.
