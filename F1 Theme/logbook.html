@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logbook — Hasnain Heryani</title>
+  <meta name="description" content="Concepts, Tools, Models and Frameworks used across Season 01 design projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/transitions.css" />
+
+  <style>
+    /* ── Page header ───────────────────────────────────────── */
+    .page-header {
+      padding-block: var(--space-12) var(--space-8);
+      border-bottom: 1px solid var(--color-border-muted);
+    }
+
+    .page-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .page-subtitle {
+      font-family: var(--font-hud);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-top: var(--space-3);
+    }
+
+    /* ── Filter bar ─────────────────────────────────────────── */
+    .filter-bar {
+      display: flex;
+      gap: var(--space-3);
+      padding-block: var(--space-8);
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: var(--space-2) var(--space-5);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border-muted);
+      background: transparent;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+      min-height: 36px;
+    }
+
+    .filter-btn:hover,
+    .filter-btn[aria-pressed="true"] {
+      color: var(--color-text);
+      border-color: var(--color-accent);
+      background: rgba(0, 210, 190, 0.06);
+    }
+
+    .filter-btn[data-filter="all"][aria-pressed="true"]      { color: var(--color-accent); }
+    .filter-btn[data-filter="frame"][aria-pressed="true"]    { color: var(--color-amber); border-color: var(--color-amber); background: rgba(245, 166, 35, 0.06); }
+    .filter-btn[data-filter="diverge"][aria-pressed="true"]  { color: var(--color-accent); }
+    .filter-btn[data-filter="converge"][aria-pressed="true"] { color: #a0a8b8; border-color: #a0a8b8; background: rgba(160,168,184,0.06); }
+    .filter-btn[data-filter="represent"][aria-pressed="true"]{ color: #6a7a9a; border-color: #6a7a9a; background: rgba(106,122,154,0.06); }
+
+    /* ── CTMF card grid ─────────────────────────────────────── */
+    .ctmf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+      padding-bottom: var(--space-16);
+    }
+
+    .ctmf-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-muted);
+      border-radius: var(--radius-md);
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .ctmf-card:hover {
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-teal-sm);
+    }
+
+    /* hidden when filtered out */
+    .ctmf-card[hidden] {
+      display: none;
+    }
+
+    .ctmf-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+
+    .ctmf-name {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-base);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-text);
+      flex: 1;
+    }
+
+    .ctmf-section {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .ctmf-section-label {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-text-muted);
+    }
+
+    .ctmf-section p {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    .placeholder-text {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      background: rgba(0, 210, 190, 0.04);
+      border: 1px dashed var(--color-border-muted);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-sm);
+    }
+
+    /* Count display */
+    .filter-count {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      margin-left: auto;
+      align-self: center;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-transition-overlay" aria-hidden="true"></div>
+
+  <!-- W04 background return car -->
+  <a href="./index.html" class="car-return" aria-label="Return to cockpit">
+    <img src="./assets/images/w04-car.png" alt="" width="2000" height="1145" loading="lazy" />
+  </a>
+
+  <!-- Persistent nav -->
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html" class="nav-brand" aria-label="Hasnain Heryani — Home">
+        <svg class="nav-logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="12,2 22,20 2,20" />
+          <line x1="12" y1="8" x2="12" y2="14" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+        </svg>
+        <span class="nav-name">Hasnain Heryani</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="./systems.html">Systems</a></li>
+        <li><a href="./driver.html">Driver</a></li>
+        <li><a href="./driver-dna.html">Driver DNA</a></li>
+        <li><a href="./logbook.html" aria-current="page">Logbook</a></li>
+        <li><a href="./references.html">Refs</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="sound-toggle" aria-label="Toggle sound off" aria-pressed="false" title="Sound is off">🔇</button>
+        <a href="./index.html" class="cockpit-btn" aria-label="Return to cockpit">↩ Cockpit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+
+      <!-- Page header -->
+      <section class="page-header section" aria-labelledby="logbook-title">
+        <h1 class="page-title" id="logbook-title">Logbook</h1>
+        <p class="page-subtitle">Concepts, Tools, Models &amp; Frameworks — Season 01</p>
+      </section>
+
+      <!-- Filter bar -->
+      <div class="filter-bar" role="group" aria-label="Filter CTMFs by strand">
+        <button class="filter-btn" data-filter="all"      aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="frame"    aria-pressed="false">Frame</button>
+        <button class="filter-btn" data-filter="diverge"  aria-pressed="false">Diverge</button>
+        <button class="filter-btn" data-filter="converge" aria-pressed="false">Converge</button>
+        <button class="filter-btn" data-filter="represent"aria-pressed="false">Represent</button>
+        <span class="filter-count" id="filter-count" aria-live="polite">9 CTMFs</span>
+      </div>
+
+      <!-- CTMF grid — 9 cards minimum (3 FRAME, 3 DIVERGE, 3 CONVERGE, 2 REPRESENT minimum) -->
+      <section aria-label="CTMF cards">
+        <div class="ctmf-grid" id="ctmf-grid">
+
+          <!-- CTMF 1 — FRAME -->
+          <article class="ctmf-card" id="ctmf-1" data-strand="frame" aria-labelledby="ctmf-1-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-1-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-frame">Frame</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition of this CTMF.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context in which this CTMF was applied.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained from using it.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 2 — FRAME -->
+          <article class="ctmf-card" id="ctmf-2" data-strand="frame" aria-labelledby="ctmf-2-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-2-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-frame">Frame</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition of this CTMF.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 3 — FRAME -->
+          <article class="ctmf-card" id="ctmf-3" data-strand="frame" aria-labelledby="ctmf-3-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-3-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-frame">Frame</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition of this CTMF.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 4 — DIVERGE -->
+          <article class="ctmf-card" id="ctmf-4" data-strand="diverge" aria-labelledby="ctmf-4-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-4-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-diverge">Diverge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 5 — DIVERGE -->
+          <article class="ctmf-card" id="ctmf-5" data-strand="diverge" aria-labelledby="ctmf-5-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-5-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-diverge">Diverge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 6 — DIVERGE -->
+          <article class="ctmf-card" id="ctmf-6" data-strand="diverge" aria-labelledby="ctmf-6-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-6-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-diverge">Diverge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 7 — CONVERGE -->
+          <article class="ctmf-card" id="ctmf-7" data-strand="converge" aria-labelledby="ctmf-7-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-7-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-converge">Converge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 8 — CONVERGE -->
+          <article class="ctmf-card" id="ctmf-8" data-strand="converge" aria-labelledby="ctmf-8-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-8-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-converge">Converge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 9 — REPRESENT -->
+          <article class="ctmf-card" id="ctmf-9" data-strand="represent" aria-labelledby="ctmf-9-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-9-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-represent">Represent</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 10 — REPRESENT (bonus, meets ≥2 represent requirement) -->
+          <article class="ctmf-card" id="ctmf-10" data-strand="represent" aria-labelledby="ctmf-10-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-10-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-represent">Represent</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+          <!-- CTMF 11 — CONVERGE (bonus) -->
+          <article class="ctmf-card" id="ctmf-11" data-strand="converge" aria-labelledby="ctmf-11-name">
+            <div class="ctmf-card-header">
+              <h2 class="ctmf-name" id="ctmf-11-name">[CTMF NAME — Hasnain to fill in]</h2>
+              <span class="tag tag-converge">Converge</span>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">What It Is</p>
+              <p class="placeholder-text">[PLACEHOLDER: One-sentence definition.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">Where I Used It</p>
+              <p class="placeholder-text">[PLACEHOLDER: Project name + specific context.]</p>
+            </div>
+            <div class="ctmf-section">
+              <p class="ctmf-section-label">My Assessment</p>
+              <p class="placeholder-text">[PLACEHOLDER: When to use it, when not to, and what you gained.]</p>
+            </div>
+          </article>
+
+        </div><!-- /ctmf-grid -->
+
+        <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint); text-align: center; padding-bottom: var(--space-8);">
+          [PLACEHOLDER: Hasnain to fill in all CTMF names and content above. Minimum 9 CTMFs required, spanning all four strands: Frame, Diverge, Converge, Represent. Each of the 3 required projects must connect to at least 3 CTMFs.]
+        </p>
+
+      </section>
+    </div><!-- /content-wrap -->
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-border-muted); padding-block: var(--space-8); margin-top: var(--space-4);">
+    <div class="content-wrap">
+      <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint); text-align: center; letter-spacing: 0.1em;">
+        HASNAIN HERYANI · SEASON 01 · ESC102 PRAXIS II
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script src="./assets/js/audio.js"></script>
+  <script src="./assets/js/transitions.js"></script>
+
+  <script>
+    // ── CTMF filter logic ─────────────────────────────────────────────
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var cards      = document.querySelectorAll('.ctmf-card');
+    var countEl    = document.getElementById('filter-count');
+
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var filter = this.getAttribute('data-filter');
+
+        // Update button states
+        filterBtns.forEach(function(b) { b.setAttribute('aria-pressed', 'false'); });
+        this.setAttribute('aria-pressed', 'true');
+
+        // Show/hide cards
+        var visible = 0;
+        cards.forEach(function(card) {
+          if (filter === 'all' || card.getAttribute('data-strand') === filter) {
+            card.removeAttribute('hidden');
+            visible++;
+          } else {
+            card.setAttribute('hidden', '');
+          }
+        });
+
+        countEl.textContent = visible + ' CTMF' + (visible !== 1 ? 's' : '');
+      });
+    });
+  </script>
+
+</body>
+</html>

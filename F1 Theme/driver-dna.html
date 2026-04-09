@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver DNA — Hasnain Heryani</title>
+  <meta name="description" content="Position statement — where I started, how the season changed me, and where I stand now." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/transitions.css" />
+
+  <style>
+    /* ── Page header ───────────────────────────────────────── */
+    .page-header {
+      padding-block: var(--space-12) var(--space-8);
+      border-bottom: 1px solid var(--color-border-muted);
+    }
+
+    .page-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .page-subtitle {
+      font-family: var(--font-hud);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-top: var(--space-3);
+    }
+
+    /* ── Section headings ───────────────────────────────────── */
+    .dna-section {
+      padding-block: var(--space-12);
+      border-bottom: 1px solid var(--color-border-muted);
+    }
+
+    .dna-section:last-child {
+      border-bottom: none;
+    }
+
+    .dna-section-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-accent);
+      margin-bottom: var(--space-2);
+    }
+
+    .dna-section-title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--space-6);
+    }
+
+    /* ── Video embed ────────────────────────────────────────── */
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border: 1px solid var(--color-border-muted);
+      border-radius: var(--radius-md);
+      background: var(--color-surface);
+      margin-bottom: var(--space-6);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-caption {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── Belief panels (original position) ──────────────────── */
+    .belief-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+      margin-block: var(--space-6);
+    }
+
+    .belief-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-muted);
+      border-left: 3px solid var(--color-accent);
+      padding: var(--space-6);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .belief-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(0.9rem, 0.8rem + 0.4vw, 1.1rem);
+      color: var(--color-text);
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      margin-bottom: var(--space-3);
+    }
+
+    .belief-source {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── Evolution paragraphs ───────────────────────────────── */
+    .evolution-block {
+      margin-bottom: var(--space-8);
+    }
+
+    .evolution-label {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      margin-bottom: var(--space-3);
+    }
+
+    .evolution-block p {
+      color: var(--color-text-muted);
+      max-width: 680px;
+    }
+
+    /* ── Current position statement ─────────────────────────── */
+    .position-statement {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-8) var(--space-10);
+      position: relative;
+      margin-top: var(--space-6);
+    }
+
+    .position-statement::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: var(--color-accent);
+    }
+
+    .position-statement p {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      line-height: 1.8;
+    }
+
+    .placeholder-text {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
+      background: rgba(0, 210, 190, 0.04);
+      border: 1px dashed var(--color-border-muted);
+      padding: var(--space-4) var(--space-6);
+      border-radius: var(--radius-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-transition-overlay" aria-hidden="true"></div>
+
+  <!-- W04 background return car -->
+  <a href="./index.html" class="car-return" aria-label="Return to cockpit">
+    <img src="./assets/images/w04-car.png" alt="" width="2000" height="1145" loading="lazy" />
+  </a>
+
+  <!-- Persistent nav -->
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html" class="nav-brand" aria-label="Hasnain Heryani — Home">
+        <svg class="nav-logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="12,2 22,20 2,20" />
+          <line x1="12" y1="8" x2="12" y2="14" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+        </svg>
+        <span class="nav-name">Hasnain Heryani</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="./systems.html">Systems</a></li>
+        <li><a href="./driver.html">Driver</a></li>
+        <li><a href="./driver-dna.html" aria-current="page">Driver DNA</a></li>
+        <li><a href="./logbook.html">Logbook</a></li>
+        <li><a href="./references.html">Refs</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="sound-toggle" aria-label="Toggle sound off" aria-pressed="false" title="Sound is off">🔇</button>
+        <a href="./index.html" class="cockpit-btn" aria-label="Return to cockpit">↩ Cockpit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+
+      <!-- Page header -->
+      <section class="page-header section" aria-labelledby="dna-page-title">
+        <h1 class="page-title" id="dna-page-title">Driver DNA</h1>
+        <p class="page-subtitle">Position in Context — Season 01</p>
+      </section>
+
+      <!-- Section 1: Origin -->
+      <section class="dna-section" aria-labelledby="origin-heading">
+        <p class="dna-section-label">01 · Origin</p>
+        <h2 class="dna-section-title" id="origin-heading">Where I Started</h2>
+
+        <!-- YouTube embed — Hasnain's original position statement video -->
+        <!--
+          PLACEHOLDER: Replace VIDEO_ID below with the actual YouTube video ID.
+          Example: if the URL is https://www.youtube.com/watch?v=abc123, use:
+          src="https://www.youtube.com/embed/abc123"
+        -->
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER"
+            title="Hasnain Heryani — Original Position Statement (January 2026)"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <p class="video-caption">
+          In January 2026, before the season began, this is where I stood. This is my engineering origin story — captured while building a redstone contraption in Minecraft, speaking to what I believe engineering is and why I'm drawn to it.
+        </p>
+        <br />
+        <p class="placeholder-text">[PLACEHOLDER: Hasnain to write 2–3 sentences summarizing what the video communicates about his original position — what did he believe about engineering at the start of the year? What values or instincts did he show?]</p>
+      </section>
+
+      <!-- Section 2: The Position (Original) -->
+      <section class="dna-section" aria-labelledby="original-position-heading">
+        <p class="dna-section-label">02 · The Position</p>
+        <h2 class="dna-section-title" id="original-position-heading">Core Beliefs — January 2026</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">
+          Pulled from the original position statement video — the foundation this season builds on.
+        </p>
+
+        <div class="belief-grid">
+          <div class="belief-card">
+            <p class="belief-quote">[PLACEHOLDER: Hasnain to write a core belief from his original video — e.g., "Engineering is building systems that solve real problems."]</p>
+            <p class="belief-source">Original Position Statement · Jan 2026</p>
+          </div>
+          <div class="belief-card">
+            <p class="belief-quote">[PLACEHOLDER: Hasnain to write a second core belief — e.g., "I learn best by doing, then reflecting."]</p>
+            <p class="belief-source">Original Position Statement · Jan 2026</p>
+          </div>
+          <div class="belief-card">
+            <p class="belief-quote">[PLACEHOLDER: Hasnain to write a third core belief — e.g., "The best designs come from understanding the person who uses them."]</p>
+            <p class="belief-source">Original Position Statement · Jan 2026</p>
+          </div>
+          <div class="belief-card">
+            <p class="belief-quote">[PLACEHOLDER: Hasnain to write a fourth core belief if applicable — or remove this card.]</p>
+            <p class="belief-source">Original Position Statement · Jan 2026</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Evolution -->
+      <section class="dna-section" aria-labelledby="evolution-heading">
+        <p class="dna-section-label">03 · Evolution</p>
+        <h2 class="dna-section-title" id="evolution-heading">How the Season Changed Me</h2>
+
+        <div class="evolution-block">
+          <p class="evolution-label">Praxis I — Design Thinking</p>
+          <p class="placeholder-text">[PLACEHOLDER: Hasnain to write honestly about what Praxis I taught him — how did the design process feel in practice? What surprised him? What did it reveal about how he approaches problems?]</p>
+        </div>
+
+        <div class="evolution-block">
+          <p class="evolution-label">CIV102 — Constraints &amp; Tradeoffs</p>
+          <p class="placeholder-text">[PLACEHOLDER: Hasnain to write about what structural constraints taught him — what did it mean to design within hard physical limits? How did this change his thinking about engineering tradeoffs?]</p>
+        </div>
+
+        <div class="evolution-block">
+          <p class="evolution-label">Praxis II — Teamwork &amp; Process</p>
+          <p class="placeholder-text">[PLACEHOLDER: Hasnain to write about how his approach to teamwork and process evolved through Praxis II — what did he learn about collaboration, facilitation, and navigating design under uncertainty?]</p>
+        </div>
+
+        <div class="evolution-block">
+          <p class="evolution-label">Personal — A Moment That Shifted Things</p>
+          <p class="placeholder-text">[PLACEHOLDER: Hasnain to write about one personal moment — from drones, research, a design team, or any other experience — that shifted how he thinks about engineering or himself as a designer.]</p>
+        </div>
+      </section>
+
+      <!-- Section 4: Current Position -->
+      <section class="dna-section" aria-labelledby="current-position-heading">
+        <p class="dna-section-label">04 · Current Position</p>
+        <h2 class="dna-section-title" id="current-position-heading">Where I Stand Now</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--space-6);">
+          An updated statement of position as an engineering designer — April 2026.
+        </p>
+
+        <div class="position-statement">
+          <p class="placeholder-text">[PLACEHOLDER: Hasnain to write one clear paragraph — his updated position statement as an engineering designer. This should reflect how his thinking has changed or deepened since January. Written in his own voice, not academic language. Maximum 150 words.]</p>
+        </div>
+      </section>
+
+    </div><!-- /content-wrap -->
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-border-muted); padding-block: var(--space-8); margin-top: var(--space-8);">
+    <div class="content-wrap">
+      <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint); text-align: center; letter-spacing: 0.1em;">
+        HASNAIN HERYANI · SEASON 01 · ESC102 PRAXIS II
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script src="./assets/js/audio.js"></script>
+  <script src="./assets/js/transitions.js"></script>
+
+</body>
+</html>

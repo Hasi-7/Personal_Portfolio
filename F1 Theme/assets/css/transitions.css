@@ -1,0 +1,45 @@
+/* ── Page transition layer ───────────────────────────────────────────── */
+#page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(0) translateY(0);
+}
+
+/* ── W04 background return car (inner pages) ─────────────────────────── */
+/* Large faded element bleeding off bottom-right. Entirely clickable.    */
+/* Content sits above it via higher z-index on header/main/footer.       */
+.car-return {
+  position: fixed;
+  right: -8%;
+  bottom: 0;
+  width: 65vw;
+  z-index: 0;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.car-return img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.22;
+  filter: brightness(0.92) saturate(0.92);
+  transition: opacity 0.4s ease;
+}
+
+.car-return:hover img {
+  opacity: 0.35;
+}
+
+/* Ensure page content sits above the car */
+.site-nav,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}

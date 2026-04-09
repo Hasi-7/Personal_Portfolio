@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systems — Hasnain Heryani</title>
+  <meta name="description" content="Engineering design projects by Hasnain Heryani — Praxis I, CIV102 Bridge, Praxis II." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/transitions.css" />
+
+  <style>
+    /* ── Page header ───────────────────────────────────────── */
+    .page-header {
+      border-bottom: 1px solid var(--color-border-muted);
+      padding-block: var(--space-12) var(--space-8);
+    }
+
+    .page-header-frame {
+      display: inline-block;
+      border: 1px solid var(--color-border);
+      padding: var(--space-4) var(--space-8);
+      position: relative;
+    }
+
+    .page-header-frame::before,
+    .page-header-frame::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+    }
+
+    .page-header-frame::before {
+      top: -2px;
+      left: -2px;
+      border-top: 2px solid var(--color-accent);
+      border-left: 2px solid var(--color-accent);
+    }
+
+    .page-header-frame::after {
+      bottom: -2px;
+      right: -2px;
+      border-bottom: 2px solid var(--color-accent);
+      border-right: 2px solid var(--color-accent);
+    }
+
+    .page-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0;
+    }
+
+    .page-subtitle {
+      font-family: var(--font-hud);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-top: var(--space-3);
+    }
+
+    /* ── Project cards ─────────────────────────────────────── */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-8);
+      padding-block: var(--space-12);
+    }
+
+    .project-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-muted);
+      border-radius: var(--radius-md);
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      min-height: 280px;
+      overflow: hidden;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .project-card:hover {
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-teal-sm);
+    }
+
+    .project-image {
+      background: var(--color-surface-raised);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      min-height: 280px;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-image-placeholder {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      text-align: center;
+      padding: var(--space-8);
+    }
+
+    .project-content {
+      padding: var(--space-8);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: var(--space-4);
+    }
+
+    .project-header {
+      border-left: 1px solid var(--color-accent);
+      padding-left: var(--space-4);
+    }
+
+    .project-number {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-accent);
+      letter-spacing: 0.12em;
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      color: var(--color-text);
+      margin-top: var(--space-2);
+      font-size: clamp(1.1rem, 1rem + 0.8vw, 1.6rem);
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .project-summary {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    .project-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+      text-decoration: none;
+      margin-top: var(--space-2);
+      transition: gap var(--transition-fast), color var(--transition-fast);
+    }
+
+    .project-cta:hover {
+      color: var(--color-accent-hover);
+      gap: var(--space-4);
+    }
+
+    .project-arrow {
+      transition: transform var(--transition-fast);
+    }
+
+    .project-cta:hover .project-arrow {
+      transform: translateX(4px);
+    }
+
+    /* ── Case study sections (below each card) ─────────────── */
+    .case-study {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-muted);
+      border-top: none;
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      padding: var(--space-8);
+      display: none; /* expanded by JS if linked directly */
+    }
+
+    .case-study.open {
+      display: block;
+    }
+
+    .case-section-label {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-3);
+    }
+
+    .case-section {
+      margin-bottom: var(--space-8);
+    }
+
+    .case-section p {
+      color: var(--color-text-muted);
+    }
+
+    .placeholder-text {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
+      background: rgba(0, 210, 190, 0.04);
+      border: 1px dashed var(--color-border-muted);
+      padding: var(--space-4) var(--space-6);
+      border-radius: var(--radius-sm);
+    }
+
+    .ctmf-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+
+    .ctmf-link {
+      font-family: var(--font-hud);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      border: 1px solid var(--color-border-muted);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+    }
+
+    .ctmf-link:hover {
+      border-color: var(--color-accent);
+      background: rgba(0, 210, 190, 0.06);
+    }
+
+    /* ── Expand toggle ─────────────────────────────────────── */
+    .expand-toggle {
+      display: none; /* shown when JS is loaded */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-transition-overlay" aria-hidden="true"></div>
+
+  <!-- W04 background return car -->
+  <a href="./index.html" class="car-return" aria-label="Return to cockpit">
+    <img src="./assets/images/w04-car.png" alt="" width="2000" height="1145" loading="lazy" />
+  </a>
+
+  <!-- Persistent nav -->
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html" class="nav-brand" aria-label="Hasnain Heryani — Home">
+        <svg class="nav-logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="12,2 22,20 2,20" />
+          <line x1="12" y1="8" x2="12" y2="14" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+        </svg>
+        <span class="nav-name">Hasnain Heryani</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="./systems.html"    aria-current="page">Systems</a></li>
+        <li><a href="./driver.html">Driver</a></li>
+        <li><a href="./driver-dna.html">Driver DNA</a></li>
+        <li><a href="./logbook.html">Logbook</a></li>
+        <li><a href="./references.html">Refs</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="sound-toggle" aria-label="Toggle sound off" aria-pressed="false" title="Sound is off">🔇</button>
+        <a href="./index.html" class="cockpit-btn" aria-label="Return to cockpit">↩ Cockpit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+
+      <!-- Page header -->
+      <section class="page-header section" aria-labelledby="page-title">
+        <div class="page-header-frame">
+          <h1 class="page-title" id="page-title">Systems</h1>
+        </div>
+        <p class="page-subtitle">Selected Design Work — Season 01</p>
+      </section>
+
+      <!-- Projects -->
+      <section aria-label="Projects" class="projects-list">
+
+        <!-- ── Project 1: Praxis I ──────────────────────────── -->
+        <article class="project-card" id="praxis-i" aria-labelledby="praxis-i-title">
+          <div class="project-image">
+            <p class="project-image-placeholder">
+              [PLACEHOLDER:<br/>Hasnain to add<br/>project image]
+            </p>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-number">01 / PRAXIS I</span>
+              <h2 class="project-title" id="praxis-i-title">[PLACEHOLDER: Praxis I Project Title — Hasnain to fill in]</h2>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Fall 2025</span>
+              <span class="tag">Team Project</span>
+              <span class="tag tag-diverge">Praxis I</span>
+            </div>
+            <p class="project-summary">[PLACEHOLDER: Hasnain to write a one-paragraph summary of the Praxis I project — describe what the problem was, who the stakeholders were, what the team designed, and what the final outcome looked like.]</p>
+            <a href="#praxis-i-case" class="project-cta" aria-expanded="false" data-target="praxis-i-case">
+              → View Case Study <span class="project-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Praxis I case study (expanded) -->
+        <div class="case-study" id="praxis-i-case" aria-label="Praxis I case study details">
+          <div class="case-section">
+            <p class="case-section-label">Context &amp; Stakeholders</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the context, client, and stakeholders for the Praxis I project.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Design Process</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the design process followed — how did the team frame the problem, diverge on ideas, converge on a solution, and represent the final design?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Key Decisions</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe 2–3 key design decisions and the tradeoffs considered.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Final Outcome / Prototype</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the final design deliverable — what was built, presented, or prototyped.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Team Credit</p>
+            <p class="placeholder-text">[PLACEHOLDER: List teammates and their contributions — required per U of T Code of Academic Behaviour and PEO Code of Ethics.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Position Annotation</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to write a short annotation explaining how this project reflects his position as an engineering designer — where his values, beliefs, and approach were visible in the process and outcome.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">CTMFs Used</p>
+            <div class="ctmf-links">
+              <a href="./logbook.html#ctmf-1" class="ctmf-link">[CTMF 1 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-2" class="ctmf-link">[CTMF 2 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-3" class="ctmf-link">[CTMF 3 — Hasnain to fill in]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 2: CIV102 Bridge ────────────────────── -->
+        <article class="project-card" id="civ102" aria-labelledby="civ102-title">
+          <div class="project-image">
+            <p class="project-image-placeholder">
+              [PLACEHOLDER:<br/>Hasnain to add<br/>bridge project image]
+            </p>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-number">02 / CIV102</span>
+              <h2 class="project-title" id="civ102-title">Bridge Design Project</h2>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Fall 2025</span>
+              <span class="tag">Team Project</span>
+              <span class="tag tag-converge">CIV102</span>
+            </div>
+            <p class="project-summary">[PLACEHOLDER: Hasnain to write a one-paragraph summary of the CIV102 Bridge project — describe the structural design problem, constraints, the team's approach, and the result. What load did it need to hold? What material was used?]</p>
+            <a href="#civ102-case" class="project-cta" aria-expanded="false" data-target="civ102-case">
+              → View Case Study <span class="project-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CIV102 case study (expanded) -->
+        <div class="case-study" id="civ102-case" aria-label="CIV102 Bridge case study details">
+          <div class="case-section">
+            <p class="case-section-label">Context &amp; Constraints</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the design brief — what were the structural requirements, material constraints, and evaluation criteria?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Design Process</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe how the team approached the bridge design — structural analysis methods used, iterations made, tradeoffs between strength and weight.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Key Decisions</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the most important structural or material choices and what informed them.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Final Outcome / Test Results</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the final bridge and its performance — did it pass the load test? What was the efficiency score?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Team Credit</p>
+            <p class="placeholder-text">[PLACEHOLDER: List teammates and their specific contributions to the bridge design and fabrication.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Position Annotation</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to annotate how this project deepened his understanding of engineering constraints, tradeoffs, and the limits of analytical models.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">CTMFs Used</p>
+            <div class="ctmf-links">
+              <a href="./logbook.html#ctmf-4" class="ctmf-link">[CTMF 4 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-5" class="ctmf-link">[CTMF 5 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-6" class="ctmf-link">[CTMF 6 — Hasnain to fill in]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Project 3: Praxis II ─────────────────────────── -->
+        <article class="project-card" id="praxis-ii" aria-labelledby="praxis-ii-title">
+          <div class="project-image">
+            <p class="project-image-placeholder">
+              [PLACEHOLDER:<br/>Hasnain to add<br/>project image]
+            </p>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-number">03 / PRAXIS II</span>
+              <h2 class="project-title" id="praxis-ii-title">[PLACEHOLDER: Praxis II Project Title — Hasnain to fill in]</h2>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Winter 2026</span>
+              <span class="tag">Team Project</span>
+              <span class="tag tag-frame">In Progress</span>
+            </div>
+            <p class="project-summary">[PLACEHOLDER: Hasnain to write a one-paragraph summary of the Praxis II project — describe the design brief, who the client or community is, the team's approach so far, and where the design stands currently.]</p>
+            <a href="#praxis-ii-case" class="project-cta" aria-expanded="false" data-target="praxis-ii-case">
+              → View Case Study <span class="project-arrow" aria-hidden="true">›</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Praxis II case study (expanded) -->
+        <div class="case-study" id="praxis-ii-case" aria-label="Praxis II case study details">
+          <div class="case-section">
+            <p class="case-section-label">Context &amp; Stakeholders</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the Praxis II design context — who is the client, what is the design challenge, and what community or user group is being served?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Design Process</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the design process to date — how did the team frame the problem, what divergent explorations were done, how are ideas being converged?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Key Decisions</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe major design decisions made so far and the reasoning behind them.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Current State / Outcome</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to describe the current state of the design — prototype, concept, or delivered solution.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Team Credit</p>
+            <p class="placeholder-text">[PLACEHOLDER: List teammates and their contributions to the Praxis II project.]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">Position Annotation</p>
+            <p class="placeholder-text">[PLACEHOLDER: Hasnain to reflect on how his design position evolved through Praxis II — what did this project reveal about how he approaches teamwork, iteration, and design under uncertainty?]</p>
+          </div>
+          <div class="case-section">
+            <p class="case-section-label">CTMFs Used</p>
+            <div class="ctmf-links">
+              <a href="./logbook.html#ctmf-7" class="ctmf-link">[CTMF 7 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-8" class="ctmf-link">[CTMF 8 — Hasnain to fill in]</a>
+              <a href="./logbook.html#ctmf-9" class="ctmf-link">[CTMF 9 — Hasnain to fill in]</a>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- /projects-list -->
+    </div><!-- /content-wrap -->
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-border-muted); padding-block: var(--space-8); margin-top: var(--space-16);">
+    <div class="content-wrap">
+      <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint); text-align: center; letter-spacing: 0.1em;">
+        HASNAIN HERYANI · SEASON 01 · ESC102 PRAXIS II
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script src="./assets/js/audio.js"></script>
+  <script src="./assets/js/transitions.js"></script>
+
+  <script>
+    // Case study expand/collapse
+    document.querySelectorAll('.project-cta[data-target]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.getAttribute('data-target');
+        var target = document.getElementById(targetId);
+        if (!target) return;
+        var isOpen = target.classList.contains('open');
+        target.classList.toggle('open', !isOpen);
+        this.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+  </script>
+
+</body>
+</html>

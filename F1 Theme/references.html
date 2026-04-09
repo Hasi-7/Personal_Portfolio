@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References — Hasnain Heryani</title>
+  <meta name="description" content="All cited works in Praxis embedded extract format (APA)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/tokens.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/nav.css" />
+  <link rel="stylesheet" href="./assets/css/transitions.css" />
+
+  <style>
+    /* ── Page header ───────────────────────────────────────── */
+    .page-header {
+      padding-block: var(--space-12) var(--space-8);
+      border-bottom: 1px solid var(--color-border-muted);
+    }
+
+    .page-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .page-subtitle {
+      font-family: var(--font-hud);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-top: var(--space-3);
+    }
+
+    /* ── Reference format note ──────────────────────────────── */
+    .format-note {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-muted);
+      border-left: 3px solid var(--color-accent);
+      padding: var(--space-4) var(--space-6);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-block: var(--space-8);
+    }
+
+    .format-note p {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+
+    /* ── Reference sections ─────────────────────────────────── */
+    .ref-section {
+      padding-block: var(--space-8);
+      border-bottom: 1px solid var(--color-border-muted);
+    }
+
+    .ref-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .ref-section-label {
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-accent);
+      margin-bottom: var(--space-6);
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    .ref-section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--color-border-muted);
+    }
+
+    /* ── Reference list ─────────────────────────────────────── */
+    .ref-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+
+    .ref-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: var(--space-4);
+      align-items: baseline;
+    }
+
+    .ref-number {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--color-accent);
+      text-align: right;
+      letter-spacing: 0.08em;
+      padding-top: 2px;
+    }
+
+    .ref-text {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      /* hanging indent per APA */
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    .ref-text a {
+      color: var(--color-accent);
+      word-break: break-all;
+    }
+
+    .placeholder-text {
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
+      background: rgba(0, 210, 190, 0.04);
+      border: 1px dashed var(--color-border-muted);
+      padding: var(--space-4) var(--space-6);
+      border-radius: var(--radius-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-transition-overlay" aria-hidden="true"></div>
+
+  <!-- W04 background return car -->
+  <a href="./index.html" class="car-return" aria-label="Return to cockpit">
+    <img src="./assets/images/w04-car.png" alt="" width="2000" height="1145" loading="lazy" />
+  </a>
+
+  <!-- Persistent nav -->
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html" class="nav-brand" aria-label="Hasnain Heryani — Home">
+        <svg class="nav-logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="12,2 22,20 2,20" />
+          <line x1="12" y1="8" x2="12" y2="14" />
+          <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+        </svg>
+        <span class="nav-name">Hasnain Heryani</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="./systems.html">Systems</a></li>
+        <li><a href="./driver.html">Driver</a></li>
+        <li><a href="./driver-dna.html">Driver DNA</a></li>
+        <li><a href="./logbook.html">Logbook</a></li>
+        <li><a href="./references.html" aria-current="page">Refs</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="sound-toggle" aria-label="Toggle sound off" aria-pressed="false" title="Sound is off">🔇</button>
+        <a href="./index.html" class="cockpit-btn" aria-label="Return to cockpit">↩ Cockpit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+
+      <!-- Page header -->
+      <section class="page-header section" aria-labelledby="refs-title">
+        <h1 class="page-title" id="refs-title">References</h1>
+        <p class="page-subtitle">All cited works in Praxis embedded extract format (APA)</p>
+      </section>
+
+      <!-- Format note -->
+      <div class="format-note" role="note">
+        <p>
+          All references are formatted in APA 7th edition per Praxis embedded extract requirements.
+          Source extracts are included in the PDF submission to Quercus.
+        </p>
+      </div>
+
+      <!-- Placeholder instruction -->
+      <div style="padding-bottom: var(--space-8);">
+        <p class="placeholder-text">[PLACEHOLDER: Hasnain to supply all references in APA 7th edition format. Include every source cited across all portfolio pages — course readings, design standards, project resources, and any external references. Format: Author, A. A. (Year). Title of work. Publisher. https://doi.org/...]</p>
+      </div>
+
+      <!-- Reference sections by project -->
+      <section class="ref-section" aria-labelledby="refs-praxis1">
+        <h2 class="ref-section-label" id="refs-praxis1">Praxis I</h2>
+        <ol class="ref-list">
+          <li class="ref-item">
+            <span class="ref-number">1.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in Praxis I project]</p>
+          </li>
+          <li class="ref-item">
+            <span class="ref-number">2.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in Praxis I project]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="ref-section" aria-labelledby="refs-civ102">
+        <h2 class="ref-section-label" id="refs-civ102">CIV102 Bridge Project</h2>
+        <ol class="ref-list" start="3">
+          <li class="ref-item">
+            <span class="ref-number">3.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in CIV102 bridge design]</p>
+          </li>
+          <li class="ref-item">
+            <span class="ref-number">4.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in CIV102 bridge design]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="ref-section" aria-labelledby="refs-praxis2">
+        <h2 class="ref-section-label" id="refs-praxis2">Praxis II</h2>
+        <ol class="ref-list" start="5">
+          <li class="ref-item">
+            <span class="ref-number">5.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in Praxis II project]</p>
+          </li>
+          <li class="ref-item">
+            <span class="ref-number">6.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for a source used in Praxis II project]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="ref-section" aria-labelledby="refs-ctmf">
+        <h2 class="ref-section-label" id="refs-ctmf">CTMFs &amp; Course Materials</h2>
+        <ol class="ref-list" start="7">
+          <li class="ref-item">
+            <span class="ref-number">7.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for ESC102 course materials, readings, or CTMF sources]</p>
+          </li>
+          <li class="ref-item">
+            <span class="ref-number">8.</span>
+            <p class="ref-text placeholder-text">[PLACEHOLDER: APA reference for ESC102 course materials, readings, or CTMF sources]</p>
+          </li>
+        </ol>
+      </section>
+
+    </div><!-- /content-wrap -->
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-border-muted); padding-block: var(--space-8); margin-top: var(--space-8);">
+    <div class="content-wrap">
+      <p style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint); text-align: center; letter-spacing: 0.1em;">
+        HASNAIN HERYANI · SEASON 01 · ESC102 PRAXIS II
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+  <script src="./assets/js/audio.js"></script>
+  <script src="./assets/js/transitions.js"></script>
+
+</body>
+</html>

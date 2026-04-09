@@ -3,6 +3,8 @@ title: "Position Statement"
 youtubeVideoId: "JYUHDenGcJY"
 ---
 
+
+
 As an engineering student, I approach design with a deep curiosity about how things work — both the technical systems we build and the human contexts they operate within. My engineering practice is grounded in the belief that meaningful design emerges at the intersection of rigorous analysis and genuine empathy for the people a design serves.
 
 Growing up, I was always drawn to taking things apart. Not to break them, but to understand them — to see the logic beneath the surface. That instinct has evolved into a design philosophy that values first principles thinking, iterative refinement, and honest reflection on what works and what doesn't.
