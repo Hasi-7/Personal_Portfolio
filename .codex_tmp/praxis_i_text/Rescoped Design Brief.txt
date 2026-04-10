@@ -1,0 +1,904 @@
+    IMPROVING ENGINEERING SCIENCE COMMON ROOM WHITEBOARD
+                   USABILITY FOR LEFT-HANDERS
+
+                                  Word count: 1798
+
+Table of Contents:
+
+
+   I.   Introduction________________________________________________________ 2
+   II. Using EngSci Common Room Whiteboards as a Left-Handed Individual________ 2
+   III. Defining the Working Environment_____________________________________ 3
+   IV. Understanding Stakeholders and Their Needs_______________________________4
+        a) Left-Handed EngSci Students________________________________________4
+       b) Audiences and Group Members of Left-Handed Students___________________4
+       c) Right-Handed Students Writing Leftward Scripts (e.g, Arabic)_______________4
+        d) Facility Custodians_________________________________________________ 4
+        e) Facility Equipment Regulator________________________________________ 4
+        f) Design Team_____________________________________________________ 4
+   V. A Discussion of Reference Designs____________________________________ 5 a)
+       Integrated Eraser Markers_____________________________________________5
+      b) Smudge Guards____________________________________________________5
+        c) InstaMorph_______________________________________________________ 5
+   VI. Needs, Goals and Objectives___________________________________________ 6
+        Goal 1_____________________________________________________________ 6
+        Goal 2_____________________________________________________________ 6
+        Goal 3_____________________________________________________________ 7
+        Goal 4_____________________________________________________________ 8
+        Goal 5_____________________________________________________________ 8
+   VI. Next Steps________________________________________________________ 9
+
+================================================================
+
+   VII. Works Cited_______________________________________________________ 9
+   VIII. Appendices_______________________________________________________12
+      Appendix A: Relevant Source Extracts___________________________________12
+      Appendix B: Left-handed Narrative Accounts_____________________________ 17
+      Appendix C: Transcript of Interviews____________________________________18
+      Appendix D: Glossary________________________________________________20
+   IX. Works Consulted__________________________________________________21
+     I.   Introduction
+
+ This design brief frames the challenges faced by left-handed writers when using whiteboards
+ in the Engineering Science common room. Left-handers often smudge or erase their written
+ work unintentionally when writing rightwards [Appendix B2-3], [Appendix C]. To limit these
+ effects, left-handers resort to uncomfortable writing postures, resulting in muscle strain and
+ poor handwriting [3], [4], [28]. This brief defines the scope of this problem, discusses
+ stakeholder expectations, and explores the limitations of existing designs to inform needs,
+ goals, and objectives for improving the left-handed whiteboard experience.
+
+II. Using EngSci Common Room Whiteboards as a Left-Handed Individual
+
+ As most language scripts in the world are right-oriented [2], left-handers’ hands tend to trail
+ over their script and rest on the board (Figure 1), smudging ink (Figure 2) and transferring
+ residue to the palm [Appendix B3], [Appendix C]. The non-absorbent whiteboard surface
+ causes this inconvenient writing experience. For the purpose of this design brief, the
+ whiteboards are a fixed element of the common room that can not be replaced.
+
+
+
+
+ Observation and research shows that left-handers often adopt awkward wrist angles when
+ writing [Figure 1.3], [Appendix B3], [Appendix C]. Even on horizontal surfaces, they exhibit
+ greater wrist flexion than right-handers [3], increasing muscle strain and the risk of
+ musculoskeletal disorders [3], [4], [27]. This effect is likely exacerbated on whiteboards, where
+ the arm is unsupported and a standing stance is adopted. Awkward wrist adjustments can also
+ reduce perceived handwriting quality [Appendix B2], [Appendix C3], [28].
+
+
+
+
+ 2
+ Hence, despite posture adjustments, whiteboard writing still causes discomfort and reduced
+ satisfaction for left-handers, emphasizing the need for a design solution.
+
+III.    Defining the Working Environment
+
+
+
+
+ The Engineering Science Common Room is an indoor space with several whiteboards, each
+ with a tray for markers and erasers. While the board material is unconfirmed, it is likely
+ melamine as it accounts for the majority of the whiteboard market (45%) [5].
+
+ There are 2 sizes of whiteboards in the common room; tray dimensions
+ were found to be 5.5 ± 0.05 cm (Whiteboard A) (Figure 4) and 4.9 ±
+ 0.05 cm (Whiteboard B). Whiteboard markers in the common room
+ are 17.8 cm [14] in length and the eraser is 13 cm x 8 cm x 5 cm [17]
+ . Design solutions could employ similar dimensions to maintain
+ consistency with standard whiteboard materials, increasing users’
+ adaptability as outlined in Norman’s ‘The Design for Everyday
+ Things’ [24]. Since the common room is frequently occupied by
+ Engineering Science students studying [Appendix C3], the design
+ must also avoid causing auditory disturbance.
+  IV.    Understanding Stakeholders and Their Needs
+ As the common room is a shared educational space, there are many who may be affected by a
+ design solution. Below is a discussion of different stakeholders and their expectations.
+
+ 3
+   a) Left-Handed EngSci Students
+The primary stakeholders – users of this opportunity.
+
+They expect to be able to write on whiteboards at the same rate as right-handed peers without
+unintentional smudging of the writing and on the hand [Appendix B2]. The design should be
+easy and fast to implement into one’s writing process without affecting their writing ability. To
+ensure this, it should prevent hand pain and should be ergonomic [Appendix C1].
+
+    b) Audiences and Group Members of Left-Handed Students
+    Primary stakeholders.
+
+They expect to read the writing of the left-handed peers’ work on whiteboards without issue.
+The design should minimize noise to avoid distraction [23]. It must be operable efficiently and
+quick to access, without hindering the user’s working pace.
+
+    c) Right-Handed Students Writing Leftward Scripts (e.g, Arabic)
+    Potential primary stakeholders with similar struggles. [Appendix C3]
+
+They wish to write with satisfactory handwriting and note minimal differences between writing
+left-ward and right-ward scripts [Appendix C3]. The design could either not consider
+handedness in design or have a right-handed alternative.
+
+   d) Facility Custodians
+Secondary stakeholders
+
+They expect that the design can not leave non-removable residue and must not require
+maintenance multiple times a day, as stakeholders are only on site to clean once daily
+[Appendix A]. Design must pass the University of Toronto APPA Cleaning Standard [29].
+
+    e) Facility Equipment Regulator
+    Tertiary stakeholders.
+
+They expect the design to not damage the whiteboard or surrounding equipment. This design
+should pass any standards from the University of Toronto for educational spaces [31].
+
+
+   f) Design Team
+Primary stakeholders.
+
+They expect other stakeholders’ expectations to be satisfied by fulfilling the Need, Goals and
+Objectives. This design should carry minimal bias from the team’s perspective through in
+depth research and understanding of other stakeholders.
+
+
+
+
+4
+  V.    A Discussion of Reference Designs
+While some existing products may aid with left-handed whiteboard use, each has shortcomings
+relative to stakeholder needs.
+
+    a) Integrated Eraser Markers
+
+Permanent markers with integrated erasers (e.g., Faber-
+Castell Multimark [5]) offer a short-term solution: the
+permanent ink prevents smudging during writing, and
+the eraser on the back allows removal afterward. While
+Faber-Castell does not disclose its eraser formula, it is
+likely alcohol-based since permanent marker polymers
+are soluble in alcohols such as isopropanol [6].
+
+However, the eraser’s small surface area makes cleaning large sections slow. Enlarging it might
+seem effective, yet another issue remains: alcohol-based erasers degrade melamine
+whiteboards with repeated use, shortening board lifespan [8]. Hence, while integrated eraser
+markers address smudging, they are not a sustainable long-term solution – however, they may
+inspire chemical designs based on how they erase non-smudge ink.
+
+    b) Smudge Guards
+SmudgeGuard® gloves (87% Nylon, 13% Spandex) [9]
+are intended for tablet users looking to reduce sweat
+transfer to screens; thus, they may also prevent ink
+smudging (Figure 6).
+
+However, this design cannot fully prevent unintentional
+erasure since it may lift dry-erase ink from the
+whiteboard due to the design’s absorbency. While
+inspiration can be taken from how they protect the palm,
+they highlight the need for a solution to prevent erasure.
+
+
+
+
+5
+    c) InstaMorph
+                              One left-hander expressing annoyance on Quora suggested using
+                              InstaMorph, forming a “custom stand-off” (Figure 7) with a
+                              lightweight polyester thermoplastic [11], to form to pivot the
+                              hand while writing on boards [Appendix B #1].
+
+                              However, this task requires modeling skills and dedicated time
+                              to create a personalized product. The prolonged sensation of
+                              plastic against skin is also undesirable [21], and contact with the
+                              board risks scratches. While InstaMorph is an impractical
+                              widescale solution, the pivot concept could inspire future
+                              designs.
+
+
+
+
+VI. Needs, Goals and Objectives
+From the stakeholder expectations and reference design shortcomings, we can derive needs,
+goals and objectives necessary to deem a solution to this splartz “sufficient.”
+
+Need: Left-handed students need are able to write on whiteboards in the EngSci common room
+without smudging their hands or hindering their normal writing ability. issue.                      Commented [SZ1]: Rewrote to be more specific about
+                                                                                                    left-handed EngSci students' exact needs.
+
+Table 1: Goal 1 meets primary stakeholders’ needs by facilitating their use of whiteboards
+without harm.
+
+                Description                        Metric               Justification
+
+
+    Goal 1      Design must not affect the user’s baseline writing ability
+
+ Requirement Cannot inhibit the user's             Score (points) on    A 15-point decrease
+ 1.1         baseline                              the                  on the DASH-2 is one
+             DASH-2 score by more than 15          DASH-2               standard deviation,
+             points [16].                          (Detailed            signifying a
+                                                   Assessment of        significant drop in
+                                                   Speed of             handwriting speed
+                                                   Handwriting).        [16].
+
+ Evaluation     The fewer points inhibited by the design on the user’s baseline DASH-2
+ Criteria 1.1   score the better.
+
+
+
+
+6
+ Requirement Ensure there is no risk of strain     Angle of extreme    Reducing strain
+ 1.2         injury caused by wrist extended       wrist extension,    injuries when
+             by >90o, wrist radial abduction,      wrist radial        adopting a standing
+             >20o, and wrist ulnar abduction,      abduction and       stance re-ensures the
+             >30o, outlined in ISO 11226-          wrist ulnar         user's original writing
+             2000 [Appendix A] [13].               abduction in        ability.
+                                                   degrees.
+
+ Evaluation     The greater range of angles less than 90o, 20o, and    Greater ranges of
+ Criteria 1.2   30o for wrist extension, wrist radial abduction, and   angles accommodate
+                wrist ulnar abduction respectively that the design     for more people’s
+                accommodates for the better.                           unique grip styles
+
+
+ Requirement Accommodate for at least 86%          Grip styles:                                  Commented [MZ2]: Accommodating for the 4
+ 1.3         of the population by allowing         lateral tripod,                               mentioned grip styles ensures at least 86% of users 11 years
+                                                                                                 and older will be able to hold the product the same way they
+             various grip styles on the pen,       dynamic tripod, Ensures the design is         normally write.
+                                                                      usable by any users
+             namely lateral tripod, dynamic        lateral quadropod,                            https://www.researchgate.net/publication/331883826_Pencil
+                                                                      with differing grip        _Grip_Patterns_of_Students_and_Skilled_Workers
+             tripod, lateral quadropod, and        dynamic
+                                                                      styles [14].               Commented [MZ3]: A small number of users may
+             dynamic quadropod.                    quadropod.         DfErgonomics [27]          exhibit an unusual grip style that differs significantly from
+             Accommodate for various grip                              emphasises to             the common grip styles.
+             styles on the pen, namely tripod                          “anticipate actions.”
+             and quadropod grip styles.
+
+
+ Evaluation     The more grip styles the pen can accommodate the better.
+ Criteria 1.3
+
+
+
+Table 2: Ergonomics-focused goal that meets the needs of all primary stakeholders through
+ensuring the device is convenient to use and be around.
+
+                     Description             Metric                    Justification
+
+
+     Goal 2          Design must be comfortable to use and have around the commons.
+
+ Requirement 2.1     Design width of at      Width (cm) of design.
+                     most 4.9cm. Design      Velocity (m/s) of       Design must fit onto
+                     can rest on a 4.9cm     design when it rests on the marker trays
+                     and 5.5cm marker        a marker tray.          (4.9cm and 5.5cm) so
+                     tray with a velocity                            users can have quick
+                     of 0 m/s in any                                 access.
+                     direction.
+
+
+
+
+7
+Evaluation
+Criteria 2.1      The smaller the design volume in cm³, the less space it takes up on the
+                  marker tray, and the better.                                                Commented [GL4]: Since changing the velocity wouldn't
+                                                                                              improve the design, the evaluation criteria instead focuses
+                                                                                              on total space taken up in marker tray.
+Requirement 2.2   Design colours are     The Euclidean             A visually distinct
+                  distinguishable,       Difference (ΔE*).         colour allows users to
+                  colour difference                                have quick access to
+                  between the design                               the design.
+                  and the marker rail
+                  (silver, #C0C0C0)
+                  must have a
+                  perceptual ΔE* ≥ 20
+                  according to
+                  ISO/CIE 11664-4
+                  [Appendix A], [12].
+
+Evaluation        The greater the Euclidian Difference between the marker rail and the
+Criteria 2.2      design, the easier to spot the design
+
+
+
+Requirement 2.3   The design must be Light Transmittance           The user should be
+                  transparent with at    Percentage                able to see what they
+                  minimum a                                        are writing and the
+                  transmittance of                                 design should not
+                  80% Portions of the                              hinder the user in any    Commented [HH5]: Glass tends to have a transmittance of
+                  design that obstruct                             way. Knowing that         at least 80%, anything lower tends to be hazy and difficult to
+                                                                                             read
+                  the writing area                                 glass is comfortable
+                                                                                             Commented [HH5R2]: This has been added because we do
+                  within the user’s line                           for people to look        not want the design to create hinderances for the user
+                  of sight (from eye                               through, equal
+                  level to hand                                    transmittance material
+                  position) shall have                             is good enough
+                  a minimum
+                  transparency of 80%
+                  transmittance.
+
+Evaluation        The higher the transmittance percentage of the design, the clearer it is
+Criteria 2.3      for the user to see anything covered by the design, which is better.
+
+
+
+
+8
+ Requirement 2.4     Reduce disturbance       Room’s sound           Research shows that
+                     by maintaining the       pressure level (dB).   “Increasing
+                     common room’s                                   background sound
+                     sound pressure level                            pressure level to 60
+                     to under 60 dB
+                                                                     dBA significantly
+                                                                     impairs auditory
+                                                                     working memory task
+                                                                     performance” [22].
+
+ Evaluation          The smaller the amount of added sound pressure (dB) to the room by
+ Criteria 2.4        the design, the better.
+
+
+
+
+Table 3: Goal 3 caters to primary stakeholders. Research suggests that smudging leads to
+lower legibility in left-handed children [28]; hence, we assume that by reducing smudging,
+one increases legibility. Further research could be done to confirm.
+
+                   Description                Metric                 Justification
+
+      Goal 3       Ensure no minimal unintentional movement of the ink on the surface of
+                   the whiteboard occurs
+
+ Requirement       No accidental contact      Ink’s drying time      Ensures no
+ 3.1               between design and         (seconds), contact     unintentional
+                   surface of the             points. Euclidean      smudging can occur
+                   whiteboard marker ink      Difference (ΔE*) of    before the ink is dry
+                   that causes original       any unintentionally    [19], maintaining
+                   ink to have a ΔE* of       smudged ink at the     legibility.               Commented [GL6]: The original objectives prevent any
+                   more than 5 compared       written location       Ensures no writing is     contact with the whiteboard, but this includes parts of the
+                                                                                               whiteboard that don't even have ink on them yet. Designs that
+                   to original ink color.     compared to original   erased after ink drying   do not touch ink will most likely not cause smudging, so we
+                   within 27.73s [19] of      writing.               [19] so written work      update this to only apply to touching ink.
+                                                                                               Below source says that delta E of 5 is noticeable at a glance,
+                   the ink being applied.                            can be read.              so designs should stay below that.
+                                                                                               https://alpolic-americas.com/wp-
+                                                                                               content/uploads/2021/05/Final_Calclulating-DE-Color-
+                                                                                               White-Paper-041221.pdf
+ Evaluation                                   See cell above         Smaller amounts of
+ Criteria 3.1                                                        marker smudging
+                   The smaller the ΔOD
+                                                                     would meet
+                   of marker ink
+                                                                     stakeholder need of
+                   transferred, the better.
+                                                                     avoiding ink
+                                                                     messiness.
+
+
+
+
+9
+ Requirement       No accidental contact     Ink’s drying time        Ensures no writing is
+ 3.2               between design and        (seconds), contact       erased after ink drying
+                   surface of the            points.                  [19] so written work
+                   whiteboard after                                   can be read.
+                   27.73s of the ink
+                   being applied.                                                                 Commented [GL7]: Merge both requirements into one,
+                                                                                                  because if we consider all time before 27.73s and all time
+                                                                                                  after 27.73s, then the design is simply not allowed to touch
+                                                                                                  the marker ink accidently.
+
+Table 4: Goal 4 reduces the messiness of the writing experience – an inconvenience mentioned
+by left-handers [Appendix B, C].
+
+                 Description                Metric                   Justification
+
+
+     Goal 4      Ensure no ink residue is left on the hand after use of the device
+
+ Requirement     Zero points of contact Hand-whiteboard                    Ensures no ink is
+ 4.1             between the hand of      contact points.                  able to rub off
+                 the user and the surface                                  onto the skin of
+                 of the whiteboard                                         the user, fulfilling
+                 marker ink on the                                         stakeholder’s
+                 whiteboard.                                               expectation.           Commented [GL8]: As long as hands do not contact
+                                                                                                  marker ink, they should not get messy.
+ Evaluation                                 Area of contact points
+ Criteria 4.1                               in cm2 between design    Smaller areas of
+                 The less total area of
+                                            and whiteboard.          contact make the
+                 contact points between
+                                            Contact points are       probability of the user
+                 the design and the
+                                            anywhere the design      accidently touching the
+                 whiteboard, the better.
+                                            touches the              marker ink smaller.
+                                            whiteboard.
+
+
+
+
+Table 5: Goal 5 designs for maintenance, satisfying custodians and regulatory staff through
+reduced damage and stains to whiteboards.
+                  Description              Metric                 Justification
+
+     Goal 5       Design must not damage the whiteboard.
+
+
+
+
+10
+  Requirement       Nicks on the          Depth and width of
+  5.1               whiteboard surface    nicks (inches/cm).          PTI Technologies’
+                    shall be “no greater                              Surface Inspection
+                    than 0.005″ (0.01270                              Acceptance Criteria
+                    cm) in depth and                                  allows for surface
+                    0.010″ (0.0254 cm) in                             irregularities below
+                    width.”                                           0.005″ in depth and
+                                                                      0.010″ in width on “non-
+                                                                      functional surfaces”,
+                                                                      which a whiteboard falls
+                                                                      under [25].
+
+  Evaluation        The smaller the nicks (< 0.005″) on the whiteboard, the better functioning
+  Criteria 5.1      the whiteboard is at displaying written work and marker strokes.
+  Requirement       Any permanent            The Euclidean          Ensures color changes
+  5.2               staining from the        Difference (ΔE*).      remain below the
+                    design should have                              perceptible threshold in a
+                    ΔE* ≤ 1.9 with                                  dental study where 50%
+                    whiteboard surface.                             of participants noticed
+                                                                    differences in dentures
+                                                                    [26]; design must be
+                                                                    below this to avoid
+                                                                    visible staining.
+  Evaluation        The smaller the ΔE of stains on the whiteboard from the design, the better.
+  Criteria 5.2
+
+
+VI.     Next Steps
+
+         In conclusion, left-handed smudging on boards and palms when using EngSci common
+ room whiteboards is a documented issue. A design team addressing this challenge must
+ maintain regular communication with primary stakeholders to ensure that left-handers are
+ satisfied with the final outcome. While literature is available on left-handed struggles, further
+ primary research within the common room environment may benefit the design team. Through
+ divergent thinking and rigorous testing to meet goals and objectives, a design team can
+ effectively address the needs of left-handers and develop a practical solution.
+
+
+
+
+ 11
+VII.    Works Cited
+ See Appendix A for relevant source extracts.
+
+ [1]   Hardyck, C., & Petrinovich, L. F. (1977). Left-handedness. Psychological Bulletin, 84(3),
+       385–404. https://doi.org/10.1037/0033-2909.84.3.385
+
+ [2]   Ager, S. (2024). Writing Direction Index. Omniglot. Retrieved October 9, 2025, from
+       https://www.omniglot.com/writing/direction.htm
+
+ [3]   Park, S. (2013). Comparison of Muscle Activation during Dominant Hand Wrist Flexion
+       when Writing. Journal of Physical Therapy Science, 25(12), 1529–1531.
+        https://doi.org/10.1589/jpts.25.1529
+
+ [4]   Malchaire, J., Cock, N., & Robert, A. (1996). Prevalences of musculoskeletal disorders at
+       the wrist as a function of angles, forces, repetitiveness and movement velocities.
+         Scandinavian Journal of Work Environment & Health, 22(3), 176–181.
+         https://doi.org/10.5271/sjweh.128
+
+ [5]   Products. (n.d.). FC-ECom. https://www.faber-castell.ca/products/marking/multimark
+
+ [6]   Chapman, K. (2022, December 15). How do whiteboard markers work? Education in
+       Chemistry | Royal Society of Chemistry. Retrieved October 9, 2025, from
+       https://edu.rsc.org/everyday-chemistry/how-do-whiteboard-markers-work/4016592.ar
+       ticle
+
+
+ 12
+[7]   Global White Board Market Size By Product Type. (2025, March). Verified Market
+      Reports.          Retrieved         October          10,         2025,         from
+      https://www.verifiedmarketreports.com/product/global-white-board-market-growth-2
+      019-2024/
+
+[8]   P, M. (2017, November 29). Why isopropyl Alcohol is Dangerous For Your Dry Erase
+      Board. Magnatag.
+        https://www.magnatag.com/blog/post/why-isopropyl-alcohol-is-dangerous-for-your-d ry-
+        erase-board?
+
+[9]   SmudgeGuard (n.d.). https://www.smudgeguard.com/index.htm
+
+[10] How can a left-handed person write neatly on a whiteboard/blackboard? (n.d.). Quora.
+      https://www.quora.com/How-can-a-left-handed-person-write-neatly-on-a-
+      whiteboardblackboard
+
+[11] InstaMorph. (n.d.). InstaMorph - Reusable moldable plastic. https://instamorph.com/
+
+[12] International Organization of Standardization. (2019) Colorimetry —Part 4: CIE 1976
+     L*a*b* colour space. (ISO Standard No.ISO/CIE 11664-4:2019)
+
+[13] International Organization of Standardization. (2000) Ergonomics — Evaluation of static
+     working postures. (ISO Standard No.ISO 11226:2000)
+
+[14] EXPO Dry Erase Markers Kit, Chisel Tip, Assorted Colours, Eraser, Spray Cleaner, 6
+     Count : 0: Amazon.ca: Office Products. (n.d.).
+      https://www.amazon.ca/Markers-Chisel-Assorted-Colours-Cleaner/dp/B000MK2PZ6/
+
+[15] Standard Practice for Labeling Art Materials for Chronic Health Hazards. (2021). In
+     ASTM International (ASTM D4236-94). ASTM International.
+
+[16] Horne, J., Ferrier, J., Singleton, C., & Read, C. (n.d.). Computerised assessment of
+     handwriting and typing speed. Educational and Child Psychology, 28(2), 52–66.
+       https://doi.org/10.53841/bpsecp.2011.28.2.52
+
+[17] Standard Dry Erase Board Eraser H-1458 - Uline. (n.d.).
+       https://www.uline.ca/Product/Detail/H-1458/Dry-Erase-Board-Accessories/StandardDry-
+       Erase-Board-Eraser
+
+[18] Medbridge. (2025b, January 27). Identifying Pencil grasp Style: Why it matters |
+      Medbridge. Medbridge
+      .https://www.medbridge.com/blog/identifying-pencil-grasp-style-why-it-matters
+
+[19]Cabuay, L. C., Caneda, N. C. C., Lao, R., & Pilipiña, J. A. (2024). A Comparative Study
+      Between an Alternative Whiteboard Marker Ink Made of Pulverized Chicken Bones and
+      an Industrial Whiteboard Marker Ink.
+13
+[20] How big is a standard backpack? Complete size & volume guide. (2025, July 4). High
+     Quality Custom Bag Manufacturer China and Overseas.
+       https://szoneier.com/custom-backpack/how-big-is-a-standard-backpack
+
+[21] Rezaei, M., Nagi, S., Xu, C., McIntyre, S., Olausson, H., & Gerling, G. (2021). Thin
+       Films on the Skin, but not Frictional Agents, Attenuate the Percept of Pleasantness to
+       Brushed Stimuli. 2021 IEEE World Haptics Conference (WHC), pp 49–54.
+       https://doi.org/10.1109/WHC49131.2021.9517259.
+
+[22] Sun, Z., Hu, S., Xie, S., Wu, L., Jiang, C., Ding, S., Zhang, Z., Xu, W., & Li, H. (2024).
+     Does background sound impact cognitive performance and relaxation states in enclosed
+     office? Building and Environment, 267, 112313.
+        https://doi.org/10.1016/j.buildenv.2024.112313
+
+[23]Braat-Eggen, P. E. (2020). Auditory distraction in open-plan study environments in higher
+       education [Phd Thesis 1 (Research TU/e / Graduation TU/e), Built Environment,
+       Technische Universiteit Eindhoven].
+       https://pure.tue.nl/ws/portalfiles/portal/151862451/20200623_Braat_Eggen.pdf
+
+[24] Norman, D. A. (1988). The design of everyday things.
+      http://documents.irevues.inist.fr/bitstream/2042/30193/1/XX_CNE-Prospective_0007
+      38.pdf
+
+[25] Montfort, R., Robino, P., Montfort, R., Robino, P., Montfort, R., Robino, P., Sheikhvand,
+      B., Robino, P., Suri, K., Marban, J., Lopez, R., & Suri, K. (2017). SURFACE
+      INSPECTION ACCEPTANCE CRITERIA. In SURFACE INSPECTION
+      ACCEPTANCE CRITERIA (pp. 1–6).
+      https://www.ptitechnologies.com/wp-content/uploads/2018/04/QAP-3.0-3-Surface-Ins
+      pection-Acceptance-Criteria.pdf
+
+[26] Alghazali, N., Burnside, G., Moallem, M., Smith, P., Preston, A., & Jarad, F. D. (2012).
+       Assessment of perceptibility and acceptability of color difference of denture teeth.
+      Journal of Dentistry, 40, e10–e17. https://doi.orgx/10.1016/j.jdent.2012.04.023
+
+[27] Openshaw, S., Taylor, E., & Allsteel. (2006). Ergonomics and design.
+      https://ehs.oregonstate.edu/sites/ehs.oregonstate.edu/files/pdf/ergo/ergonomicsanddesi
+      gnreferenceguidewhitepaper.pdf
+
+[28] Hayden, C., & Burton, N. (2012). Assessing the suitability of individual whiteboards for
+     left-handed writers within the Early Years Foundation Stage. Education 3-13, 41(1), 71–
+     81. https://doi.org/10.1080/03004279.2012.710102
+
+[29] Knecht, K., Bryan-Kinns, N., & Shoop, K. (2016). Usability and design of personal
+     wearable and portable devices for thermal comfort in shared work environments.
+
+14
+        Proceedings of British HCI 2016 Conference Fusion.
+        https://www.scienceopen.com/document_file/2828f85c-1a92-4eb1-83a6-c9feee65067
+        e/ScienceOpen/001_Knecht.pdf
+
+ [30]Caretaking Department. (n.d.). Area cleaning frequency for all buildings.
+        https://www.fs.utoronto.ca/wp-content/uploads/2024/09/Caretaking-Frequencies-002.
+        pdf
+
+  [31]Facilities & Services - University of Toronto. (2025, June 25). Caretaking - Facilities &
+        Services - University of Toronto. Facilities & Services - University of Toronto.
+       https://www.fs.utoronto.ca/services/caretaking/
+
+ [32] Space at the University of Toronto, Procedures for the Temporary Use of - Office of the
+        Vice-Provost, Students. (2023, August 27). Office of the Vice-Provost, Students.
+        https://www.viceprovoststudents.utoronto.ca/policy-guideline/space-at-the-universityof-
+        toronto-procedures-for-the-temporary-use-of
+
+
+
+
+VIII.   Appendices
+        Appendix A: Relevant Source Extracts
+
+ [3] Page 1
+
+
+
+
+ [4] Page 1
+
+
+
+
+ [6]
+
+
+
+
+ 15
+[21] Page 5
+
+
+
+
+The stiffest brush used in this paper was made of “stiff, synthetic plastic,” while the others were
+not, hence supporting that the sensation of plastic on skin is typically seen as undesirable.
+
+[12] Page 7
+
+
+
+
+https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/834704
+
+[13] Page 7
+
+
+
+
+                  https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/70275
+
+
+16
+[14] Page 8
+
+
+
+
+https://www.medbridge.com/blog/identifying-pencil-grasp-style-why-it-matters
+
+[19]
+
+
+
+
+[23]
+
+
+
+
+[24]
+A discussion of why using similar sizes as a physical constraint will help users intuitively use
+any solution.
+
+
+
+
+17
+[28]
+
+
+
+
+Left-handers produced better writing on magnetic boards than whiteboards, indicating that the
+issue of poor hand grip due to smudging led to poor handwriting.
+
+[30]
+
+
+
+
+18
+[31] Section III
+
+
+
+
+[31] Section V
+
+
+
+
+     Appendix B: Left-handed Narrative Accounts
+
+
+
+
+     1.
+          From reference [10]
+
+
+
+
+     2.
+          From reference [10]
+
+
+19
+     3.
+          Source: https://www.reddit.com/r/Parenting/comments/1hnket6/my_leftie_son_is_struggling_
+          with_dragging_his/
+          An account of a similar issue to smudging on a whiteboard due to the non-absorbent
+          nature of the surface of a snowboard. Details the annoyances of smudging.
+
+
+
+
+     4.
+          Source: see #3
+
+
+
+
+     5.
+        Source:
+https://www.quora.com/Why-do-the-majority-of-left-handed-people-have-bad-handwriting
+
+20
+Appendix C: Transcript of Interviews
+
+    1. Left-Hander 1
+[Interviewer]: When you write on whiteboards, does smudging of the writing ever happen? If
+so, what do you do to avoid it?
+
+[Anonymous]: “Yes – but what I do is lowkey hard to explain. I use my pinky to prop my hand
+up. That causes my pinky to be kinda stuck in position and causing discomfort if I write for a
+while.”
+
+[Interviewer]: Do you think this issue is something that bothers you often?
+
+[Anonymous]: “Not as much as pen and paper, because the ink doesn’t dry fast enough most
+of the time. Whiteboard is still an issue though. For writing on paper, I used these “magic” pens
+that don’t smudge, so that idea for whiteboards sounds cool.”
+
+
+
+     2. Left-Hander 2
+
+[Interviewer]: Could you explain some of the challenges you face in general as a left-handed
+individual that are not experienced by right-handers?
+
+[Anonymous]: “Almost everything is designed for right-handed people. Like things you as a
+rightie have never even thought of. I’m talking about doors, scissors, binders (you know the
+ones with the coils)…also I always have to write like [displays ocular occlusion from position
+of left hand writing] to see what I’m writing. Which sucks if you have just finished writing an
+idea and you end up smudging all of it. Especially during [references an exam with only
+pens]. I got ink all over my face and I didn’t realize it until after.”
+[Interviewer]: We are focusing our attention on whiteboards. Could you tell us about your
+experience with writing on whiteboards as a left-handed individual?
+
+[Anonymous]: “Every time I go to write something, I end up messing up what I have already
+written. I’m mostly fine when using portable whiteboards, like the one I use as my calendar
+with tape and stuff, but I don’t really use any wall whiteboards. So just let me think here. I
+think it is just a super uncomfortable experience because you almost have to contort your
+body and your hand so that you aren’t smudging, and my wrist gets sore pretty quickly.”
+
+[Interviewer]: So what would you say is the biggest challenge if you had to pick one?
+
+[Anonymous]: “Accidentally erasing stuff I have written, getting whiteboard markers on my
+hands and face (though that doesn’t happen too frequently), and like the awkward writing
+contorting [mimes increased flexion]. This is something that no-one ever talks about, but is
+honestly so not inclusive for [left-handed people].”
+
+
+21
+     3. Right-Hander EngSci Student who has written in Arabic script
+
+[Interviewer]: Do you typically face issues when writing on whiteboards in English?
+
+[Anonymous]: “No, I usually don’t face any issue when writing on whiteboards. If I’m being
+picky, it’s annoying when whiteboards sometimes don’t have an eraser on hand and I end up
+erasing the writing with the side of my hand because it’s inconvenient to go and find one.”
+
+[Interviewer]: You have experience writing Arabic before. Did you ever face challenges writing
+Arabic on vertical whiteboards?
+
+[Anonymous]: “For sure. In school, whenever I had to answer Arabic questions in front of the
+class on whiteboards, I’d have to angle my hand away from the board so that my palm
+wouldn’t ruin what I was writing. I never really thought about how I don’t have to do that for
+English, but I always felt like my handwriting on whiteboards for Arabic was much worse
+than on paper. Because I always angled my hand when writing, my sentences would end up
+completely crooked. By the time I finished a line, I’d realise the whole thing was slanted –
+like I’d started with the first word of a sentence at the top of the whiteboard, and somehow the
+last word was halfway down.”
+
+[Interviewer]: What do you mean by “ruin” your writing?
+
+[Anonymous]: “I didn’t want my writing to get smudged or erased, and I didn’t want to have
+to wash marker off my hands after every lesson because of that either.”
+
+[Interviewer]: Do you use the EngSci common room whiteboards now at U of T?
+
+[Anonymous]: “Rarely. I don’t really go to the common room much, it’s really crowded
+whenever I’ve tried to go and my friends and I can never find enough seats.”
+
+[Interviewer]: Would you use a design to prevent whiteboard pen smudging?
+[Anonymous]: “If I was still writing Arabic often, and something made writing Arabic on
+whiteboards as easy as writing English – then yes.
+
+
+
+     Appendix D: Glossary
+
+
+     1. Splartz: an annoyance or an irritant, or a minor problem in your lives, or an opportunity
+        for something that could be better if only we did something about it.
+
+     2. Left-hander: An individual who prefers to use their left hand for tasks such as writing,
+        which involve handedness.
+
+     3. Wrist Extension: A term describing upwards motion of the wrist.
+
+
+
+22
+     4. Wrist Flexion: A term describing downwards motion of the wrist See image below to
+        visualise flexion and extension angles.
+
+
+
+
+            Visual representation of wrist flexion and angles of wrist flexion. Source:
+       https://www.researchgate.net/figure/Reduction-of-hand-strength-at-different-angles-of-flexion -
+                                         extension_fig17_317984098
+
+
+     5. Grip types: lateral tripod; dynamic tripod; lateral quadrupod; dynamic quadrupod. See
+        image below.
+
+
+
+
+                                  Illustration of grip types.
+          Source: https://www.themanual.com/culture/different-types-of-pencil-grips/
+
+     6. Wrist Ulnar Abduction: little finger moved towards the forearm (ulnar bone)
+
+     7. Wrist Radial Abduction: thumb moved towards the forearm (radial bone)
+
+
+
+
+23
+ [13]
+
+
+
+
+IX.       Works Consulted
+
+ F. H.-S. I. B. (ANG-E5B), “Human Factors Guidance for the use of Handheld computing
+      devices,” 2005. Available: https://hf.tc.faa.gov/publications/2005-human-factors-guidance-
+      for-the-use-of-handhe ld
+
+ G. Salvendy and W. Karwowski, Handbook of Human Factors and Ergonomics (5th Edition)
+          - Chapter 18: Sound and Noise: Measurement and Design Guidance. John Wiley \&
+          Sons, 2021. Available: https://app.knovel.com/kn/resources/kpHHFEE028/toc
+
+ Lefthandedchildren.org, “Left-Handers School Experiences Survey analysis: Handwriting.”
+          May 2023.
+
+ M. M. Clark, Left-Handedness: Laterality Characteristics and their educational implications.
+          1953. Available: https://ci.nii.ac.jp/ncid/BA12342785
+
+ M. Pedersen, “The ultimate guide to ergonomics in human factors research,” Feb. 2025.
+
+ T. Nilsen, M. Hermann, C. S. Eriksen, H. Dagfinrud, P. Mowinckel, and I. Kjeken, “Grip
+          force and pinch grip in an adult population: Reference values and factors associated
+          with grip force,” Scandinavian Journal of Occupational Therapy, vol. 19, no. 3, pp.
+          288–296, 2011, doi: 10.3109/11038128.2011.553687
+
+ 24
+Y. Masud and M. A. Ajmal, “Left-handed people in a right-handed world: a
+       phenomenological study,” Pakistan Journal of Social and Clinical Psychology, vol. 9,
+       no. 2, p. 49, 2012.
+
+
+
+
+25
+

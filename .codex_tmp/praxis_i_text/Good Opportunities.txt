@@ -1,0 +1,200 @@
+Brainstorming
+What makes a good opportunity for Praxis I?
+
+   -​ Specific -> narrow, converge
+   -​ Diverse ways to solve
+   -​ Feasibility for first year students
+          -​ Costs
+          -​ Skills
+          -​ etc.
+   -​ Interesting to all the internal stakeholders involved (EngSci’s for this project)
+   -​ Real problem that hasn’t been solved (google to double check)
+          -​ Look at reference designs or handbooks etc.
+
+Potential Opportunities:
+   -​ STANGEBY’S CHALK
+   -​ Uncomfortable chairs
+          -​ Chairs are creaky, wobbly
+          -​ SO hard to get in and sit with bumping the person next to you
+   -​ Tables are hard to stow/unstow without hitting the person next to you
+   -​ Professors don’t talk loud enough for people in the back to hear
+          -​ Pocket mics for lectures
+   -​ Midterm schedules and assignment due dates aren’t unified (they’re spread out on 6
+      different syllabi)
+          -​ Quercus google extension that takes the data from all the syllabi and combines
+              into a centralized exam/assignment calendar
+   -​ Slow elevators in Myhal
+          -​ THEY GO DOWN TO PARKING THEN BACK UP
+   -​ Water fountains
+          -​ Taste odd
+          -​ Rarely changed when needed
+          -​ Not working half the time
+          -​ Not enough water bottle refill stations
+          -​ Water pressure isn’t high enough
+
+Homework: each individual chooses one DfX and identifies 4 more opportunities that can
+be defined using their DfX. Bring these opportunities to next studio
+
+Useability
+   -​ We have to take the TCard out of our bags and/or the plastic case for the TCard each time
+       we need to swipe it
+           -​ Very easy thing to fix. Can be done by buying something
+   -​ Binder explosion -> nvm
+           -​ Not everyone had this problem
+   -​ Wet umbrellas and wet shoes during winter, making the classroom all wet, seats & tables
+       etc
+           -​ Buy stuff to fix it
+   -​ Headphones pinching
+           -​
+Environment
+   -​ Printers print out a title page every time for printing
+             -​ Software fix
+    -​   Some textbooks are still physical
+             -​ Not very good splartz
+    -​   Paper towels offered in bathrooms
+             -​ Lots of people want paper towels
+    -​   Food trucks give one-time-use utensils
+             -​ Maybe some affiliation with Uoft and food trucks
+    -​   A lot of food waste at dining halls
+             -​ Maybe?
+
+Repairability
+   -​ Unrepairable personal electronics
+            -​ Apple is very notorious for being against repairability with their very shut down and
+               soldered design for everything on their macs, forcing students to pay very high fees to get
+               Apple to fix it or pay for a new one. There is a very large percentage of engineering
+               science students that use Apple electronics and almost all engineering science students
+               use Apple iPads
+            -​ These devices are repairable to an extent given the expertise and tools
+            -​ What can be done the student end is that they are educated on how to repair these very
+               complex electronics for easy fixes
+   -​ Wear and tear on personal transportation equipment
+   -​ Dorm Appliances -> breaking down
+   -​ Everyday small tech stuff
+            -​ Cables, etc.
+
+Safety
+    -​ Better traffic arrangement
+    -​
+
+Homework
+  -​ Reparability
+  -​ Maintainability
+  -​ Testing
+  -​ Assembling
+   -​   The environment
+   -​   Durability
+   -​   Reliability
+   -​   Manufacturing
+   -​   Recycling
+   -​   Logistics
+   -​   Usability
+   -​   Affordability
+
+New Opportunity Ideas
+   -​ Improving biking opportunities? - Greennn
+          -​ Increasing biking slots/return area
+   -​ Jay walking on Campus -> St George street
+          -​ Bridge
+          -​ Tunnel
+          -​ More traffic lights
+          -​ Close the road
+   -​ Umbrellas flipping inside out during big winds
+
+
+Parts of Life
+    -​ Eating
+             -​ Dining halls, restaurants, food trucks, meal prep
+    -​ Cleaning/Hygiene
+             -​ Vacuums
+             -​ Hair on the floor
+             -​
+    -​ Sleeping
+             -​ Alarms that we forget to set? (probably software though)
+             -​ Roomates in dorms sleeping at different times difficulty sleeping?
+             -​ Need: a way for roommates to not disturb each other when the other is sleeping
+                (might be too broad)
+                    -​ Noise cancelling bed
+                    -​ Pullout slideable soundproof wall (sound dampening foam)
+                    -​ Directional alarm maybe in the wall
+                    -​ Vibrating bed to wake you up
+    -​ Travelling
+             -​ Public transport, green transport options
+             -​ Traffic
+             -​ Weather
+             -​
+    -​ Studying
+    -​ Academic
+             -​ Lectures
+             -​ Quizzes, exams, homework
+             -​ Pens not writing
+    -​   Social
+             -​ Clubs
+             -​ Design teams
+    -​   Entertainment
+
+
+
+Workplan:
+Research
+Writing
+Further Observation
+Select another opportunity
+
+
+ Opportunity                                   Solutions
+
+ Binder Inconveniences                             -​   Change the opening/closing mechanism
+    -​ Need a good way to store                    -​   Change the binder rings so they themselves can
+        papers?                                         hole punch
+    -​ Binder rings opening unwanted               -​
+        when attempting to flip large
+        amounts of paper at once
+    -​ Binder hole misalignment
+    -​ Its annoying to hole punch
+
+ Broken electronics are wasted                     -​   Make a course to educate people about how to
+                                                        repair their own devices. Make it a standard not just
+                                                        something that is available online
+                                                   -​   Have supplies to repair devices on campus
+                                                   -​   Reuse broken electronics for educational purposes
+                                                   -​
+
+ Food trucks give one-time-use utensils            -​   Reusable tray system + designated eating area for
+    -​ Generates a lot of waste from                    food truck food
+        every customer                             -​   Give food trucks recyclable containers and
+    -​ Need a better way for people to                  financial incentive to use them
+        eat without using one-time                 -​   Everyone that brings their own utensils gets a
+        utensils                                        discount (funded by UofT)
+
+ Resting between classes?
+
+
+
+
+Opportunities
+A good opportunity:
+i. reflects the team's and primary stakeholders' interests and values,
+ii. represents a stakeholder need (as demonstrated by observation and research),
+iii. is solvable by a team of first-year engineering science students,
+iv. can be represented and solved in multiple meaningful ways (e.g. calculation, physical
+prototype(s), drawings, demonstrations, or other means), but
+v. cannot simply be solved by selecting an existing design
+
+
+
+Oct 4 Meeting Goals:
+  -​ Put a timer for everything
+  -​ 20 min brainstorm, broken into 5 min intervals
+  -​ 15 min to research the three ideas narrowed down to
+        -​ Look specifically at reference designs
+  -​ Discuss for 10 min to finalize a single idea
+        -​ Keep it simple
+        -​ Focus on the biggest problem related to that one idea
+  -​ Plan out the project for the next week in the remaining time
+To Do List
+Finish By Saturday
+   -​ Each person should bring 4 opportunities or one really good oppottuniy
+         -​ Each with 5 solutions
+   -​ Read the design brief doc
+

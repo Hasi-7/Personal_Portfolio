@@ -1,0 +1,1679 @@
+               Word Count: 2977
+
+
+
+
+   Roller Support Design to Prevent
+Smudging for Left-Handed Writing in the
+        EngSci Common Room
+                                                                                                                                                             1
+
+
+Table of Contents
+1 Introduction............................................................................................................................................... 2
+2 The Problem With Left-Handed Writing on Whiteboards................................................................... 2
+3 Defining the Working Environment........................................................................................................ 3
+4 Stakeholders...............................................................................................................................................3
+    4.1 Left-Handed EngSci Students........................................................................................................... 3
+    4.2 Right-handed EngSci Students Writing Leftward Scripts................................................................. 3
+    4.3 Audiences of Left-Handed Students..................................................................................................3
+    4.4 UofT Facilities................................................................................................................................... 3
+5 Requirements and Evaluation Criteria................................................................................................... 3
+6 Recommended Roller Support Design.................................................................................................... 5
+    6.1 Roller Support Design Description....................................................................................................5
+    6.2 Roller Support Key Design Decisions...............................................................................................5
+    6.3 Summary of Design Selection Rationale...........................................................................................7
+7 Overview of Three Alternative Designs.................................................................................................. 7
+    7.1 Dummy Marker................................................................................................................................. 7
+    7.2 Air Cushion........................................................................................................................................7
+    7.3 Platform............................................................................................................................................. 8
+8 Converging Process................................................................................................................................... 9
+    8.1 Verification Through Testing.............................................................................................................9
+        8.1.1 Proxy Test to Measure Writing Speed (Verify Requirement 1)............................................... 9
+        8.1.2 Proxy Test to Measure Smudging Euclidean Difference (Verify Requirement 2).................10
+        8.1.3 Proxy Test to Measure Wrist Angle Ergonomics (Verify Requirement 3.1)..........................11
+        8.1.4 Proxy Test to Measure Design Weight (Verify Requirement 3.2)..........................................12
+    8.2 Elimination of Air Cushion Using Pairwise Comparison Matrix....................................................12
+    8.3 Pugh Charts......................................................................................................................................13
+9 Conclusion................................................................................................................................................14
+10 Works Cited........................................................................................................................................... 15
+11 Appendices............................................................................................................................................. 17
+    Appendix A: Source Extracts................................................................................................................ 17
+    Appendix B: Stakeholder Interviews.....................................................................................................24
+        B1: Engineering Science Student Left-Hander 1............................................................................ 24
+        B2: Engineering Science Student Left-Hander 2............................................................................ 24
+        B3: Right-Hander EngSci Student who has written in Arabic script..............................................24
+    Appendix C: Roller Support Required Static Coefficient of Friction................................................... 25
+    Appendix D: Proxy Test Procedures and Raw Data..............................................................................26
+        Proxy Test D1: Impact of Prototypes on Writing Speed................................................................. 26
+        Proxy Test D2: Roller Smudging Euclidean Difference................................................................. 29
+        Proxy Test D3: Measure Wrist Angle Ergonomics......................................................................... 29
+    Appendix E: Air Cushion Spec............................................................................................................. 30
+    Appendix F: Original Design Brief....................................................................................................... 31
+                                                                                                           2
+
+
+1​      Introduction
+This design report presents the opportunity of preventing smudging on whiteboards for left-handed
+EngSci students and recommends a roller ball support design based on the evaluation criteria. Currently,
+left-handed students must position their hands in unergonomic positions to prevent smudging the marker
+ink [Figure 2] [Appendix B]. Four potential solutions were created to solve this problem and after
+verification through testing, Pairwise Comparison Matrices, and Pugh Charts, the roller support design
+was determined to meet stakeholder needs the best.
+
+
+2​ The Problem With Left-Handed Writing on
+Whiteboards
+English is the primary language of instruction at UofT [1]. Since this language is written from left to
+right, and a left handed student’s hand will follow from the left of the marker writing, their hand will
+contact the freshly applied ink of what was just written. This causes ink on the whiteboard to smudge and
+transfers ink residue to the hand, as shown in Figure 1. To mitigate smudging these students often position
+their wrists in awkward angles while writing, as shown in Figure 2 [Appendix B]. This causes greater
+wrist flexion, increasing muscle strain and potentially leading to musculoskeletal disease [2], [3], [4].
+Therefore, solutions are needed to prevent smudging while allowing left-handed writers to position their
+hands ergonomically during writing.
+
+
+
+
+ Figure 1: Examples of smudging that occurs due to      Figure 2: Multiple examples of left-handed
+ left-handed writing. Text can become illegible due     writers straining their wrists in awkward angles
+ to smudging, reducing communicability for              to write without smudging.
+ left-handed writers through whiteboards.
+                                                                                                                 3
+
+
+3​      Defining the Working Environment
+The working environment is the EngSci common room, an indoor space with several porcelain
+whiteboards and whiteboard markers. Although UofT has not confirmed if the whiteboards are porcelain,
+they are likely to be since they are magnetic, non-porous, and glossy [6], [7]. Expo Dry Erase markers [8]
+are the prevalent marker in the common room, so designs should function properly using them. They have
+a maximum diameter of 2.29 cm and a length of 14.27 cm [9].
+
+
+4​      Stakeholders
+This section lists the stakeholders for our identified opportunity and explains each stakeholder’s main
+wants.
+
+4.1 Left-Handed EngSci Students
+Primary Stakeholders
+These students want to be able to write on whiteboards at the same rate as right-handed peers without
+unintentionally smudging the ink on the board [Appendix B1]. They wish for the design to be ergonomic
+and not hinder their writing ability [Appendix B2].
+
+4.2 Right-Handed EngSci Students Writing Leftward Scripts
+Primary Stakeholders
+These students face the same problem as left-handed students when writing right-to-left languages like
+Arabic or Hebrew [Appendix B3]. Therefore, designs should accommodate both right and left-handed
+users.
+
+4.3 Audiences of Left-Handed Students
+Secondary Stakeholders
+The audience wants to read the writing of left-handed writers, requiring that the writing be legible with no
+visible smudges. They also wish for left-handed writers to write at the same rate as their right-handed
+counterparts.
+
+4.4 UofT Facilities
+Tertiary Stakeholders
+The facilities want no permanent residue or damage done to the whiteboard. There must not be multiple
+maintenance required per day and standards for educational spaces of University of Toronto [10] must be
+followed.
+
+
+5​      Requirements and Evaluation Criteria
+This section lists critical goals with their associated requirements and evaluation criteria that will be used
+to verify and compare different designs.
+
+Need: Left-handed students need to write ergonomically on whiteboards in the EngSci common room
+without smudging or hindering their normal writing ability.
+                                                                                                              4
+
+
+Table 1: Goal and associated requirement to meet stakeholder wants of maintaining writing speeds on
+whiteboards.
+                           Description                    Justification
+
+ Goal 1                    Design must not affect the user’s baseline writing ability
+
+ Requirement 1             Cannot inhibit the user’s      A 15 point DASH-2 score reduction is one
+                           baseline DASH-2 score          standard deviation [12], signifying a significant
+                           [11] by more than 15           reduction in writing speed
+                           points.
+
+ Evaluation Criteria 1 The smaller the point reduction on the DASH-2 test, the better.
+
+
+Table 2: Goal to address stakeholder wants of minimizing smudging
+                             Description                                  Justification
+
+ Goal 2:                     Ensure minimal unintentional movement of the ink on the surface of the
+                             whiteboard
+
+ Requirement 2               Contact with marker ink cannot cause         According to the NBS, a ΔE* of
+                             writing to have a ΔE* (Euclidean             3 is a perceivable difference so
+                             Difference) of more than 3 compared to       anything lower is acceptable
+                             the original ink color [24].                 [24].
+
+ Evaluation Criteria 2:       The smaller the ΔE* between unsmudged and smudged ink, the better.
+
+
+Table 3: Goal and associated requirements and evaluation criteria to ensure stakeholder ergonomics and
+comfort.
+                              Description                        Justification
+
+ Goal 3                       Design must ensure minimal discomfort and strain to be ergonomic
+
+ Requirement 3.1              No wrist extension or flexion >    The RULA Assessment is a score based
+                              15o, and no ulnar or radial        system where the higher the score, the
+                              deviations of the wrist > 15o      worse the risk of strain. Any deviations
+                              [Appendix D], [22].                of the ulnar or radial bones > 15o is +1 to
+                                                                 the score and any wrist extension or
+                                                                 flexion > 15o is +2 [22].
+
+ Evaluation Criteria 3.1      The smaller the wrist deviations from neutral during use the better.
+
+ Requirement 3.2              The weight of the design           The Canadian Centre for Occupational
+                              should be less than 400g           Health and Safety recommends a
+                              including the original marker.     maximum of 400g for one-handed tools
+                                                                 to reduce the risk of developing
+                                                                                                             5
+
+
+                                                                    musculoskeletal disorders [13].
+
+ Evaluation Criteria 3.2       The lighter the design the better.
+
+
+6​       Recommended Roller Support Design
+This section will describe the recommended design, justify key design decisions about it, and provide an
+overview of why it is the recommended design.
+
+6.1 Roller Support Design Description
+
+The design that we converged onto was a ball support
+on a wrist cuff, as shown in Figure 3. Users hold a
+marker normally in their hand and their wrist/arm is
+supported by the platform attached to the ball
+contacting the whiteboard. The ball does not smudge
+noticeable amounts of ink on the whiteboard because if
+it doesn’t slip, it only pushes ink into the whiteboard.
+[Video].
+
+
+
+
+                                                             Figure 3: Roller support design. The arm rests on
+                                                             the flat platform and the wrist goes through the
+                                                             wrist cuff. The sphere is attached to the ball transfer
+                                                             unit (BTU) as shown in Figure 4.
+
+
+Figure 4: A ball transfer unit has many low-friction
+small balls surrounding the main ball [14]. This lets
+the main ball spin freely while attached to the arm
+support platform.
+
+
+
+
+6.2 Roller Support Key Design Decisions
+The reasoning behind three major design decisions for the roller support will be explained here.
+
+     1.​ The support ball will be made of polystyrene. ​
+         Polystyrene has a surface energy of 34 dynes/cm, which is lower than the minimum of 38
+         dynes/cm required for inks to adhere to it [15], [16]. Therefore, it will not pick up marker ink
+                                                                                                           6
+
+
+    from the whiteboard as it rolls. Plastics like polystyrene are also very lightweight compared to
+    alternatives like metal [17], which is better for Evaluation Criteria 3.2. Its coefficient of static
+    friction (μs = 0.3) is also great enough to roll without slipping (μs minimum is 0.12 according to
+    [Appendix C] calculations) compared to alternatives like Teflon (μs = 0.04) [18].
+
+2.​ The design has a symmetric wrist cuff.
+    As stated in stakeholder section 4.2, there are right-handed Engsci students that write leftward
+    scripts who face the same issues as left-handed students writing rightward scripts. To
+    accommodate both groups of stakeholders, the design should be ambidextrous. A wrist cuff
+    design (Figure 5) to attach the ball to the wrist is ambidextrous as opposed to alternatives such as
+    a wrist brace (Figure 6).
+
+
+
+
+     Figure 5: Wrist cuff concept that allows for an    Figure 6: Wrist brace concept that does not
+     ambidextrous design.                               allow for an ambidextrous design due to
+                                                        asymmetry in the thumb hole placement.
+
+
+
+3.​ The wrist cuff has a velcro strap.
+    A velcro strap allows the design to fit more wrist sizes compared to alternative clasp methods
+    (Figure 7, Figure 8). This is important as not all EngSci students have the same wrist size.
+                                                                                                              7
+
+
+
+
+         Figure 7: Two parts of a button that would be      Figure 8: Clasps of different shapes that could
+         attached to either side of the wrist cuff.         be used to secure wrist strap.
+
+        For the button or clasp method to accommodate for varying wrist sizes, multiple buttons or clasps
+        would have to be added. Each of this style of button tends to weigh around 2 grams, worsening
+        the design according to evaluation criteria 3.2. Thus velcro would be the lightest solution to
+        provide versatility for EngSci students [23].
+
+6.3 Summary of Design Selection Rationale
+The roller support design is the best solution for stakeholders because it maintains baseline writing speed
+and doesn’t smudge marker ink while being ergonomic and lightweight (Section 8.1). When compared to
+other designs through Pugh Charts and Pairwise Comparison Matrices (Section 8.3) using data collected
+from various proxy tests, the roller support is found to perform better in most evaluation criteria.
+
+
+7​      Overview of Three Alternative Designs
+This section will list three alternative designs to meet stakeholder needs and explain how each one
+functions.
+
+7.1 Dummy Marker
+Consists of a “dummy” marker held by the user which cannot draw on the whiteboard, and a second
+marker attached to the left of the dummy marker that actually can draw, as shown in Figure 9 and in this
+video. Since the ink is written on the whiteboard to the left of the hand no smudging can occur.
+
+7.2 Air Cushion
+Takes inspiration from pucks hovering over the surface of an air hockey table. This design(see Figure 10
+has a platform attached to the user’s wrist with a powerful fan inside that exerts a thrust on the whiteboard
+through a porous bottom. This provides support to the user’s arm, but the surface is floating so no
+smudging can take place.
+                                                                                                              8
+
+
+
+
+ Figure 9: Prototype of dummy marker on a                  Figure 10: CAD model of air cushion. The
+ whiteboard. The marker that the user holds is taped       platform contains a fan that pushes air through
+ on the bottom so that it cannot write, and the marker     the porous bottom to prevent contact with the
+ to the left is able to write.                             whiteboard.
+
+
+
+
+7.3 Platform
+A platform is attached to the marker to create a
+surface that creates a sense of support similar to
+resting their hand on the whiteboard while writing
+(see Figure 11). Since only the marker contacts the
+board, no incidental smudging will occur.
+
+
+
+
+                                                         Figure 11: Platform design prototype; the user’s
+                                                         hand rests on the attached platform while writing.
+                                                         The platform would be see-through.
+                                                                                                             9
+
+
+8​      Converging Process
+This section will summarize each method we used in our converging process and use them to justify our
+recommended design and other design choices.
+
+8.1 Verification Through Testing
+This section explains each proxy test carried out, and presents results used to verify and compare designs
+for each requirement.
+
+8.1.1 Proxy Test to Measure Writing Speed (Verify Requirement 1)
+This proxy test for the DASH-2 assessment in Requirement 1 has a left-handed writer write a pangram
+with all the physical prototypes, timing how long the writer takes to write the sentence with each one.
+Results are shown in Figure 12, and a full procedure for this test can be found in Appendix D.
+
+The proxy test finds that the roller support does not hinder writing speed noticeably. Writing speeds for
+the roller were found to be 0.99 standard deviations below the baseline writing speed, which passes
+Requirement 1.
+
+On the other hand, the platform and dummy marker reduce writing speeds significantly. They reduced
+writing speed by more than 15 standard deviations below baseline writing speed, which does not pass
+Requirement 1.
+
+
+
+
+ Figure 12: Box and whisker plot displaying the average writing speed using different prototypes.
+ The platform and dummy marker significantly reduce writing speeds, because their range does not
+ overlap the baseline speed range.
+                                                                                                            10
+
+
+
+8.1.2 Proxy Test to Measure Smudging Euclidean Difference (Verify Requirement 2)
+
+This test is only needed for the roller design because it contacts the ink. Other designs have no contact
+points with the ink and therefore cannot smudge, creating a ΔE* of 0.
+
+The roller ball passes Requirement 2, meaning that its smudges are not perceivable. For this test, a roller
+ball was moved along the surface of some written text and an image was taken of the region, as seen in
+Figure 13. Then, using photoshop’s color picker and a MATLAB script [Appendix D], the Euclidean
+difference was found to be 2.95 (Figure 14), which is lower than the maximum ΔE* = 3 in Requirement 2.
+
+
+
+
+ Figure 13: Shows where the color samples for the
+ Euclidean Difference graph were taken from.
+
+
+
+
+                                                          Figure 14: Position of unsmudged marker ink as a control
+                                                          color and position of ink color of where the roller ball
+                                                          passed over on the CIELAB color space, showing the ΔE*.
+                                                                                                      11
+
+
+8.1.3 Proxy Test to Measure Wrist Angle Ergonomics (Verify Requirement 3.1)
+
+This proxy test uses a modified version of the RULA Assessment as defined in Appendix D3. The
+following are the angles measured for ulnar/radial deviations and wrist extension and flexion:
+
+Table 4: Goal and associated requirements and evaluation criteria to ensure stakeholder ergonomics and
+comfort.
+                  Ulnar/Radial Deviation    Wrist                     Score   Pass/Fail Requirement
+                                            Extension/Flexion                 3.1
+
+ Control          17.6o                     29.6o                     4       Fail
+
+ Platform         20o                       22.6o                     4       Fail
+
+ Dummy            14.3o                     13.7o                     2       Pass
+ Marker
+
+ Roller           13.3o                     14.8o                     2       Pass
+ Support/Air
+ Cushion
+
+The dummy marker and roller support both pass the ergonomics proxy test with scores of 2. According to
+the RULA Assessment, any scores of 1 or 2 indicate an acceptable posture as long as it is not kept for
+long periods of time, meaning breaks are taken [22].
+
+
+
+
+ Figure 15: Example wrist extension angle
+ measurement to measure wrist angles of dummy
+ marker.
+                                                                                                        12
+
+
+8.1.4 Proxy Test to Measure Design Weight (Verify Requirement 3.2)
+
+This proxy test involved using a scale to measure prototypes. For the roller support and air cushion,
+estimated weights were used.
+
+Table 5: Weights of design concepts for reference to Requirement 3.2.
+                         Weight In Grams                                 Pass/Fail Requirement 3.2
+
+ Platform                92 grams = 76 (acrylic sheet) + 16              Pass
+                         (marker)
+
+ Dummy Marker            35 grams = 16 (marker) + 14 (dummy              Pass
+                         marker) + 5 (marker connector)
+
+ Roller Support          307.2 grams [Appendix C]                        Pass
+
+ Air Cushion             578 grams = 478 (Fan & Battery) + 100           Fail
+                         (Housing) [Appendix E]
+
+
+8.2 Elimination of Air Cushion Using Pairwise Comparison Matrix
+The air cushion design is not viable because it is too heavy (Section 8.1.3) and complex compared to
+alternatives. The air cushion row in Table 5 is all zeroes, indicating it performed worse than all other
+designs when compared holistically. In every comparison, the air cushion’s internal fan added
+unnecessary weight and complexity when compared to the simpler alternatives that could provide support
+without smudging.
+Table 6: A Pairwise Comparison Matrix comparing all designs. A 0 means design in row loses to design
+in column. 1 means design in row wins against design in column.
+
+                                                                            Dummy
+                    Air Cushion         Platform       Roller Support
+                                                                            Marker
+
+
+  Air Cushion             -                 0                 0                 0
+
+
+
+    Platform              1                 -                 0                 0
+
+
+
+ Roller Support           1                 1                 -                 1
+
+
+    Dummy
+                          1                 1                 0                 -
+    Marker
+                                                                                                          13
+
+
+8.3 Pugh Charts
+Three Pugh charts will be presented to compare the designs after elimination of the air cushion. This
+section uses them to justify why the roller support was the final recommendation.
++ signs on Pugh Charts mean better than reference, - signs mean worse than reference, and 0 means equal
+to reference.
+
+The dummy marker meets stakeholder needs better than the platform design. Table 7 shows a Pugh chart
+with the dummy marker as the reference. It shows that compared to the platform design, the dummy
+marker has faster writing speed (see Figure 12), less smudging, a smaller wrist angle (see Table 4), and
+weighs less.
+
+Table 7: Pugh Chart with the Dummy Marker as Reference.
+
+                           Platform               Roller          Dummy Marker
+
+
+   Writing Speed                -                    +                    0
+
+
+    Smudge ΔE*                 0                     -                    0
+
+
+    Wrist Angle                 -                    0                    0
+
+
+       Weight                   -                    -                    0
+
+
+The roller design is better suited for stakeholder needs than the platform. Table 8 shows a Pugh chart with
+the platform as the reference design. It shows that the roller allows for faster writing speeds (Figure 12),
+and allows for better wrist angles (Table 4). Since smudging from the roller ΔE* is not perceivable
+(Section 8.1.2) and the roller weight passes verification (Section 8.1.4), the roller design is better.
+
+Table 8: Pugh chart with the platform as the reference.
+
+                           Platform               Roller           Dummy Marker
+
+
+
+   Writing Speed               0                     +                     -
+
+
+
+    Smudge ΔE*                 0                     -                    0
+                                                                                                         14
+
+
+
+      Wrist Angle              0                     +                    +
+
+
+
+        Weight                 0                     -                    +
+
+
+The roller design meets stakeholder needs better than the dummy marker and platform. Table 9 and Figure
+12 shows that the dummy marker and platform have significantly slower writing speeds. Although these
+alternatives outperform the roller in smudging and weight in Table 9, these minor advantages do not
+outweigh the major writing speed drop.
+
+Table 9: Pugh chart with the roller support as the reference.
+
+                           Platform               Roller           Dummy Marker
+
+
+     Writing Speed             -                     0                    -
+
+
+     Smudge ΔE*                +                     0                    +
+
+
+      Wrist Angle              -                     0                    0
+
+
+        Weight                 +                     0                    +
+
+
+
+
+9​       Conclusion
+The roller support wrist cuff is the final recommended design to let left-handed users write smudge free
+on whiteboards in the EngSci common room without straining their wrist in unergonomic ways. The
+roller design maintains baseline writing speed, minimizes visible smudging, and supports ergonomic wrist
+angles while remaining lightweight. When compared to other designs using Pairwise Comparison
+Matrices and Pugh Charts, the roller support significantly out-performs them in writing speed and only
+performs marginally worse in other evaluation criteria, so it is the better design. Moving forward with this
+design should involve testing a wide variety of materials to create an appropriate support ball that
+optimizes for lower weights, thus maximizing writing speed.
+                                                                                                       15
+
+
+10​ Works Cited
+[1]​     Faculty of Applied Science & Engineering, “Admission Requirements | Faculty of Applied
+Science and Engineering,” engineering.calendar.utoronto.ca.
+https://engineering.calendar.utoronto.ca/admission-requirements
+[2]​     S. Park, “Comparison of Muscle Activation during Dominant Hand Wrist Flexion when Writing,”
+Journal of Physical Therapy Science, vol. 25, no. 12, pp. 1529–1531, 2013, doi:
+https://doi.org/10.1589/jpts.25.1529
+[3]​     J. Malchaire, N. Cock, and A. Robert, “Prevalences of musculoskeletal disorders at the wrist as a
+function of angles, forces, repetitiveness and movement velocities,” Scandinavian Journal of Work,
+Environment & Health, vol. 22, no. 3, pp. 176–181, Jun. 1996, doi: https://doi.org/10.5271/sjweh.128
+[4]​     S. Openshaw and E. Taylor, “Ergonomics and Design A Reference Guide,” Allsteel, 2006.
+Available:
+https://ehs.oregonstate.edu/sites/ehs.oregonstate.edu/files/pdf/ergo/ergonomicsanddesignreferenceguidew
+hitepaper.pdf
+[5]​     Quartet, “The Difference Between Whiteboard Surface Types,” Quartet, May 05, 2021.
+https://www.quartet.com/quartet-blog/buyers-guide/the-difference-between-whiteboard-surface-types/?srs
+ltid=AfmBOopdq0v-uAKv01XSLof7euVv5hkijo6t0E2TTNzawuPSmAF2WmSe (accessed Dec. 01,
+2025).
+[6]​     “What are Whiteboards? Types, Features & Best Options,” Vibe.us, 2025.
+https://vibe.us/ca/blog/what-are-whiteboards/?srsltid=AfmBOorSpdM6H71e-uF5y5Jb9J4omcaF4T2eOW
+PWAKzJ2xEvHyaBixsd (accessed Dec. 01, 2025).
+[7]​     J. Ong, “Porcelain Whiteboards: Everything You Need to Know - Swift Enterprises OPC,” Swift
+Enterprises OPC -, Oct. 2024. https://swiftenterprisesopc.com/porcelain-whiteboards/ (accessed Dec. 01,
+2025).
+[8]​     Expo, “EXPO Low Odor Dry Erase Markers, Chisel Tip,” Expo CA, 2025.
+https://www.expomarkers.ca/expo/markers/dry-erase-markers/expo-low-odor-dry-erase-markers-chisel-tip
+/SAP_1825973.html (accessed Dec. 01, 2025).
+[9]​     M. Enholm, “Expo Marker Length: Why Size Matters?,” art ltd. magazine, Oct. 02, 2022.
+https://artltdmag.com/expo-marker-length/ (accessed Dec. 01, 2025).
+[10]​ Office of the Vice-Provost, “Procedures for the Temporary Use of Space at the University of
+Toronto Office of the Vice-Provost, Students,” Utoronto.ca, 2024.
+https://www.viceprovoststudents.utoronto.ca/policy-guideline/space-at-the-university-of-toronto-procedur
+es-for-the-temporary-use-of/
+[11]​ A. Barnett, S. Henderson, and B. Scheib, “DASH-2 - Detailed Assessment of Speed of
+Handwriting, Second Edition | Pearson Clinical Assessment Canada - English,” Pearsonclinical.ca, 2025.
+https://www.pearsonclinical.ca/en-ca/Store/Professional-Assessments/Academic-Learning/Detailed-Asses
+sment-of-Speed-of-Handwriting%2C-Second-Edition/p/P100062000 (accessed Dec. 01, 2025).
+[12]​ A. Barnett, S. Henderson, and B. Scheib, “Detailed Assessment of the Speed of Handwriting
+Second Edition (DASH-2) Course Tutors,” May 2024. Available:
+https://www.communicate-ed.org.uk/assets/downloads/DASH-2_Course_Materials_v2.pdf
+[13]​ CCOHS, “Hand Tool Ergonomics -Tool Design CCOHS Hand Tool Ergonomics Hand Tool
+Ergonomics -Tool Design.” Available:
+https://www.ccohs.ca/oshanswers/ergonomics/handtools/tooldesign.pdf
+[14]​ Essentra Components, “What is a ball transfer unit?,” Essentracomponents.com, Nov. 15, 2024.
+https://www.essentracomponents.com/en-gb/news/solutions/access-hardware/what-is-a-ball-transfer-unit
+                                                                                                         16
+
+
+[15]​ F. Hild, “Surface Energy of Plastics,” www.tstar.com.
+https://www.tstar.com/blog/bid/33845/surface-energy-of-plastics
+[16]​ Coating Experts, “Printing on Plastic Substrates can be Tricky • Cork Industries,” Cork
+Industries, Jul. 15, 2016. https://corkindustries.com/printing-on-plastic-substrates-can-be-tricky (accessed
+Dec. 01, 2025).
+[17]​ S. Shen, “A Complete List of Densities of Commonly Used Materials - Mould, Die Casting,
+Casting, CNC Machining Supplier,” Mould, Die Casting, Casting, CNC Machining Supplier, Jan. 29,
+2024. https://yontone.com/a-complete-list-of-densities-of-commonly-used-materials/
+[18]​ Engineers Edge, “Coefficient of Friction Equation and Table Chart,” Engineers Edge, 2019.
+https://www.engineersedge.com/coeffients_of_friction.htm
+[19]​ S. Horie and K. Shibata, “Quantitative evaluation of handwriting: factors that affect pen operating
+skills,” Journal of Physical Therapy Science, vol. 30, no. 8, pp. 971–975, 2018, doi:
+https://doi.org/10.1589/jpts.30.971.
+[20]​ K. Cieślik and M. J. Łopatka, “Research on Speed and Acceleration of Hand Movements as
+Command Signals for Anthropomorphic Manipulators as a Master-Slave System,” Applied Sciences, vol.
+12, no. 8, p. 3863, Jan. 2022, doi: https://doi.org/10.3390/app12083863.
+[21]​ J Bryant, “Wrist Cuffs,” Amazon.
+https://www.amazon.ca/Wrist-Cuffs-Cable-Machine-Workouts/dp/B0FDG1BPLJ?th=1
+[22]​ L. McAtamney and E. Nigel Corlett, “RULA: a survey method for the investigation of
+work-related upper limb disorders,” Applied Ergonomics, vol. 24, no. 2, pp. 91–99, Apr. 1993, doi:
+https://doi.org/10.1016/0003-6870(93)90080-s.
+[23]​ P. Hardware, “Heavy-Duty Snap Fastener – Stainless Steel,” Pet Hardware®, 2025.
+https://www.pethardware.com/en/snap-fasteners/heavy-duty-snap-fastener-stainless-steel-6026/ accessed
+Dec. 01, 2025).
+[24]​ C. Kobkiatkawin, W. Panyayong, S. Suphangul, and S. Thiradilok, "Color stability of clear
+aligners exposed to various beverages: an in vitro study," *BMC Oral Health*, vol. 25, no. 1, p. 971, Jul.
+2025, doi: 10.1186/s12903-025-06343-1
+[25]​ Turbines RC. "EDF Ducted Fan FD Model 70mm 12 blades + 4S Motor 3400KV." Turbines RC,
+https://www.turbines-rc.com/en/turbines-rc-fd/2716-edf-ducted-fan-fd-model-70mm-12-blades-4s-motor-
+3400kv.html. Accessed 1 Dec. 2025.
+[26]​ RCJuice. "HobbyStar 3500mAh 14.8V, 4S 35C LiPo Battery." RCJuice,
+https://rcjuice.com/products/hobbystar-3500mah-14-8v-4s-35c-lipo-battery. Accessed 1 Dec. 2025.
+                                                             17
+
+
+11​ Appendices
+Appendix A: Source Extracts
+[1]
+
+
+
+
+Used to find the primary language of instruction at UofT.
+[2]
+
+
+
+
+Links wrist flexion to musculoskeletal disorders.
+
+[3]
+
+
+
+
+Links wrist flexion to musculoskeletal disorders.
+[7]
+
+
+
+
+Used to identify characteristics of porcelain whiteboards.
+                                                                                        18
+
+
+[9]
+
+
+
+
+Used to find length of Expo marker
+
+[10]
+
+
+
+
+Identifies acceptable conduct for students at the U of T campus
+[12]
+
+
+
+
+Defines in short what the DASH-2 test is with its score sheet, inspiring proxy test 1
+                                                                                                          19
+
+
+
+
+Describes the DASH-2 score that correlates with significant reductions in handwriting. One standard
+deviation is found to be 15, so one standard deviation lower than baseline writing speed is significant
+reductions in handwriting.
+
+[13]
+
+
+
+
+Used to justify the requirement for maximum weight of designs.
+
+[14]
+
+
+
+
+Describes what a ball transfer unit is and how it works.
+                                                                                              20
+
+
+[15]
+
+
+
+
+Describes polystyrene’s surface energy, which is a measure of how well it attracts liquids.
+
+[16]
+
+
+
+
+Describes threshold for materials that attract ink.
+                                                                                                         21
+
+
+[19]
+
+
+
+
+Used to find the force exerted by the hand and forearm onto the whiteboard. Note that the table says
+pressure (g), but this is actually a measurement of force in the units of grams-force, where 1 g = 0.0098 N.
+
+[20]
+                                                                                         22
+
+
+Finds maximum hand acceleration during reaching hand movements that helps with calculation
+Appendix C.
+[21]
+
+
+
+
+Estimates weight of wrist cuff and platform for roller support design.
+[22] [Page 92]
+
+
+
+
+Defines RULA assessment.
+[22] [Page 93]
+
+
+
+
+Shows the extension/flexion of the wrist and ulnar/radial deviation of the wrist
+[22] [Page 96]
+                                                                                              23
+
+
+Defines the scoring for muscle use and force/load
+[22] [Page 96]
+
+
+
+
+Shows the urgency of fixing issues with ergonomics depending on points that are collected for a
+certain posture
+[23]
+
+
+
+
+Defines the mass of buttons.
+[24]
+                                                                                             24
+
+
+Defines noticeable ΔE* values for human sight of smudged ink.
+
+Appendix B: Stakeholder Interviews
+B1: Engineering Science Student Left-Hander 1
+ [Interviewer]: When you write on whiteboards, does smudging of the writing ever
+ happen? If so, what do you do to avoid it?
+
+ [Anonymous]: “Yes – but what I do is lowkey hard to explain. I use my pinky to prop
+ my hand up. That causes my pinky to be kinda stuck in position and causing discomfort
+ if I write for a while.”
+
+ [Interviewer]: Do you think this issue is something that bothers you often?
+
+ [Anonymous]: “Not as much as pen and paper, because the ink doesn’t dry fast enough
+ most of the time. Whiteboard is still an issue though. For writing on paper, I used these
+ “magic” pens that don’t smudge, so that idea for whiteboards sounds cool.”
+B2: Engineering Science Student Left-Hander 2
+
+ [Interviewer]: Could you explain some of the challenges you face in general as a
+ left-handed individual that are not experienced by right-handers?
+
+ [Anonymous]: “Almost everything is designed for right-handed people. Like things you
+ as a rightie have never even thought of. I’m talking about doors, scissors, binders (you
+ know the ones with the coils)…also I always have to write like [displays ocular
+ occlusion from position of left hand writing] to see what I’m writing. Which sucks if
+ you have just finished writing an idea and you end up smudging all of it. Especially
+ during [references an exam with only pens]. I got ink all over my face and I didn’t
+ realize it until after.”
+
+ [Interviewer]: We are focusing our attention on whiteboards. Could you tell us about
+ your experience with writing on whiteboards as a left-handed individual?
+
+ [Anonymous]: “Every time I go to write something, I end up messing up what I have
+ already written. I’m mostly fine when using portable whiteboards, like the one I use as
+ my calendar with tape and stuff, but I don’t really use any wall whiteboards. So just let
+ me think here. I think it is just a super uncomfortable experience because you almost
+ have to contort your body and your hand so that you aren’t smudging, and my wrist gets
+ sore pretty quickly.”
+
+ [Interviewer]: So what would you say is the biggest challenge if you had to pick one?
+
+ [Anonymous]: “Accidentally erasing stuff I have written, getting whiteboard markers on
+ my hands and face (though that doesn’t happen too frequently), and like the awkward
+ writing contorting [mimes increased flexion]. This is something that no-one ever talks
+ about, but is honestly so not inclusive for [left-handed people].”
+                                                                                                              25
+
+
+
+B3: Right-Hander EngSci Student who has written in Arabic script
+
+ [Interviewer]: Do you typically face issues when writing on whiteboards in English?
+
+ [Anonymous]: “No, I usually don’t face any issue when writing on whiteboards. If I’m
+ being picky, it’s annoying when whiteboards sometimes don’t have an eraser on hand
+ and I end up erasing the writing with the side of my hand because it’s inconvenient to go
+ and find one.”
+
+ [Interviewer]: You have experience writing Arabic before. Did you ever face challenges
+ writing Arabic on vertical whiteboards?
+
+ [Anonymous]: “For sure. In school, whenever I had to answer Arabic questions in front
+ of the class on whiteboards, I’d have to angle my hand away from the board so that my
+ palm wouldn’t ruin what I was writing. I never really thought about how I don’t have to
+ do that for English, but I always felt like my handwriting on whiteboards for Arabic was
+ much worse than on paper. Because I always angled my hand when writing, my
+ sentences would end up completely crooked. By the time I finished a line, I’d realise the
+ whole thing was slanted – like I’d started with the first word of a sentence at the top of
+ the whiteboard, and somehow the last word was halfway down.”
+
+ [Interviewer]: What do you mean by “ruin” your writing?
+
+ [Anonymous]: “I didn’t want my writing to get smudged or erased, and I didn’t want to
+ have to wash markers off my hands after every lesson because of that either.”
+
+ [Interviewer]: Do you use the EngSci common room whiteboards now at U of T?
+
+ [Anonymous]: “Rarely. I don’t really go to the common room much, it’s really crowded
+ whenever I’ve tried to go and my friends and I can never find enough seats.”
+
+ [Interviewer]: Would you use a design to prevent whiteboard pen smudging?
+
+ [Anonymous]: “If I was still writing Arabic often, and something made writing Arabic
+ on whiteboards as easy as writing English – then yes.
+
+Appendix C: Roller Support Required Static Coefficient of Friction
+
+The roller support only works if the ball rolls without slipping, so this appendix calculates the required
+coefficient of static friction for a sphere that allows it to not slip under normal handwriting conditions.
+This is a mathematical prototype for the roller support.
+                                                                                                            26
+
+
+
+
+Let Fs be the force of static friction, FN be the normal force.
+Fs = μsFN
+μs = Fs/FN
+
+FN is equal to the downwards force that the user’s hand or arm will apply onto the ball. [19] finds that the
+minimum normal force is 350 gf + 1747 gf = 2097 gf = 20.5506 N, where 1 gf = 0.0098 N. A minimum is
+taken to provide a safe overestimate for μs, since having a lower μs could cause smudging.
+
+Fs is the maximum amount of static friction force the whiteboard will have to apply onto the ball in order
+to move it without slipping. The maximum required friction force happens when the acceleration of the
+user’s arm is at a maximum. According to [20], the hand usually reaches accelerations of 7.81 m/s2.
+
+Weight Calculation:
+The weight of the design is around (272 g for the wrist cuff + 4/3*(2 cm)3*π * 1.05 g / cm3 for the ball) =
+307.2g = 0.3072 kg [21], [17]. This assumes the ball is 2 cm in radius and has a density similar to plastic.
+The wrist cuff reference is assumed to cover the weight of the platform as well, because it is a very thick
+wrist cuff.
+
+Then plug into Fs = ma = 0.3072 kg * 7.81 m/s2 = 2.4 N.
+
+Finally, solve for μs = Fs/FN = 2.4 N / 20.5506 N = 0.12
+
+Therefore, in order for a sphere to not slip in usage with the roller ball support design, it must have a
+minimum μs of 0.12 against the whiteboard.
+
+
+Appendix D: Proxy Test Procedures and Raw Data
+
+Proxy Test D1: Impact of Prototypes on Writing Speed
+This proxy verifies requirement 1 (design cannot inhibit user’s baseline DASH-2 score) by testing writing
+speed with the 3 concepts, the dummy marker, the platform and the roller support. The roller support is
+tested by substituting for 0.4kg wrist weights to simulate the extra weight of the roller support. This
+                                                                                                          27
+
+
+weight is an overestimate for the roller support but if it is able to pass this max threshold as defined by
+requirement 1, then a lighter design passes too. This substitution also works because the roller support is
+attached to the wrist and not to the marker, allowing the user to write in their natural position.
+    1.​ The control test defines a mean baseline writing speed for a left-handed writer writing on a
+        whiteboard with no additional weight or using a normal marker
+    2.​ The sentence given is “The quick brown fox jumps over the lazy dog” because it contains every
+        letter of the alphabet (pangram) and is short enough to avoid long writing session fatigue
+    3.​ Each prototype is tested, collecting a mean of 5 times to reduce error, with the 0.4 kg wrist
+        weights used for the roller support
+             a.​ Writing speed is considered hindered if the mean time with added weight has a z-score
+                  greater than 2 (95% confidence interval) relative to the control mean. Therefore we can
+                  establish the effect of the given weight in hindering writing speed with a significance
+                  value of a = 0.05
+Proxy Test 1 Results
+Table D1.1: Control-Without weights, normal writing
+(9 words / 17.829 seconds) * (60 seconds / 1 minute)
+ Trial Number        Time (s)
+
+ 1                   18.45
+
+ 2                   17.48
+
+ 3                   17.93
+
+ 4                   17.90
+
+ 5                   17.76
+
+ 6                   17.54
+
+ 7                   17.80
+
+ 8                   18.65
+
+ 9                   17.90
+
+ 10                  16.67
+
+ 11                  17.18
+
+ 12                  18.08
+
+ 13                  18.30
+
+ 14                  18.58
+
+ 15                  16.98
+
+ 16                  17.34
+                                                           28
+
+
+ 17                  17.90
+
+ 18                  18.18
+
+ 19                  17.76
+
+ 20                  18.20
+
+ Mean                17.829
+
+ WPM                 30.29
+
+ Standard            0.520
+ Deviation
+
+
+Table D1.2: With weights (0.4kg, simulating roller ball)
+(9 words / 18.33 seconds) * (60 seconds / 1 minute)
+ Trial Number        Time (seconds)
+
+ 1                   18.66
+
+ 2                   17.11
+
+ 3                   18.28
+
+ 4                   18.56
+
+ 5                   19.11
+
+ Mean                18.344
+
+ WPM                 29.46
+
+ Z-score             0.99
+
+
+Table D1.3: Styrofoam Platform
+(9 words / 26.8 seconds) * (60 seconds / 1 minute)
+ Trial Number        Time (seconds)
+
+ 1                   32.26
+
+ 2                   25.31
+
+ 3                   23.81
+
+ 4                   22.13
+
+ 5                   30.65
+                                                                                                         29
+
+
+ Mean                 26.8
+
+ WPM                  20.15
+
+ Z-score              17.525
+
+
+Table D1.4: Dummy marker
+(9 words / 29.8 seconds) * (60 seconds / 1 minute)
+ Trial Number         Time (seconds)
+
+ 1                    29.35
+
+ 2                    27.47
+
+ 3                    25.02
+
+ 4                    34.78
+
+ 5                    32.38
+
+ Mean                 29.8
+
+ WPM                  18.12
+
+ Z-score              23.02
+
+
+Proxy Test D2: Roller Smudging Euclidean Difference
+This proxy test uses the Euclidean Difference MATLAB script (See Appendix x) to calculate the
+Euclidean difference between the hex code of the smudged and unsmudged ink.
+    1.​ Take a picture of the text with any photo processing disabled to ensure colors are unedited. This is
+        the control and what the smudged ink will be compared to
+            a.​ This is done with the export raw mode on the Samsung S25 Ultra
+    2.​ Then use both the roller types on the ink and take a picture of the ink
+    3.​ Input all photos into photoshop and use the color picker to get an average hex code of the color in
+        the area that the roller was used
+    4.​ Input all the hex codes into the MATLAB script, use the outputted Euclidean Difference to
+        determine if that roller ball material passes
+​
+Proxy Test D3: Measure Wrist Angle Ergonomics
+This proxy test is based on the RULA assessment, which is a methodology developed for investigating
+the ergonomics of work places in such a way that no special equipment is required, allowing for a quick
+assessment. However, it has been adjusted to fit the need of only analyzing the wrist and not the body as a
+whole [22]
+    1.​ Take a picture of a left-handed writer, writing normally on a whiteboard, this will define the
+        baseline problem
+                                                                                                            30
+
+
+            a.​ Two pictures are taken, one from a top down view of the lower arm and hand and one
+                 from a side view of the lower arm and hand, thus showing wrist flexion/extension and
+                 ulnar/radial deviations
+            b.​ Each picture is taken with either the hand or wrist as the central focus of the image and
+                 all angles are then relative to that
+                    i.​ Choosing any central focus is fine as there is no impact to resultant angle as it is
+                          calculated as a difference between two angles
+    2.​ The picture is uploaded to Kinovea video analyzer, which thus allows placing a digital
+        goniometer on the wrist joint to measure the wrist flexion/extension and ulnar/radial deviations
+    3.​ This is then repeated with the platform and dummy marker physical prototypes and the weight
+        wrist cuffs to simulate the roller ball support
+            a.​ The weight wrist cuff can simulate the roller ball support because the roller ball is not
+                 connected to the actual marker so the marker grip remains the same as the normal grip
+                 used by left-handed writers when writing on a whiteboard without worrying about not
+                 smudging the text (inverse right-handed grip) and the roller ball support in theory just lift
+                 the wrist up vertically off the whiteboard but keeping the same writing angle
+    4.​ The point system defined in the RULA Assessment has been adjusted as following:
+            a.​ Only the wrist portion of the score is considered
+            b.​ Muscle score is given a score of 1 for all prototypes as they are all held for more than a
+                 minute and have repeated movements of writing [22]
+            c.​ Give force score of 0 to prototypes with weight less than 0.4 kg and score of 1 to
+                 prototypes with weight greater than that
+                    i.​ Writing is done for longer periods of time in a vertical position so fatigue is felt
+                          at a much faster rate, so a lower weight is preferred and thus a lower weight
+                          threshold than the RULA assessment is recommended. Additionally, requirement
+                          1 defines that for safe use, the design weight should not exceed 0.4 kg
+            d.​ Wrist is given a score of 1 for flexion or extension within 15o of the neutral position and 2
+                 points for greater than 15o. 1 additional point for any ulnar or radial deviation greater than
+                 15o as defined by the RULA assessment
+            e.​ The action levels defined in the RULA assessment are not completely applicable as
+                 RULA is holistic of the whole body while this test only considers the wrist. As within 15o
+                 is considered to be acceptable deviations, a score of 2 will be taken as a pass for this test
+                 (which would be 1 point for less than 15o flexion or extension and 1 point for muscle
+                 score)
+
+Appendix E: Air Cushion Spec
+
+
+Thrust Output Calculation for 70 mm EDF (Turbines RC-FD Model) [25]
+
+Specifications:
+- EDF Model: JP Hobby 70 mm, 12-blade
+- Motor: 3400 KV, 4S compatible
+- Total weight (EDF + motor + shroud): 178 g
+
+Battery Specifications:
+                                                                                                       31
+
+
+- Battery type: 4S LiPo (14.8V nominal)
+- Capacity: 3500 mAh
+- Discharge rating: 35C continuous
+- Battery weight: ~300 g
+- Connector: XT60 or Deans
+
+Total System Weight:
+- EDF unit: 178 g
+- Battery: 300 g
+- Total propulsion system: 478 g
+- Operating voltage: 4S LiPo (14.8 V nominal)
+- Current draw: 75 A at full throttle
+
+Electrical Power Calculation:
+P=V×I
+P = 14.8 V × 75 A
+P ≈ 1110 W (manufacturer spec: 1260 W)
+
+Measured Static Thrust:
+From manufacturer test data at 4S, 75 A:
+T = 1810 g = 1.81 kgf
+
+Conversion to Newtons:
+T=m×g
+T = 1.81 kg × 9.81 m/s²
+T = 17.8 N
+
+Summary:
+The Turbines RC-FD 70 mm EDF (178 g, model FED-7012-3400) produces approximately 17.8 N (1.81
+kgf) of static thrust at full throttle on a 4S LiPo battery, drawing 75 A and consuming approximately 1260
+W of electrical power. This thrust output is achieved with a compact 70 mm diameter form factor and a
+total system weight of 178 grams including the motor, fan, and synthetic shroud. When paired with a
+recommended 4S 3500mAh 35C LiPo battery (~300 g) [26], the complete propulsion system weighs
+approximately 478 grams.
+
+
+Appendix F: Original Design Brief
+Page numbers for the original design brief are in the lower left hand corner.
+            IMPROVING ENGINEERING SCIENCE COMMON ROOM
+               WHITEBOARD USABILITY FOR LEFT-HANDERS
+
+                                   Word count: 1798
+
+Table of Contents:
+
+   I. Introduction___________________________________________________________ 2
+   II. Using EngSci Common Room Whiteboards as a Left-Handed Individual__________ 2
+   III. Defining the Working Environment_______________________________________ 3
+   IV. Understanding Stakeholders and Their Needs________________________________4
+        a) Left-Handed EngSci Students__________________________________________ 4
+        b) Audiences and Group Members of Left-Handed Students____________________ 4
+        c) Right-Handed Students Writing Leftward Scripts (e.g, Arabic)________________ 4
+        d) Facility Custodians__________________________________________________ 4
+        e) Facility Equipment Regulator__________________________________________ 4
+        f) Design Team_______________________________________________________ 4
+   V. A Discussion of Reference Designs________________________________________ 5
+        a) Integrated Eraser Markers_____________________________________________ 5
+        b) Smudge Guards_____________________________________________________ 5
+        c) InstaMorph________________________________________________________ 5
+   VI. Needs, Goals and Objectives____________________________________________ 6
+        Goal 1______________________________________________________________ 6
+        Goal 2______________________________________________________________ 6
+        Goal 3______________________________________________________________ 7
+        Goal 4______________________________________________________________ 8
+        Goal 5______________________________________________________________ 8
+   VI. Next Steps___________________________________________________________ 9
+
+================================================================
+
+   VII. Works Cited_________________________________________________________ 9
+   VIII. Appendices________________________________________________________ 12
+       Appendix A: Relevant Source Extracts____________________________________12
+       Appendix B: Left-handed Narrative Accounts______________________________ 17
+       Appendix C: Transcript of Interviews_____________________________________18
+       Appendix D: Glossary_________________________________________________ 20
+   IX. Works Consulted_____________________________________________________ 21
+    I.​   Introduction
+​
+This design brief frames the challenges faced by left-handed writers when using whiteboards
+in the Engineering Science common room. Left-handers often smudge or erase their written
+work unintentionally when writing rightwards [Appendix B2-3], [Appendix C]. To limit these
+effects, left-handers resort to uncomfortable writing postures, resulting in muscle strain and
+poor handwriting [3], [4], [28]. This brief defines the scope of this problem, discusses
+stakeholder expectations, and explores the limitations of existing designs to inform needs,
+goals, and objectives for improving the left-handed whiteboard experience.
+
+ II.​     Using EngSci Common Room Whiteboards as a Left-Handed Individual
+
+As most language scripts in the world are right-oriented [2], left-handers’ hands tend to trail
+over their script and rest on the board (Figure 1), smudging ink (Figure 2) and transferring
+residue to the palm [Appendix B3], [Appendix C]. The non-absorbent whiteboard surface
+causes this inconvenient writing experience. For the purpose of this design brief, the
+whiteboards are a fixed element of the common room that can not be replaced.
+
+
+
+
+Observation and research shows that left-handers often adopt awkward wrist angles when
+writing [Figure 1.3], [Appendix B3], [Appendix C]. Even on horizontal surfaces, they exhibit
+greater wrist flexion than right-handers [3], increasing muscle strain and the risk of
+musculoskeletal disorders [3], [4], [27]. This effect is likely exacerbated on whiteboards,
+where the arm is unsupported and a standing stance is adopted. Awkward wrist adjustments
+can also reduce perceived handwriting quality [Appendix B2], [Appendix C3], [28].
+
+
+
+
+2
+Hence, despite posture adjustments, whiteboard writing still causes discomfort and reduced
+satisfaction for left-handers, emphasizing the need for a design solution.
+
+III.​   Defining the Working Environment
+
+
+
+
+The Engineering Science Common Room is an indoor space with several whiteboards, each
+with a tray for markers and erasers. While the board material is unconfirmed, it is likely
+melamine as it accounts for the majority of the whiteboard market (45%) [5].
+
+There are 2 sizes of whiteboards in the common room; tray
+dimensions were found to be 5.5 ± 0.05 cm (Whiteboard A) (Figure
+4) and 4.9 ± 0.05 cm (Whiteboard B). Whiteboard markers in the
+common room are 17.8 cm [14] in length and the eraser is 13 cm x 8
+cm x 5 cm [17] . Design solutions could employ similar dimensions
+to maintain consistency with standard whiteboard materials,
+increasing users’ adaptability as outlined in Norman’s ‘The Design
+for Everyday Things’ [24]. Since the common room is frequently
+occupied by Engineering Science students studying [Appendix C3],
+the design must also avoid causing auditory disturbance.
+
+
+
+3
+ IV.​ Understanding Stakeholders and Their Needs
+As the common room is a shared educational space, there are many who may be affected by a
+design solution. Below is a discussion of different stakeholders and their expectations.
+
+   a)​ Left-Handed EngSci Students
+The primary stakeholders – users of this opportunity.
+
+They expect to be able to write on whiteboards at the rate as right-handed peers without
+unintentional smudging of the writing and on the hand [Appendix B2]. The design should be
+easy and fast to implement into one’s writing process without affecting their writing ability.
+To ensure this, it should prevent hand pain and should be ergonomic [Appendix C1].
+
+   b)​ Audiences and Group Members of Left-Handed Students
+Primary stakeholders.
+
+They expect to read the writing of the left-handed peers’ work on whiteboards without issue.
+The design should minimize noise to avoid distraction [23]. It must be operable efficiently
+and quick to access, without hindering the user’s working pace.
+
+   c)​ Right-Handed Students Writing Leftward Scripts (e.g, Arabic)
+Potential primary stakeholders with similar struggles. [Appendix C3]
+
+They wish to write with satisfactory handwriting and note minimal differences between
+writing left-ward and right-ward scripts [Appendix C3]. The design could either not consider
+handedness in design or have a right-handed alternative.
+
+   d)​ Facility Custodians
+Secondary stakeholders
+
+They expect that the design can not leave non-removable residue and must not require
+maintenance multiple times a day, as stakeholders are only on site to clean once daily
+[Appendix A]. Design must pass the University of Toronto APPA Cleaning Standard [29].
+
+    e)​ Facility Equipment Regulator
+Tertiary stakeholders.
+
+They expect the design to not damage the whiteboard or surrounding equipment. This design
+should pass any standards from the University of Toronto for educational spaces [31].
+
+
+
+
+4
+   f)​ Design Team
+Primary stakeholders.
+
+They expect other stakeholders’ expectations to be satisfied by fulfilling the Need, Goals and
+Objectives. This design should carry minimal bias from the team’s perspective through in
+depth research and understanding of other stakeholders.
+
+  V.​ A Discussion of Reference Designs
+While some existing products may aid with left-handed whiteboard use, each has
+shortcomings relative to stakeholder needs.
+
+    a)​ Integrated Eraser Markers
+
+Permanent markers with integrated erasers (e.g.,
+Faber-Castell Multimark [5]) offer a short-term
+solution: the permanent ink prevents smudging during
+writing, and the eraser on the back allows removal
+afterward. While Faber-Castell does not disclose its
+eraser formula, it is likely alcohol-based since
+permanent marker polymers are soluble in alcohols
+such as isopropanol [6].
+
+However, the eraser’s small surface area makes cleaning large sections slow. Enlarging it
+might seem effective, yet another issue remains: alcohol-based erasers degrade melamine
+whiteboards with repeated use, shortening board lifespan [8]. Hence, while integrated eraser
+markers address smudging, they are not a sustainable long-term solution – however, they may
+inspire chemical designs based on how they erase non-smudge ink.
+
+    b)​ Smudge Guards
+SmudgeGuard® gloves (87% Nylon, 13% Spandex) [9]
+are intended for tablet users looking to reduce sweat
+transfer to screens; thus, they may also prevent ink
+smudging (Figure 6).
+
+However, this design cannot fully prevent unintentional
+erasure since it may lift dry-erase ink from the
+whiteboard due to the design’s absorbency. While
+inspiration can be taken from how they protect the palm,
+they highlight the need for a solution to prevent erasure.
+
+
+
+
+5
+    c)​ InstaMorph
+                               One left-hander expressing annoyance on Quora suggested
+                               using InstaMorph, forming a “custom stand-off” (Figure 7)
+                               with a lightweight polyester thermoplastic [11], to form to
+                               pivot the hand while writing on boards [Appendix B #1].
+
+                               However, this task requires modeling skills and dedicated time
+                               to create a personalized product. The prolonged sensation of
+                               plastic against skin is also undesirable [21], and contact with
+                               the board risks scratches. While InstaMorph is an impractical
+                               widescale solution, the pivot concept could inspire future
+                               designs.
+
+
+
+
+VI. Needs, Goals and Objectives
+From the stakeholder expectations and reference design shortcomings, we can derive needs,
+goals and objectives necessary to deem a solution to this splartz “sufficient.”
+
+Need: Left-handed students are able to write on whiteboards in the EngSci common room
+without issue.
+
+Table 1: Goal 1 meets primary stakeholders’ needs by facilitating their use of whiteboards
+without harm.
+                 Description               Metric                    Justification
+
+    Goal 1       Design must not affect the user’s baseline writing ability
+
+ Objective 1.1 Cannot inhibit the          Score (points) on the     A 15 points decrease
+               users baseline              DASH-2 (Detailed          on the DASH-2 is one
+               DASH-2 score by             Assessment of Speed       standard deviation,
+               more than 15 points         of Handwriting).          signifying a significant
+               [16].                                                 drop in handwriting
+                                                                     speed [16].
+
+ Objective 1.2 Ensure there is no risk     Angle of extreme wrist    Reducing strain
+               of strain injury caused     extension, wrist radial   injuries when adopting
+               by wrist extended by        abduction and wrist       a standing stance
+               >90o, wrist radial          ulnar abduction in        re-ensures the user's
+               abduction, >20o, and        degrees.                  original writing ability.
+               wrist ulnar abduction,
+               >30o, outlined in ISO
+               11226-2000 [Appendix
+               A] [13].
+
+
+
+6
+    Objective 1.3 Accommodate for          Grip styles: lateral      Ensures the design is
+                  various grip styles on   tripod, dynamic tripod,   usable by any user
+                  the pen, namely tripod   lateral quadropod,        with differing grip
+                  and quadropod grip       dynamic quadropod.        styles [14].
+                  styles.                                            DfErgonomics [27]
+                                                                     emphasises to
+                                                                     “anticipate actions.”
+​
+
+Table 2: Ergonomics-focused goal that meets the needs of all primary stakeholders through
+ensuring the device is convenient to use and be around.
+                    Description             Metric                   Justification
+
+       Goal 2       Design must be comfortable to use and have around the commons.
+
+    Objective 2.1   Design width of at      Width (cm) of design.    Design must fit onto
+                    most 4.9cm.                                      the marker trays
+                                                                     (4.9cm and 5.5cm). so
+                                                                     users can have quick
+                                                                     access.
+
+    Objective 2.2   Design colours are      The Euclidean            A visually distinct
+                    distinguishable, colour Difference (ΔE*).        colour allows users to
+                    difference between the                           have quick access to
+                    design and the marker                            the design.
+                    rail (silver, #C0C0C0)
+                    must have a
+                    perceptual ΔE* ≥ 20
+                    according to ISO/CIE
+                    11664-4 [Appendix
+                    A], [12].
+
+    Objective 2.4   Reduce disturbance by Room’s sound               Research shows that
+                    maintaining the       pressure level (dB).       “increasing
+                    common room’s                                    background sound
+                    sound pressure level                             pressure level to 60
+                    to under 60 dB.                                  dBA significantly
+                                                                     impairs auditory
+                                                                     working memory task
+                                                                     performance” [22].
+
+
+
+
+Table 3: Goal 3 caters to primary stakeholders. Research suggests that smudging leads to
+lower legibility in left-handed children [28]; hence, we assume that by reducing smudging,
+one increases legibility. Further research could be done to confirm.
+
+
+
+7
+                 Description              Metric                     Justification
+
+    Goal 3       Ensure no unintentional movement of the ink on the surface of the
+                 whiteboard occurs
+
+ Objective 3.1 No accidental contact      Ink’s drying time          Ensures no
+               between design and         (seconds), contact         unintentional
+               surface of the             points.                    smudging can occur
+               whiteboard within                                     before the ink is dry
+               27.73s [19] of the ink                                [19], maintaining
+               being applied.                                        legibility.
+
+ Objective 3.2 No accidental contact   Ink’s drying time             Ensures no writing is
+               between design and      (seconds), contact            erased after ink drying
+               surface of the          points.                       [19] so written work
+               whiteboard after                                      can be read.
+               27.73s of the ink being
+               applied.
+
+
+
+Table 4: Goal 4 reduces the messiness of the writing experience – an inconvenience
+mentioned by left-handers [Appendix B, C].
+                 Description               Metric                    Justification
+
+    Goal 4       Ensure no ink residue is left on the hand after use of the device
+
+ Objective 4.1   Zero points of contact    Hand-whiteboard           Ensures no ink is able
+                 between the hand of       contact points.           to rub off onto the skin
+                 the user and the                                    of the user, fulfilling
+                 surface of the                                      stakeholder’s
+                 whiteboard.                                         expectation.
+
+
+
+
+Table 5: Goal 5 designs for maintenance, satisfying custodians and regulatory staff through
+reduced damage and stains to whiteboards.
+                 Description               Metric                    Justification
+
+    Goal 5       Design must not damage the whiteboard.
+
+
+
+
+8
+ Objective 5.1   Any nicks on the         Depth and width of        PTI Technologies’
+                 whiteboard surface       nicks (inches/cm).        Surface Inspection
+                 must be “no greater                                Acceptance Criteria
+                 than 0.005″ (0.01270                               allows for surface
+                 cm) in depth and                                   irregularities below
+                 0.010″ (0.0254 cm) in                              0.005″ in depth and
+                 width.”                                            0.010″ in width on
+                                                                    “non-functional
+                                                                    surfaces”, which a
+                                                                    whiteboard falls under
+                                                                    [25].
+
+ Objective 5.2   Any staining from the    The Euclidean             Ensures color changes
+                 design should have       Difference (ΔE*).         remain below the
+                 ΔE* ≤ 1.9 with                                     perceptible threshold
+                 whiteboard surface.                                in a dental study where
+                                                                    50% of participants
+                                                                    noticed differences in
+                                                                    dentures [26]; design
+                                                                    must be below this to
+                                                                    avoid visible staining.
+
+
+VI.​   Next Steps
+
+        In conclusion, left-handed smudging on boards and palms when using EngSci
+common room whiteboards is a documented issue. A design team addressing this challenge
+must maintain regular communication with primary stakeholders to ensure that left-handers
+are satisfied with the final outcome. While literature is available on left-handed struggles,
+further primary research within the common room environment may benefit the design team.
+Through divergent thinking and rigorous testing to meet goals and objectives, a design team
+can effectively address the needs of left-handers and develop a practical solution.
+
+
+
+
+9
+VII.​ Works Cited
+See Appendix A for relevant source extracts.
+
+[1] Hardyck, C., & Petrinovich, L. F. (1977). Left-handedness. Psychological Bulletin, 84(3),
+       385–404. https://doi.org/10.1037/0033-2909.84.3.385
+
+[2] Ager, S. (2024). Writing Direction Index. Omniglot. Retrieved October 9, 2025, from
+       https://www.omniglot.com/writing/direction.htm
+
+[3] Park, S. (2013). Comparison of Muscle Activation during Dominant Hand Wrist Flexion
+        when Writing. Journal of Physical Therapy Science, 25(12), 1529–1531.
+        https://doi.org/10.1589/jpts.25.1529
+
+[4] Malchaire, J., Cock, N., & Robert, A. (1996). Prevalences of musculoskeletal disorders at
+       the wrist as a function of angles, forces, repetitiveness and movement velocities.
+       Scandinavian Journal of Work Environment & Health, 22(3), 176–181.
+       https://doi.org/10.5271/sjweh.128
+
+[5] Products. (n.d.). FC-ECom. https://www.faber-castell.ca/products/marking/multimark
+
+[6] Chapman, K. (2022, December 15). How do whiteboard markers work? Education in
+       Chemistry | Royal Society of Chemistry. Retrieved October 9, 2025, from
+       https://edu.rsc.org/everyday-chemistry/how-do-whiteboard-markers-work/4016592.ar
+       ticle
+
+[7] Global White Board Market Size By Product Type. (2025, March). Verified Market
+       Reports. Retrieved October 10, 2025, from
+       https://www.verifiedmarketreports.com/product/global-white-board-market-growth-2
+       019-2024/
+
+[8] P, M. (2017, November 29). Why isopropyl Alcohol is Dangerous For Your Dry Erase
+        Board. Magnatag.
+        https://www.magnatag.com/blog/post/why-isopropyl-alcohol-is-dangerous-for-your-d
+        ry-erase-board?
+
+
+10
+[9] SmudgeGuard (n.d.). https://www.smudgeguard.com/index.htm
+
+[10] How can a left-handed person write neatly on a whiteboard/blackboard? (n.d.). Quora.
+       https://www.quora.com/How-can-a-left-handed-person-write-neatly-on-a-whiteboard-
+       blackboard
+
+[11] InstaMorph. (n.d.). InstaMorph - Reusable moldable plastic. https://instamorph.com/
+
+[12] International Organization of Standardization. (2019) Colorimetry —Part 4: CIE 1976
+        L*a*b* colour space. (ISO Standard No.ISO/CIE 11664-4:2019)
+
+[13] International Organization of Standardization. (2000) Ergonomics — Evaluation of
+       static working postures. (ISO Standard No.ISO 11226:2000)
+
+[14] EXPO Dry Erase Markers Kit, Chisel Tip, Assorted Colours, Eraser, Spray Cleaner, 6
+       Count : 0: Amazon.ca: Office Products. (n.d.).
+       https://www.amazon.ca/Markers-Chisel-Assorted-Colours-Cleaner/dp/B000MK2PZ6/
+
+[15] Standard Practice for Labeling Art Materials for Chronic Health Hazards. (2021). In
+        ASTM International (ASTM D4236-94). ASTM International.
+
+[16] Horne, J., Ferrier, J., Singleton, C., & Read, C. (n.d.). Computerised assessment of
+       handwriting and typing speed. Educational and Child Psychology, 28(2), 52–66.
+       https://doi.org/10.53841/bpsecp.2011.28.2.52
+
+[17] Standard Dry Erase Board Eraser H-1458 - Uline. (n.d.).
+        https://www.uline.ca/Product/Detail/H-1458/Dry-Erase-Board-Accessories/Standard-
+        Dry-Erase-Board-Eraser
+
+[18] Medbridge. (2025b, January 27). Identifying Pencil grasp Style: Why it matters |
+      Medbridge. Medbridge
+      .https://www.medbridge.com/blog/identifying-pencil-grasp-style-why-it-matters
+
+[19]Cabuay, L. C., Caneda, N. C. C., Lao, R., & Pilipiña, J. A. (2024). A Comparative Study
+      Between an Alternative Whiteboard Marker Ink Made of Pulverized Chicken Bones
+      and an Industrial Whiteboard Marker Ink.
+
+[20] How big is a standard backpack? Complete size & volume guide. (2025, July 4). High
+       Quality Custom Bag Manufacturer China and Overseas.
+       https://szoneier.com/custom-backpack/how-big-is-a-standard-backpack
+
+[21] Rezaei, M., Nagi, S., Xu, C., McIntyre, S., Olausson, H., & Gerling, G. (2021). Thin
+       Films on the Skin, but not Frictional Agents, Attenuate the Percept of Pleasantness to
+
+
+11
+       Brushed Stimuli. 2021 IEEE World Haptics Conference (WHC), pp 49–54.
+       https://doi.org/10.1109/WHC49131.2021.9517259.
+
+[22] Sun, Z., Hu, S., Xie, S., Wu, L., Jiang, C., Ding, S., Zhang, Z., Xu, W., & Li, H. (2024).
+       Does background sound impact cognitive performance and relaxation states in
+       enclosed office? Building and Environment, 267, 112313.
+       https://doi.org/10.1016/j.buildenv.2024.112313
+
+[23]Braat-Eggen, P. E. (2020). Auditory distraction in open-plan study environments in
+       higher education [Phd Thesis 1 (Research TU/e / Graduation TU/e), Built
+       Environment, Technische Universiteit Eindhoven].
+       https://pure.tue.nl/ws/portalfiles/portal/151862451/20200623_Braat_Eggen.pdf
+
+[24] Norman, D. A. (1988). The design of everyday things.
+       http://documents.irevues.inist.fr/bitstream/2042/30193/1/XX_CNE-Prospective_0007
+       38.pdf
+
+[25] Montfort, R., Robino, P., Montfort, R., Robino, P., Montfort, R., Robino, P., Sheikhvand,
+      B., Robino, P., Suri, K., Marban, J., Lopez, R., & Suri, K. (2017). SURFACE
+      INSPECTION ACCEPTANCE CRITERIA. In SURFACE INSPECTION
+      ACCEPTANCE CRITERIA (pp. 1–6).
+      https://www.ptitechnologies.com/wp-content/uploads/2018/04/QAP-3.0-3-Surface-Ins
+      pection-Acceptance-Criteria.pdf
+
+[26] Alghazali, N., Burnside, G., Moallem, M., Smith, P., Preston, A., & Jarad, F. D. (2012).
+       Assessment of perceptibility and acceptability of color difference of denture teeth.
+       Journal of Dentistry, 40, e10–e17. https://doi.org/10.1016/j.jdent.2012.04.023
+
+[27] Openshaw, S., Taylor, E., & Allsteel. (2006). Ergonomics and design.
+      https://ehs.oregonstate.edu/sites/ehs.oregonstate.edu/files/pdf/ergo/ergonomicsanddesi
+      gnreferenceguidewhitepaper.pdf
+
+[28] Hayden, C., & Burton, N. (2012). Assessing the suitability of individual whiteboards for
+       left-handed writers within the Early Years Foundation Stage. Education 3-13, 41(1),
+       71–81. https://doi.org/10.1080/03004279.2012.710102
+
+[29] Knecht, K., Bryan-Kinns, N., & Shoop, K. (2016). Usability and design of personal
+       wearable and portable devices for thermal comfort in shared work environments.
+       Proceedings of British HCI 2016 Conference Fusion.
+       https://www.scienceopen.com/document_file/2828f85c-1a92-4eb1-83a6-c9feee65067
+       e/ScienceOpen/001_Knecht.pdf
+
+
+
+
+12
+ [30]Caretaking Department. (n.d.). Area cleaning frequency for all buildings.
+        https://www.fs.utoronto.ca/wp-content/uploads/2024/09/Caretaking-Frequencies-002.
+        pdf
+
+ [31]Facilities & Services - University of Toronto. (2025, June 25). Caretaking - Facilities &
+        Services - University of Toronto. Facilities & Services - University of Toronto.
+        https://www.fs.utoronto.ca/services/caretaking/
+
+ [32] Space at the University of Toronto, Procedures for the Temporary Use of - Office of the
+        Vice-Provost, Students. (2023, August 27). Office of the Vice-Provost, Students.
+        https://www.viceprovoststudents.utoronto.ca/policy-guideline/space-at-the-university-
+        of-toronto-procedures-for-the-temporary-use-of
+
+
+
+
+VIII.​   Appendices
+         Appendix A: Relevant Source Extracts
+
+ [3] Page 1
+
+
+
+
+ [4] Page 1
+
+
+
+
+ [6]
+
+
+
+
+ [21] Page 5
+
+
+ 13
+

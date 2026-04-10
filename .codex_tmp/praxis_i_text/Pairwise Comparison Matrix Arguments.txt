@@ -1,0 +1,10 @@
+Air Cushion vs. Platform:
+   -​ Air cushion has lower height than platform which could allow for faster writing and more
+       ergonomic grip
+   -​ Platform probably lowers DASH-2 score more because you have to stop applying
+       pressure on platform in order to stop writing as well.
+   -​
+Add requirements/EC:
+   -​ EC for lighter is better
+   -​
+

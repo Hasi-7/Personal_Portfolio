@@ -4,9 +4,8 @@ slug: "brainstorming"
 strand: "diverge"
 projects:
   - praxis-i
-  - praxis-ii
 explanation: "Structured brainstorming is a divergent thinking technique for generating a large quantity of ideas in a short time. Effective brainstorming follows specific rules — defer judgement, encourage wild ideas, build on others' ideas, go for quantity — and uses facilitation techniques like round-robin, brainwriting, or timed sprints."
-evidence: "In Praxis I, our team used timed brainstorming sprints (5 minutes per HMW statement) combined with brainwriting to generate 40+ concepts on sticky notes. In Praxis II, we refined our approach by doing individual brainwriting before group discussion to reduce anchoring bias."
-utilityAssessment: "Useful when done with discipline, but the unstructured 'just throw out ideas' version is often counterproductive. The key insight is that brainstorming is a divergent tool — its purpose is to expand the solution space, not to find the answer. It should always be followed by structured convergence."
-fitAssessment: "Moderate fit. I'm naturally more analytical than generative, so brainstorming pushes me out of my comfort zone — which is exactly why it's valuable. I've learned to be more effective by doing individual ideation before group sessions."
+evidence: "In Praxis I, `Alpha Release Brainstorming.pdf` explicitly names wishing, freewriting, SCAMPER, and 6-3-5, and preserves both plausible and absurd concept directions. That artifact shows the team exploring quick-drying marker chemistry, dummy-marker, fan or air-cushion, platform, and rolling-support concepts before convergence. The same file also records that wishing and freewriting were the most productive while SCAMPER was less useful in this case."
+utilityAssessment: "The main utility was de-anchoring. Brainstorming opened the design space beyond the obvious 'change the ink' answer and produced enough credible alternatives that the final convergence had something real to compare. It also surfaced reference-design inspirations and prototype questions early."
+fitAssessment: "This tool fits best for me when it is structured and evidenced rather than purely conversational. Praxis I showed that brainstorming is most valuable when it is used to deliberately widen the space first, then paired with later comparison tools so the team does not confuse quantity of ideas with quality of decisions."
 ---

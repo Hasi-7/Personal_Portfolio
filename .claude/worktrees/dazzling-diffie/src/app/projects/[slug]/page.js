@@ -59,6 +59,16 @@ export default async function ProjectPage({ params }) {
                 <dt>Date</dt><dd>{project.date}</dd>
                 <dt>CTMFs</dt><dd>{projectCtmfs.length} documented</dd>
               </dl>
+              {Array.isArray(project.teamCredits) && project.teamCredits.length > 0 && (
+                <div className={styles.teamCredits}>
+                  <p className={styles.teamCreditsTitle}>Team Credits</p>
+                  <ul className={styles.teamCreditsList}>
+                    {project.teamCredits.map((credit, index) => (
+                      <li key={`${project.slug}-credit-${index}`}>{credit}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </ScrollReveal>
@@ -79,8 +89,7 @@ export default async function ProjectPage({ params }) {
         {projectCtmfs.length > 0 && (
           <ScrollReveal delay={200}>
             <div className={styles.ctmfsSection}>
-              <p className="section-label">CTMFs Applied</p>
-              <h2 className={styles.ctmfsHeading}>Concepts, Tools, Models &amp; Frameworks</h2>
+              <h2 className={styles.ctmfsHeading}>CTMFs Used</h2>
               <div className={styles.ctmfsGrid}>
                 {projectCtmfs.map((ctmf) => (
                   <Link href={`/ctmfs/${ctmf.slug}`} key={ctmf.slug} className={styles.ctmfCard}>

@@ -2,43 +2,60 @@
 title: "CIV102 — Structural Bridge Design"
 slug: "civ102-bridge"
 type: "Structural Engineering"
-date: "2026-01-15"
+date: "2025-11"
 description: "Designed and built a model bridge to meet specific load requirements, applying structural analysis principles and material science fundamentals."
-summary: "Applied structural engineering principles to design, analyse, and construct a model bridge optimised for load-bearing capacity under weight and cost constraints."
+summary: "Designed, analysed, and built a matboard box-girder bridge through multiple quantified design iterations, balancing buckling risk, shear demand, and material constraints before converging on a buildable final geometry."
+teamCredits:
+  - "This bridge was completed as a team project in CIV102."
+  - "Team members: Aditi Datla, Samantha Chang, Perry Xu."
+  - "Analysis, construction, and testing activities were distributed across the team and integrated into a shared final design."
 ctmfs:
-  - design-brief
-  - analogical-thinking
-  - requirements-list
-  - pairwise-comparison
+  - iterative-design
+  - mathematical-modelling
   - technical-drawing
-  - prototype-testing
 ---
 
-## Context
+## Summary
 
-CIV102 (Structures and Materials) culminates in a bridge design project where student teams must design and construct a model bridge using limited materials (matboard and contact cement). The bridge must span a specified gap and support a moving point load, with performance measured by the ratio of load carried to bridge weight.
+CIV102 (Structures and Materials) culminates in a bridge design project where teams design and construct a matboard bridge under strict geometric and material constraints. The bridge had to span a 1200 mm support distance (minimum built length 1250 mm), use only the provided matboard and contact cement, and carry a moving train load that increased until failure during testing.
 
-This project integrates theoretical structural analysis — shear force diagrams, bending moment diagrams, cross-sectional design — with practical construction and testing.
+The work combined structural analysis and physical fabrication. We used shear-force and bending-moment envelopes, thin-plate buckling checks, glue and matboard shear checks, and repeated cross-section redesign to increase the minimum factor of safety while staying buildable.
 
-## What We Designed
+## Outcomes
 
-Our team designed a [placeholder: describe bridge type — e.g., "Warren truss bridge with a composite deck section"]. The design process began with establishing clear requirements from the project brief and analysing the loading conditions to determine critical sections.
+![CAD model of final bridge design](/images/projects/civ102-bridge/figure-1.png)
+*Figure 1: CAD Model of the Final Bridge Design*
 
-We used analogical thinking to study real-world bridge designs and understand why certain configurations perform well under specific loading conditions. This informed our choice of truss geometry and cross-sectional profiles.
+![Final bridge after construction](/images/projects/civ102-bridge/figure-2.png)
+*Figure 2: Final Bridge Built*
+
+Our final bridge was a thin-walled box-girder style beam, approximately 1256 mm long, with a double-layer top deck, two vertical walls, an internal top spine through the high-moment region, and 16 diaphragms distributed along the span. Diaphragms were spaced quadratically, denser near supports where shear demand was higher and wider near midspan to reduce unnecessary material.
+
+The CAD model (Figure 1) helped us lock geometry, diaphragm strategy, and splice planning before fabrication, and the constructed bridge (Figure 2) shows how closely the final build followed that design intent. The design process was highly iterative. We moved through major cross-section families (Design 0, modified Design 0, I-section variants, U- and box-like variants, and two Pi-symbol iterations), using calculations and code output each time to identify governing failure modes and decide what to change next.
 
 Key design decisions included:
 
-- [Placeholder: e.g., "Selecting a Warren truss for more uniform member loading"]
-- [Placeholder: e.g., "Using a closed cross-section for the top chord to resist buckling"]
-- [Placeholder: e.g., "Tapering the bridge depth at supports to optimise material use"]
+- converging to a box-like/Pi-style cross-section to reduce torsional vulnerability and improve stiffness efficiency relative to I-section concepts
+- prioritizing balance between compressive and shear-buckling factors of safety instead of maximizing one metric at the expense of others
+- using quadratic diaphragm spacing and planned splice locations to reinforce high-demand regions while preserving material for the full build
+- using a double-layer top deck and an internal spine to improve local stability in the most critical bending region
 
-## Key Outcomes
+<div class="md-clear"></div>
 
-- Achieved a load-to-weight ratio of [placeholder: e.g., "185:1"]
-- Bridge supported [placeholder: e.g., "a 95 kg load"] before failure
-- Failure mode matched our predicted critical section — validated by SFD/BMD analysis
-- [Placeholder: e.g., "Placed in the top 15% of the class cohort"]
+![Final Pi-style bridge cross-section dimensions](/images/projects/civ102-bridge/figure-7.png)
+*Figure 3: Dimensions of Bridge Cross Section in mm with spine spanning 355mm across center of bridge*
+
+## Key outcomes included:
+
+- Produced a complete, buildable bridge geometry with matching engineering drawings, cut layout, splice plan, and documented construction process
+- Final converged iteration used a 120 mm by 118 mm Pi-style cross-section with 16 diaphragms and balanced critical FOS values (including compressive and local shear-buckling checks)
+- Analysis and coding workflow supported evidence-based elimination of weaker iterations and convergence on a design that met project constraints
+- Team construction process translated the analytical design into a physical bridge using controlled gluing, staged drying/clamping, and documented quality-control adjustments
 
 ## Reflection
 
-The CIV102 bridge project taught me that elegance in structural design comes from deeply understanding constraints. Our strongest design decisions came not from adding complexity, but from removing it — simplifying the geometry where loads were manageable, and concentrating material only where structurally necessary. The project also reinforced the value of analytical tools: our hand-calculated predictions of failure location and mode were remarkably accurate, which built my confidence in applying first principles to real design challenges.
+What I am most proud of is our final build quality with limited resources. Our bridge failed earlier than predicted because we underestimated splice weakness and did not reinforce that region enough, but outside of that oversight, the build quality was strong and the overall geometry performed as intended.
+
+The biggest turning point was fixing our matboard cut-layout problem. A measurement error made it look like the bridge would not fit without major compromises, which caused a lot of panic. Once Perry found workable tradeoffs using Aditi's optimization algorithm, we regained confidence and moved forward with a design that was both buildable and promising.
+
+Early on, we eliminated Design 0-adjacent concepts, especially base-heavy options, because modelling showed they used material inefficiently: tensile capacity became too strong while compression still governed. The key tradeoff was compression versus shear, so we tuned height-to-thickness ratios to balance both in code. The hardest part was then executing the build, which took about 20 hours of sustained precision. That made one lesson clear for me: a theoretically stronger bridge is not better if it is too difficult to build cleanly. If I repeated this project, I would start cross-section optimization earlier and enforce stricter team cross-checking, because even strong contributors are human and early verification prevents costly mistakes.

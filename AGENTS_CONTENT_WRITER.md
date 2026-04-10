@@ -70,6 +70,28 @@ YouTube video. Your job is to write the **written annotation beneath the video**
 | A list of skills or achievements | A portrait of how the author thinks and why |
 | Sounds like a cover letter | Sounds like a person reflecting honestly |
 
+**Postion Statement Transcript**
+Hi, my name is Hasnain and in this video I am showing my approach to engineering design by designing,
+iterating and creating a mechanical 3x3 door using the sandbox video game Minecraft as the medium. This process
+included designing several different circuits, iterating on those circuits until I had all the timing logic and logic gates required for the mechanical
+door to work and using reference designs for certain basic circuits. I built off those reference designs and adjusted
+to fit the timing logic within my system. Here's a screenshot of all the reference designs of circuits I used.
+This reflects one of my core values in engineering design which is prioritizing understanding and integration of existing solutions rather than reinventing the wheel.
+The way I approached this system specifically is I broke it up into three core circuits. Door activation opening
+closing sequence of the center block the center bottom block and the opening closing sequence of all other blocks. I
+then took the opening closing circuit for the center block and center bottom block and further broke it down into three circuits. The first is the double
+piston extender circuit you see on the right which allows blocks to be moved beyond the reach of a single piston. The
+second is the opening sequence of the center block and center bottom block.
+And finally the third is the closing sequence of those two blocks. This shows another one of my core values in
+engineering design which is breaking larger more complex problems into more manageable problems.
+Now despite not fully understanding the complexities of the system going into this I was able to create a fully functioning system through testing the
+circuit repeatedly observing the behavior and adjusting the circuit timing logic based on the observed behavior. Thus, I was able to determine
+if things need to be slowed down, sped up, or needed to be changed entirely.
+Through experiences like this and my practice one design project, I've learned that I understand systems and prototypes best by testing and observing
+their behavior rather than trying to design everything perfectly up front.
+This kind of iterative systematic problem solving is my position as of right now. As I continue to gain experience, I expect this
+approach to evolve. But it is why I'm currently drawn to engineering design and look forward to future design projects.
+
 **Output format:**
 ```yaml
 ---

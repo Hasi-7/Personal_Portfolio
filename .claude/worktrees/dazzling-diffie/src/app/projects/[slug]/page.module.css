@@ -75,6 +75,29 @@
   color: var(--color-text-primary);
 }
 
+.teamCredits {
+  margin-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+}
+
+.teamCreditsTitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.teamCreditsList {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
 /* Process annotation */
 .annotationSection { margin-bottom: var(--space-2xl); }
 
@@ -98,13 +121,12 @@
 
 /* CTMFs section */
 .ctmfsSection {
-  padding-top: var(--space-xl);
-  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-sm);
   margin-bottom: var(--space-2xl);
 }
 
 .ctmfsHeading {
-  margin: var(--space-sm) 0 var(--space-lg);
+  margin: 0 0 var(--space-lg);
   font-size: 1.25rem;
 }
 

@@ -42,7 +42,7 @@ export default async function PositionPage() {
             <div className={styles.graphicContainer} aria-hidden="true">
               <svg
                 className={styles.designGraphic}
-                viewBox="0 0 420 80"
+                viewBox="0 -20 420 100"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >

@@ -1,42 +1,57 @@
 ---
-title: "Praxis II — Engineering Design Project"
+title: "Motor Fault Detection via Sound Analysis for Professional FPV Drone Operations"
 slug: "praxis-ii"
 type: "Systems Design"
-date: "2026-03-01"
-description: "A comprehensive engineering design project integrating technical analysis with stakeholder needs, demonstrating growth in design methodology and reflective practice."
-summary: "Applied the full engineering design process to a complex, open-ended challenge, integrating multiple CTMFs and demonstrating iterative refinement based on testing and feedback."
+date: "2026-01 - 2026-04"
+description: "In ESC102 Praxis II, our team designed and prototyped a pre-flight motor diagnostic tool for professional FPV drone operations, replacing subjective audio checks with FFT-based analysis and actionable pass/warn/fail outputs."
+summary: "Worked with D.Vision Aerials to rescope a broad drone diagnostics opportunity into a buildable motor-health solution, then designed and tested a sound-analysis prototype that balanced feasibility, repeatability, and diagnostic value within first-year constraints."
+teamCredits:
+  - "Praxis II was completed with my ESC102 project team: Muhammed Ali Bhanji, Michael Lin, and Frank Yin."
+  - "Opportunity framing, NGO development, convergence analysis, and prototype decisions were completed collaboratively."
+  - "My main implementation contributions were the final sound-dampening test enclosure and software integration for the diagnostic pipeline."
 ctmfs:
   - stakeholder-mapping
-  - design-brief
-  - brainstorming
-  - pugh-chart
   - requirements-list
-  - prototype-testing
-  - one-pager
+  - prototypes
 ---
 
-## Context
+## Summary
 
-Praxis II (ESC102) builds on the design foundations established in Praxis I, pushing students toward more sophisticated design methodology and deeper reflective practice. This project required us to engage with a complex, multi-stakeholder design challenge and demonstrate not just a final solution, but a thoughtful, well-documented design process.
+In ESC102 Praxis II, our team worked with the professional FPV drone cinematography community in the GTA through interviews and consultation with D.Vision Aerials. The core problem was that pre-flight motor health was being assessed subjectively by ear, even though operations occur in high-risk, high-pressure environments with major liability exposure and tight setup windows.
 
-The emphasis in Praxis II shifts from "can you follow the design process?" to "can you make informed, justified decisions about which tools and approaches to use, and when?"
+The original framing covered motor, battery, carbon-fiber frame, and radio-frequency diagnostics. After divergence, feasibility checks, and convergence analysis, we narrowed scope to motor fault detection so we could deliver a field-relevant prototype in the available timeline. This let us focus on one high-impact failure pathway while respecting stakeholder constraints around setup speed, repeatability, and non-invasive testing.
 
-## What We Designed
+## Outcomes
 
-Our team tackled [placeholder: describe the Praxis II design challenge]. The project required balancing competing stakeholder needs, technical feasibility constraints, and usability requirements.
+![Praxis II one-pager summary](/images/projects/praxis-ii/figure-1.png)
+*Figure 1: One-pager summary of the opportunity framing, design decisions, and next steps for the motor diagnostic concept.*
 
-We began by revisiting and refining our stakeholder mapping approach from Praxis I, applying it with greater sophistication — not just identifying stakeholders, but weighting their needs and mapping conflicts between them. This informed a design brief that explicitly acknowledged trade-offs rather than trying to satisfy every requirement equally.
+![Praxis II concept and architecture](/images/projects/praxis-ii/figure-2.png)
+*Figure 2: Concept diagram and software workflow used for the sound-analysis motor diagnostic prototype.*
 
-Our divergent phase generated concepts across multiple solution categories, which we evaluated using a weighted Pugh Chart. The converged concept was developed through iterative prototyping and tested against our requirements list.
+![Praxis II verification outputs](/images/projects/praxis-ii/figure-3.png)
+*Figure 3: Verification outputs showing spectral indicators used to flag likely imbalance and misalignment behavior.*
 
-## Key Outcomes
+We designed a pre-flight motor diagnostic prototype that uses sound analysis to support objective go/no-go decisions. The system tests one motor at a time, records audio in a sound-dampening enclosure, computes FFT-based features, and compares them against a healthy baseline profile.
 
-- Developed a comprehensive stakeholder map identifying 12+ stakeholder groups
-- Created a weighted requirements list with traceability to stakeholder needs
-- Evaluated 5 distinct concept families using a multi-criteria Pugh Chart
-- Built 3 prototype iterations, each validated through user testing
-- Delivered a final one-pager, detailed report, and portfolio documentation
+The final workflow extracts frequency-domain indicators such as dominant frequency/amplitude, harmonic ratios, significant peak count, and band energy spread. It then classifies each motor into a simplified status output (Ready to Fly, Warning, or Do Not Fly) so results are actionable without requiring raw-signal interpretation on set.
+
+During convergence, we compared this concept against vibration-based analysis (blackbox/IMU) and motor current signature analysis (MCSA). Sound analysis was selected because it had the simplest practical workflow, did not require a test flight, and did not require invasive access to motor terminals. It also provided broader diagnostic coverage in our evaluation (up to 8 fault types, versus 5 for vibration and 1 for current analysis). Vibration was harder to repeat reliably because each run depended on flight conditions, and current-based analysis was harder to stabilize because battery voltage fluctuations directly shifted the measured current profile.
+
+## Key outcomes included:
+
+- Rescoped a broad pre-flight diagnostics opportunity into a buildable motor-health problem with explicit needs, goals, and measurable objectives
+- Built and demonstrated a working sound-analysis prototype integrating enclosure design, acquisition workflow, FFT feature extraction, and 3-state diagnostic output
+- Used comparative convergence tools (measurement matrix + multi-reference Pugh analysis) to evaluate sound, vibration, and MCSA pathways before selecting a final direction
+- Verified that the integrated app and diagnostic pipeline could run end-to-end within the project's practical time constraints
+- Identified the main remaining gap as fault-verification rigor, with future work focused on larger labeled datasets and stronger repeatability/fault-injection testing
 
 ## Reflection
 
-Praxis II was where I began to feel like an engineering designer rather than a student following a process. The key shift was learning to make deliberate choices about methodology — choosing which CTMFs to apply not because they were assigned, but because they were the right tool for the situation. I also developed a stronger reflective practice, learning to articulate not just what I did but why, and what I would do differently next time. This portfolio itself is an artefact of that growth.
+The biggest turning point for me was when our final app worked end-to-end and integrated all of our ideas into a single prototype. That moment made the project feel real. Up to that point, a lot of our work was still fragmented across separate analyses and partial tests, but once the full pipeline ran cleanly, we could finally evaluate the concept as an actual tool rather than disconnected parts.
+
+The hardest part of the process was trying to validate the current-analysis route through simulation. Hardware and software integration was much more difficult than expected, and we eventually found a practical limitation in our Arduino setup, which was not powerful enough for the level of acquisition and processing we needed. That forced a key tradeoff decision: avoid both over-simplifying the problem and over-engineering beyond first-year scope. We had to choose a level of complexity that still produced a usable product while remaining buildable within course constraints.
+
+My biggest contribution was building the final prototype itself, especially constructing the sound-dampening box and developing the software workflow that interfaced with the drone and ran diagnostics. The final solution still fell short in one important area: fault-detection confidence. While secondary research supports the diagnostic logic, proving reliability requires much more rigorous fault-injection and repeatability testing than we could complete in this cycle.
+
+If I repeated this project, I would put more structure around team communication from the start, with regular progress checkpoints and explicit follow-up when updates stall. The strongest technical ideas only become useful when the team stays synchronized enough to integrate and verify them early.

@@ -1,0 +1,773 @@
+Improving Ergonomics and Comfort of
+Napping in
+Improving Ergonomics and Comfort of Napping in EngSci
+               Common Room Chairs
+                    Word Count: 1799
+                    ESC101 - Praxis I
+                                                                                                               1
+
+
+Table of Contents
+Introduction--------------------------------------------------------------------------------------------------- 2
+Background--------------------------------------------------------------------------------------------------- 2
+    1. Napping Definition------------------------------------------------------------------------------------ 2
+    2. Environment Definition and Reasoning------------------------------------------------------------ 2
+Stakeholder Expectations---------------------------------------------------------------------------------- 3
+    1. UofT Engineering Science Students---------------------------------------------------------------- 3
+Need, Goals, and Objectives------------------------------------------------------------------------------- 3
+    Primary Stakeholder Need-------------------------------------------------------------------------------3
+    1. Provides an ergonomic resting place---------------------------------------------------------------- 3
+    2. Design for comfortability----------------------------------------------------------------------------- 4
+    3. The design should be portable----------------------------------------------------------------------- 4
+    4. The design stays hygienic with minimal cleaning effort----------------------------------------- 5
+Reference Designs--------------------------------------------------------------------------------------------7
+    Portable Head Rest--------------------------------------------------------------------------------------- 7
+    Office Chair Support Cushion---------------------------------------------------------------------------7
+Conclusion-----------------------------------------------------------------------------------------------------8
+Bibliography-------------------------------------------------------------------------------------------------- 9
+Source Extracts--------------------------------------------------------------------------------------------- 11
+Appendicies-------------------------------------------------------------------------------------------------- 19
+    A.1 Chair Specifications--------------------------------------------------------------------------------19
+    A.2 Skeletal Muscle Definition------------------------------------------------------------------------19
+                                                                                                  2
+
+
+Introduction
+
+This design brief will explore the current inadequacies faced when napping on the University of
+Toronto’s Engineering Science (EngSci) common room chairs; it will then outline objectives for
+a more ergonomic, comfortable, portable and hygienic solution that can be integrated with the
+chairs. Currently, students complain of back and neck pain after napping in these chairs [1],
+indicating a lack of comfort and proper ergonomics for taking a nap. Over time, this can result in
+chronic health issues for students [2]. Thus, access to an ergonomic napping solution in the
+common room is vital to improve the energy level of sleep deprived EngSci students without
+causing chronic health issues.
+
+
+Background
+   1.​ Napping Definition
+         a.​ Napping will be defined as a light and brief sleep that lasts less than 30 minutes
+             [1][3]. Body positions for napping can be more varied than those for sleeping
+             because of the shorter time frame, so designs are not required to act as a
+             traditional mattress or offer entirely horizontal support for the body.
+
+   2.​ Environment Definition and Reasoning
+          a.​ The working environment of the design will be the
+              chairs in the EngSci common room, not including
+              high chairs or couches. Figure 1 shows an example
+              chair in the EngSci common room for the design.
+              Designs should not seek to replace the chair, but
+              integrate with it.
+          b.​ The environment has been limited to the EngSci
+              common room chairs because entry requires an
+              EngSci student’s T-Card. This means that safety
+              during the nap is less of a concern for the design.
+          c.​ Since it is not socially acceptable to sleep on the
+              floor, lie down across a couch or on a table to sleep;
+              designs should not rely on these surfaces.​
+                                                                                                      3
+
+
+Stakeholder Expectations
+This section will discuss all relevant stakeholders for the design of a napping device, and list
+what they want in a design.
+
+   1.​ UofT Engineering Science Students
+       EngSci students are the primary stakeholders because they are the ones napping in the
+       common room [1]. They want a design that can integrate with the existing chairs to make
+       them more ergonomic and comfortable, without replacing the original chairs. Students
+       also want a solution that is portable enough to be carried around campus, because they
+       must travel between classes and home. Finally, they want a design that requires minimal
+       cleaning effort to stay hygienic.
+   2.​ People within the vicinity of the product
+       These secondary stakeholders want designs to take up minimal space in the common
+       room.
+   3.​ Design Team
+
+
+Need, Goals, and Objectives
+Primary Stakeholder Need
+UofT Engineering Science students need an attachment to Engineering Science Common Room
+chairs to make napping more comfortable and ergonomic, while also being portable and
+hygienic.
+
+To satisfy this need, four goals with their associated objectives will be identified and justified.
+
+   1.​ Provides an ergonomic resting place
+       The current common room chairs are not ideal for napping due to their structure having
+       backrests of angles 80o-90o. Thus, the design will allow EngSci students to sleep with
+       their backs/necks straight instead of hunched over, preventing chronic back and neck
+       problems in the long term.
+                          Description            Justification
+
+         Objective 1.1 Back angle of             An angle of 60o produced the highest quality
+                       20o-60o from the          sleep and anything greater than 20o was an
+                       vertical                  improvement [5].
+
+         Objective 1.2 Neck angle does       It is important to keep the head upright and
+                       not drop more than support it, especially when sleeping upright like
+                       10o relative to spine in a car or plane to prevent chronic neck pain [6].
+                                             Having the neck at an angle greater than 10o for
+                                                                                                   4
+
+
+                                               prolonged periods of time was found to be a
+                                               potential source of neck pain among other
+                                               chronic issues [7].
+
+
+
+2.​ Design for comfortability
+    Since one main desire of the primary stakeholders is a comfortable place to sleep, designs
+    should be made to prioritize this. Comfort is described by the Oxford Dictionary, as
+    ‘freedom from pain’ [8]. Therefore, designs should aim to reduce any pain caused by
+    high pressure or hard resting surfaces. The user should also be relaxed, meaning that no
+    voluntarily controlled skeletal muscles need to contract for the user’s body to remain still.
+    The following objectives address those ways to increase comfort.
+                  Description                   Justification
+
+     Objective    Gauge pressure from the       The user will not feel pain below this threshold,
+     2.1          support surface must not      because 31.8 kPa applied to the back or legs is
+                  exceed 31.8 kPa at any        the threshold to make a user on a chair
+                  part of the skin.             uncomfortable [9]. The pressure threshold for
+                                                pain on other parts of the body is larger [10], so
+                                                a minimum of 31.8 kPa is enough to ensure
+                                                comfort.
+
+     Objective    Material that contacts        45 ILD surfaces will provide a comfortable
+     2.2          and supports the body         surface for napping because 44 ILD is the
+                  must be rated less than       hardest firmness available for sleeping surfaces
+                  45 ILD.                       like mattresses [11].
+
+     Objective    All of the user's skeletal    Muscle responsiveness can be measured by
+     2.3          muscles [A.2] register        electromyography (EMG). A threshold of 3 μV
+                  less than 3μV above           above signal baseline on EMGs was found to be
+                  signal baseline on an         the best indicator that muscles were active [12],
+                  EMG (EMG amplitude            and all voluntary skeletal muscles should be at
+                  ≤ baseline + 3μV) when        rest, so they should be below this threshold.
+                  resting with design.
+
+
+3.​ The design should be portable
+    EngSci students walk around campus to attend their classes. As the location of lecture
+    halls are spread among various buildings that require 5-10 minutes of walking, the design
+    should be portable for students to carry to and around campus without unnecessary
+                                                                                              5
+
+   physical strain. Thus, allowing sleep-deprived engineering students to easily use the
+   design to achieve high-quality sleep.
+
+
+                      Description                  Justification
+
+    Objective 3.1     Mass under 4.4 kg.           The maximum portable weight for
+                                                   one-hand carry of the smallest
+                                                   5th-percentile of population is 4.4 kg [13].
+                                                   Heavier weights require support from
+                                                   waist/harness rather than free carry.
+                                                   Designing under that guideline allows for
+                                                   comfort, easy grip, and free of physical
+                                                   strains.
+
+    Objective 3.2     Under one-hand carrying      The maximum volume of portable devices
+                      volume: 675 cm³.             to be carried one-handed is 675 cm³ [13].
+                                                   Larger load volume/shape contributes to
+                                                   user discomfort.
+
+    Objective 3.3     Under standard backpack      The dimensions of 43cm×25cm×15cm
+                      internal dimensions at       correspond to the standard school backpack
+                      smallest size:               internal dimensions recommended by
+                      43cm×25cm×15cm.              studies on college students [15]. Designing
+                                                   under that dimension criteria ensures a
+                                                   comfortable fit in a student backpack.
+
+
+
+4.​ The design stays hygienic with minimal cleaning effort
+    In order for EngSci students to feel comfortable while taking a nap, the product has to be
+    hygienic; as dirt causes psychological discomfort [16]. By making the product
+    antibacterial and stain resistant (oleophobic and hydrophobic) [17], EngSci students can
+    spend minimal time cleaning the product.
+
+
+                  Description                 Justification                        Metric
+
+    Objective     All plastic and non         Many people commute to the           R
+    4.1           porous surfaces should      UofT St George campus,
+                  have an antibacterial       increasing the diversity and
+                  activity value (R)          abundance of bacteria on
+                  greater than or equal to    campus. An R value of 2.0
+                                                                                           6
+
+
+            2.0 [18] per ISO 22196      indicates a 99% reduction of
+            [19].                       bacteria in 24 hours on porous
+                                        surfaces, allowing EngSci’s to
+                                        worry less about sanitizing the
+                                        product.
+
+Objective   All fabric should have      Germs on the product can easily     A
+4.2         an antibacterial value      enter the user’s body through
+            (A) greater than or equal   skin contact or particle
+            to 2; falling under the     inhalation. With an antibacterial
+            “significant” category of   value of 2.0 or greater, definite
+            efficacy of antibacterial   antibacterial effects can be
+            property in ISO 20743       confirmed [20], inhibiting
+            [20].                       significant growth of bacteria.
+
+Objective   All fabric should have a    Stains are time consuming to        Grams
+4.3         result of no more than      remove and harbour germs. With
+            1.0 grams when put          an AATCC 35 result of less than
+            through AATCC test          1.0 grams, the tested fabric is
+            method 35 [21].             hydrophobic.
+
+Objective   All fabric should receive Oleophobic fabric will prevent        Assigned
+4.4         a grade of “A” per ISO    potential oil stains from food        grade
+            14419 [22].               EngSci students eat near the          based on
+                                      product, as well as oils the          visually
+                                      human body naturally produces.        looking at
+                                                                            the results.
+                                                                                                    7
+
+
+Reference Designs
+For each reference design, features that satisfy objectives will be discussed, as well as objectives
+not met. From this analysis the reader should gain an idea of what features may be useful to
+implement in a solution.
+
+Portable Head Rest
+
+One existing design is a portable head rest as shown in Figure
+2. It consists of a supporting board that is inserted into a
+traveller’s bag, with a hinge attached to the cushion.
+
+It satisfies Objective 3.1 - 3.3 because it is within the portable
+dimensions (21.59cm×15.24cm×2.22cm <
+43cm×25cm×15cm) [24]. The design takes advantage of
+features that the environment has, such as the chair and the
+user’s bag, to support the user’s body weight, so that it
+doesn’t have to waste space on providing this support.
+
+However, this design does not satisfy Goal 1-2 and Goal 4.
+
+Office Chair Support Cushion
+
+                                                      An additional design to achieve comfortable
+                                                      rest on a typical office chair is shown in
+                                                      Figure 3. This design satisfies Goals 1-2 as it
+                                                      is made of memory foam cushioning with
+                                                      ideal pressures for blood circulation and firm
+                                                      support for the user's neck and back to be held
+                                                      upright (at ideal angles), with muscles
+                                                      relaxed. This design does not satisfy goal 4
+                                                      but instead features slidable and detachable
+                                                      sheets (with hidden zipper) that allows for
+                                                      daily machine wash with strong detergents.
+
+                                                     This design is a perfect example of the
+                                                     ergonomic features our goals aim for but has
+overlooked portability, therefore failing to meet the dimension criterias of Objectives 3.1-3.3.
+                                                                                                8
+
+
+Conclusion
+Considering that unergonomic naps are so common in the EngSci common room, hopefully
+solutions inspired by this design brief can improve the ergonomics and comfort of those naps,
+while providing a portable and hygienic product at the same time. These goals and objectives
+were created after an analysis of EngSci student expectations to ensure that primary stakeholder
+wants were represented as best as possible. Therefore, any design under the outlined brief should
+transform ordinary office chairs in the EngSci common room into ergonomic napping
+environments, improving student rest quality and productivity.
+                                                                                               9
+
+
+Bibliography
+
+[1] Engsci Student After Nap, “Holy my back is so sore after that [nap]!” Oct. 2025.
+[2] Healthline, “How long should I nap? A guide to healthy sleep rejuvenation,” Healthline, Mar.
+2019. https://www.healthline.com/health/how-long-should-i-nap#benefits (accessed Oct. 2025).
+[3] Y. Saini, A. Rai, and S. Sen, “Relationship Between Sleep Posture and Low Back Pain: A
+Systematic Review,” Musculoskeletal care, vol. 23, no. 2, p. e70114, Jun. 2025, doi:
+https://doi.org/10.1002/msc.70114.
+[4] NIOSH, “Module 7. Napping, an important fatigue countermeasure, nap duration | NIOSH |
+CDC,” www.cdc.gov, Apr. 2020.
+https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/05.html (accessed
+Oct. 2025).
+[5] I. Caballero-Bruno, T. Wohllebe, D. Töpfer, and P. M. Hernández-Castellano, “The effect of
+seating recline on sleep quality, comfort and pressure distribution in moving autonomous
+vehicles,” Applied Ergonomics, vol. 105, p. 103844, Nov. 2022, doi:
+https://doi.org/10.1016/j.apergo.2022.103844.
+[6] P. H. Health, “Say ‘good night’ to neck pain,” Harvard Health, Feb. 2022.
+https://www.health.harvard.edu/pain/say-good-night-to-neck-pain (accessed Oct. 2025).
+[7] C. Frange and F. Morgadnho, Sleep medicine and physical therapy : a comprehensive guide
+for practicioners. Springer, 2022.
+[8] OED, “comfort, n. meanings, etymology and more | Oxford English Dictionary,” Oed.com,
+2023, doi: https://doi.org/10.1093//OED//1203068253.
+[9] P. Vink and D. Lips, “Sensitivity of the human back and buttocks: The missing link in
+comfort seat design,” Applied Ergonomics, vol. 58, pp. 287–292, Jan. 2017, doi:
+https://doi.org/10.1016/j.apergo.2016.07.004.
+[10] M. Smulders, van Dijk, Y. Song, P. Vink, and T. Huysmans, “Dense 3D pressure discomfort
+threshold (PDT) map of the human head, face and neck: A new method for mapping human
+sensitivity,” Applied Ergonomics, vol. 107, p. 103919, Feb. 2023, doi:
+https://doi.org/10.1016/j.apergo.2022.103919.
+[11] D. Boudreau, “ILD (indentation load deflection) rating,” Natural Mattress Finder, Apr.
+2018. https://www.naturalmattressfinder.com/ild (accessed Oct. 2025).
+[12] P. A. J, Y. Gao, and T. Finni, “Responsiveness of electromyographically assessed skeletal
+muscle inactivity: methodological exploration and implications for health benefits,” Scientific
+Reports, vol. 12, Dec. 2022, doi: https://doi.org/10.1038/s41598-022-25128-y.
+[13] A. Angarita-Fonseca, M. Boneth-Collante, C. L. Ariza-Garcia, J. Parra-Patiño, J. D.
+Corredor-Vargas, and A. P. Villamizar-Niño, “Factors associated with non-specific low back pain
+in children aged 10–12 from Bucaramanga, Colombia: A cross-sectional study,” Journal of Back
+and Musculoskeletal Rehabilitation, vol. 32, pp. 739–747, Sep. 2019, doi:
+https://doi.org/10.3233/bmr-160561.
+                                                                                            10
+
+[14] B. S. Jones, “Process contracting limited human factors consultancy process contracting
+limited human factors criteria for hand held devices with emphasis on devices for maintenance
+and diagnosis,” Sep. 2004.
+https://www.nautinst.org/static/addd53ae-6f9e-4299-8117538a2c8b3b72/he01255-Human-Factor
+s-for-Hand-Held-Devices.pdf (accessed Oct. 2025).
+[15] M. Z. Ramadan and Al-Tayyar, Sultan N, “Development and experimental verification of an
+ergonomic backpack,” BioMed Research International, vol. 2020, pp. 1–13, May 2020, doi:
+https://doi.org/10.1155/2020/1437126.
+[16] van, “Hygiene and sanitation: medical, social and psychological concerns,” Canadian
+Medical Association Journal, vol. 187, pp. 1313–1314, Sep. 2015, doi:
+https://doi.org/10.1503/cmaj.150588.
+[17] J. Williams, Waterproof and water repellent textiles and clothing. The Textile Institute ;
+Duxford, United Kingdom ; Cambridge, Ma, United States, 2018. Accessed: Oct. 2025. [Online].
+Available:
+https://www-sciencedirect-com.myaccess.library.utoronto.ca/book/9780081012123/waterproof-a
+nd-water-repellent-textiles-and-clothing
+[18] 4wardtesting, “ISO 22196 antibacterial activity measurement - 4ward testing,” 4ward
+Testing, Aug. 2025.
+https://4wardtesting.co.uk/standards/iso-22196-antibacterial-activity-measurement/ (accessed
+Oct. 2025).
+[19] O. for, “Plastics -Measurement of antibacterial activity on plastics surfaces,” 2007.
+http://www.poudrox.com/poudrox/wp-content/uploads/norme_ISO221961.pdf (accessed Oct.
+2025).
+[20] O. for, “ISO 20743:2021,” 2025.
+https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/902350 (accessed
+Oct. 2025).
+[21] American and Colorists, “WATER AND STAIN REPELLENT FINISHING OF COTTON
+FABRICS,” Jan. 2019.
+https://www.cottoninc.com/wp-content/uploads/2017/12/ISP-1007-Water-and-Stain-Repellent-Fi
+nishing-of-Cotton-Fabrics.pdf (accessed Oct. 2025).
+[22] O. for, “ISO 14419:2010,” Utoronto.ca, 2025.
+https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/557575 (accessed
+Oct. 2025).
+[23] “您查看的页面找不到了!-理想生活上天猫,” Tmall.com, 2025.
+https://detail.tmall.com/item.htm?abbucket=4id=906156177450mi_id=0000PvMDY0wu6lKYU
+brY8iU9YUSOk6pSXaLK3gVATR0QIm4ns=1priceTId=2100c82117600274813823439e0922sk
+uId=5766812353954spm=a21n57.1.hoverItem.25utparam=%7B%22aplus_abtest%22%3A%227
+80a177ce46bdc60f3e949a053454ca5%22%7Dxxc=taobaoSearch (accessed Oct. 2025).
+[24] Google Patents, “US9770113B1 - portable head support - google patents,” Google.com,
+Mar. 2016. https://patents.google.com/patent/US9770113B1/ (accessed Oct. 2025).
+                                                                                               11
+
+[25] Haworth, “Design your own products | haworth,” Haworth.com, 2025.
+https://b2b.haworth.com/product-catalog/product/single/very-side-chair (accessed Oct. 2025).
+[26] C. McCuller, R. Jessu, and A. L. Callahan, “Physiology, skeletal muscle,” PubMed, 2023.
+https://www.ncbi.nlm.nih.gov/books/NBK537139 (accessed Oct. 2025).
+[27] C. Clinic, “Skeletal muscle,” Cleveland Clinic, Sep. 2021.
+https://my.clevelandclinic.org/health/body/21787-skeletal-muscle (accessed Oct. 2025).
+[28] A. K. Patel, J. F. Araujo, V. Reddy, and K. R. Shumway, “Physiology, sleep stages,”
+National Library of Medicine, Jan. 2024. https://www.ncbi.nlm.nih.gov/books/NBK526132/
+(accessed Oct. 2025).
+
+
+Source Extracts
+
+Source Extract: How posture causes back pain [2]
+
+
+
+
+Taken from a study that analyzed sleeping positions and back pain. Used to determine if napping
+posture could lead to health detriments.
+
+Source Extract: Back angle on a chair for optimal napping [5]
+
+
+
+
+                                                            This source extracts shows that an
+                                                            angle of 60o is the most optimal
+                                                            angle for sleeping on a reclined
+                                                            chair.
+                                                                                                     12
+
+
+
+Source Extract: Effect of neck position and spine on neck pain [6]
+
+
+
+
+This source extract shows that the neck dropping to any one side is a compromised position.
+Also explains that the neck needs to be supported, but if it is too large, it will force your head
+forward.
+Source Extract: Neck angle of 10o or greater cause neck pain and other issues [7]
+
+
+
+
+                                                                            This source extract
+                                                                            explains that when lying
+                                                                            on your side, any
+                                                                            flexion of the neck
+                                                                            greater than 10o showed
+                                                                            negative repercussions
+                                                                            on the body, such as
+                                                                            neck pain. This is
+                                                                            applicable to a person
+                                                                            sitting because the neck
+                                                                            is now upright and has
+                                                                                               13
+
+no support from anything on the side. Therefore, any potential harm caused by the neck being at
+a compromised angle while lying down is exacerbated when sitting upright with the neck at a
+compromised angle.
+
+Source Extract: Force threshold for discomfort [9]
+
+
+
+
+This table shows the average value of force applied to different parts of the user’s body when
+they sit on a chair when they become uncomfortable. The force was measured by an advanced
+force gauge applied in a circle with a diameter of 20 mm. Data from the table was used to justify
+the pressure threshold the skin could experience before the user became uncomfortable.
+
+Source Extract: Pressure threshold for pain[10]
+
+                                                            Data taken from a study that mapped
+                                                            the pressure discomfort threshold on
+                                                            the human head and neck. This table
+                                                            was also used to justify pressure
+                                                            threshold for objective 2.1
+                                                                                                14
+
+Source Extract: EMG measurements for muscles at rest[11]
+
+
+
+
+This source was used to find the best EMG reading boundary between active and resting
+muscles. A boundary like this has not been standardized, but this source found that
+responsiveness indices for 3μV above EMG signal baseline performed the best.
+
+Source Extract: Firmness of sleeping surfaces, measured in ILD [12]
+
+
+
+
+There is no standard defined for ILD ratings of mattresses, so there isn’t a super reliable source
+for recommended ILD for sleeping surfaces. This website provided one possible perspective that
+was used to define objective 2.2, but this means that the objective could be biased.
+                                                                                             15
+
+Source Extract: One hand carry weight [13]
+
+
+
+
+This source extract explains that the maximum acceptable portable weight for one-hand carry of
+the smallest 5th-percentile of the human population is approximately 4.4 kg.
+
+Source Extract: Portable one-handed devices [13]
+
+
+
+
+This source extract explains that the maximum volume of portable devices to be carried one
+handed is 675 cm³.
+
+Source Extract: Backpack dimensions [15]
+                                                                                                   16
+
+
+
+
+This source extract explains that the dimensions of 43 cm × 25 cm × 15 cm correspond to the
+standard backpack maximum internal dimensions recommended by studies, where the maximum
+height, width, and thickness is determined based on research findings of the 5th percentile of the
+student’s sitting shoulder height, the 5th percentile of the student’s shoulder to shoulder distance,
+and 10% of the average weight of college students, respectively.
+
+
+Source Extract: Dirt Causes Psychological Discomfort [16]
+
+
+
+
+This source extract explains that dirt, which is perceived depending on the context, causes
+psychological discomfort when out of place. Examples of out of place: when a drink is in a
+bottle, it is fine. However, when it is on say a piece of clothing, it is now out of place and
+therefore perceived as “dirt”.
+                                                                                                   17
+
+Source Extract: Staining of a Fabric Depend On Its Oleophobic and Hydrophobic
+Properties [17]
+
+
+
+
+This source extract explains what actually makes a fabric stain resistant, the oleophobic and
+hydrophobic functionalities. It also covers the common marketing terms used for consumers to
+better understand these terms.
+
+Source Extract: What an R Factor of 2 Means in ISO 22196 [18]
+
+
+
+
+This source extract explains that an R factor of 2 (log reduction of 2) for ISO 22196 is
+considered effective since it implies a 99% reduction in bacteria levels. This was particularly
+helpful to determine quantitatively what the numerical results of ISO 22196 mean.
+
+
+Source Extract: Level of Efficacy of Antibacterial Activity [20]
+
+
+
+
+This source extract describes what different antibacterial values resulting from the test in ISO
+20743 means. It was vital in determining the category of antibacterial the plastic in the design
+should fall under, as well as what antibacterial value achieves it.
+                                                                                                    18
+
+
+
+Source Extract: AATCC 35 Sample Test Result [21]
+
+
+
+
+This source extract shows how a blot weight difference of less than 1.0 grams is considered the
+highest level result in apparel. This was vital to constructing objective 4.3 as the official AATCC
+test method 35 document only outlines the process for performing the test, omitting results and
+their implications.
+
+Source Extract: Oil Repelency; Visual Demonstration [22]
+
+
+
+
+This source extract provides a visual example for the levels of “oil resistance” of fabrics. This
+provides a simple way to evaluate fabrics put through the test method outlined in ISO 14419.
+From this, stakeholders were able to easily conclude what level of oleophobic they wished the
+design to have.
+                                                                                                   19
+
+
+Appendicies
+A.1 Chair Specifications
+The specific chair that designs should work
+with is the “Very Side Chair,” designed by
+Haworth [25]. A CAD model can be found on
+their website here [25]. The dimensions of the
+chair are 22"D× 23.5"W×33.9"H [25], which
+can be seen in Figure A1.
+
+
+A.2 Skeletal Muscle Definition
+​       To clarify objective 2.3, “skeletal
+muscles” include every skeletal muscle that is
+entirely voluntarily controlled, such as the
+shoulder, hamstring, or abdominal muscles
+[26] [27]. This does not include cardiac or
+smooth muscle, as those are not considered
+skeletal muscles [26]. Cardiac and smooth
+muscle are essential for functions like
+pumping the heart or breathing—which must
+take place during sleep—so these are not
+included in the muscles that should be at rest (otherwise the user would have to be dead for the
+design to satisfy objective 2.3!). The diaphragm and extraocular muscles are excluded from
+muscles that should be at rest because these are active even during REM sleep [28].
+Questions
+    -​ Metric for objective 4.1??? -> Kathy’s feedback
+    -​ Should I reduce scope so that users can’t just slap on a sleeping mask and earplugs to
+       solve goal 2 (blocking outside light and sound)
+    -​ Stakeholder wants for design team?
+    -​ Is it ok if we don’t address all the stakeholder wants that we list in our goals?
+    -​ Should portable and accessibility/easy setup be contained in one goal
+    -​ Should it be 12 font size for entire report?
+
+
+This design brief will explore the inadequacies for of napping in the EngSci common room
+chairs, and then outline objectives for more ergonomic, comfortable, and portable solutions for
+students napping there. Currently, the EngSci common room chairs are not comfortable or
+ergonomic for naps. Students often complain of back or neck pain after napping in these chairs
+[TODO], indicating that they are not ergonomic enough for napping.
+Currently the EngSci common room chairs are not comfortable or ergo
+ Given the demanding schedules of EngSci students and the difficulty of getting enough sleep at
+night, access to an ergonomic napping solution on campus can improve energy levels without
+causing long-term detriments to health.
+
+Figure 1 - Chair from the Engineering Science Common Room. Designs may use the chair to support the user’s
+body weight. See [A.1] for details. Figure 2 - Portable head support intended to be supported by the user’s bag.
+Allows the user to sleep in a face-down position on a cushion [&24].
+Figure 3: Ergonomic head, neck, back, and leg rest secured on office chair. Designed to support users' spine and
+neck for comfortable sleep. [&23]
+
+
+
+Prove students nap -> napping isn’t comfortable enough -> why thing has to be an attachment ->
+why it has to be comfortable?
+
+Comfortable vs dark and quiet -> each one is a different concept
+
+Improving Naps in EngSci Common Room Chairs
+
+
+
+
+Hygenic is clean, but clean is not hygienic
+
+ADJUST TO INCLUDE CHAIR AND TABLE
+Define the length of a nap
+Is it safe to nap on campus???
+Why is the current napping not good enough on the table?
+Cannot lie on the ground -> be specific to mention this -> add a reference of a person lying on
+the ground
+Scope into EngSci common room -> but why wouldn’t I just lie on the couches in the common
+room
+    -​ Only has one or two types of chairs in there -> scopes it down
+    -​ Swiping in→ safety
+
+Not socially acceptable to sleep on the floor of the common room.
+Say that it is similar to sleeping on the car or plane
+
+Clarify what is used (chair) and what is designed (cushion)
+
+Concerns -> its very broad, 1000 different common room places in UofT,
+
+
+Stakeholder list:
+   -​ UofT Engineering Science Students (Primary)
+          -​ Want a solution that allows for a higher quality of sleep than existing areas in the
+               building
+          -​ Want a solution that is portable and comfortable
+          -​ Want a solution that gives them privacy
+          -​ Want a solution that is easy to clean + sanitize - reusable
+          -​ Want a solution that applies to students with a range of physical abilities
+   -​ Anyone within the vicinity of the product being used (Secondary)
+          -​ Want a solution that does not disturb others (noise, smell, space etc)
+   -​ Design team (Primary)
+   -​ UofT Facilities and Services (tertiary)
+          -​ Want a product that is safe for users and people around them
+          -​ Want a product that does not damage school property or facilities
+          -​ Want a product that does not dirty the campus
+DONT EDIT - CITATIONS
+*Missing source extracts rn*
+*not numbered yet*
+
+From intro we need to cite: Random EngSci student who was napping in common room: “Holy
+my back is so sore after that [nap]!” [TODO.1] [&1]
+
+Yo how are we supposed to format the citation for that
+
+
+https://pubmed.ncbi.nlm.nih.gov/40338112/ [TODO.3] [&2]
+https://www.healthline.com/health/how-long-should-i-nap#benefits [TODO.2] [&3]
+https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod7/05.html [.1] [&4]
+https://www.sciencedirect.com/science/article/pii/S0003687022001673 [.2] [&5]
+https://www.health.harvard.edu/pain/say-good-night-to-neck-pain [.3] [&6]
+Book: Sleep Medicine and Physical Therapy: A Comprehensive Guide for Practitioners [.4] [&
+        7]
+    -​ ISBN 10: 3030850730
+    -​ ISBN 13: 978-3030850739
+https://www.oed.com/dictionary/comfort_n?tab=meaning_and_use#8985057 [.5] [&8]
+Dictionary definition used to define comfort.
+https://www.sciencedirect.com/science/article/pii/S0003687016301351?ref=pdf_download&fr=
+RR-2&rr=98c20a03c9fda31b [.7] [&9]
+
+
+
+
+This table shows the average value of force applied to different parts of the user’s body when
+they sit on a chair when they become uncomfortable. The force was measured by an advanced
+force gauge applied in a circle with a diameter of 20 mm. Data from the table was used to justify
+the pressure threshold the skin could experience before the user became uncomfortable.
+https://www.sciencedirect.com/science/article/pii/S0003687022002423 [.6] [&10]
+Data taken from a study that mapped the pressure discomfort threshold on the human head and
+neck. This table was also used to justify pressure threshold for objective 2.1
+https://www.naturalmattressfinder.com/ild [.9] [&11]
+
+
+
+
+There is no standard defined for ILD ratings of mattresses, so there isn’t a super reliable source
+for recommended ILD for sleeping surfaces. This website provided one possible perspective that
+was used to define objective 2.2, but this means that the objective could be biased.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9718848/ [.8] [&12]
+
+
+
+
+This source was used to find the best EMG reading boundary between active and resting
+muscles. A boundary like this has not been standardized, but this source found that
+responsiveness indices for 3μV above EMG signal baseline performed the best.
+https://www.nautinst.org/static/addd53ae-6f9e-4299-8117538a2c8b3b72/he01255-Human-Factor
+s-for-Hand-Held-Devices.pdf [.10] [&13]
+https://journals.sagepub.com/doi/abs/10.3233/BMR-160561 [.11] [&14]
+
+
+
+
+https://onlinelibrary.wiley.com/doi/full/10.1155/2020/1437126 [.12] [&15]
+
+
+
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC4646757/ [.19] [&16]
+
+
+
+
+https://www-sciencedirect-com.myaccess.library.utoronto.ca/book/9780081012123/waterproof-a
+nd-water-repellent-textiles-and-clothing [.17] [&17]
+https://4wardtesting.co.uk/standards/iso-22196-antibacterial-activity-measurement/ [.15] [&18]
+
+
+
+
+http://www.poudrox.com/poudrox/wp-content/uploads/norme_ISO221961.pdf [.14] [&19]
+
+
+
+
+https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/902350 [.13] [&20]
+
+
+
+
+https://www.cottoninc.com/wp-content/uploads/2017/12/ISP-1007-Water-and-Stain-Repellent-Fi
+nishing-of-Cotton-Fabrics.pdf [.16] [&21]
+
+
+
+
+https://subscriptions-techstreet-com.myaccess.library.utoronto.ca/products/557575 [.18] [[&22]]
+https://detail.tmall.com/item.htm?abbucket=4&id=906156177450&mi_id=0000PvMDY0wu6lK
+YUbrY8iU9YUSOk6pSXaLK3gVATR0QIm4&ns=1&priceTId=2100c82117600274813823439e
+0922&skuId=5766812353954&spm=a21n57.1.hoverItem.25&utparam=%7B%22aplus_abtest%
+22%3A%22780a177ce46bdc60f3e949a053454ca5%22%7D&xxc=taobaoSearch [.20] [&23]
+https://patents.google.com/patent/US9770113B1/ [.21] [&24]
+
+
+
+
+https://b2b.haworth.com/product-catalog/product/single/very-side-chair [.22] [&25]
+
+
+
+
+https://www.ncbi.nlm.nih.gov/books/NBK537139 [.23] [&26]
+https://my.clevelandclinic.org/health/body/21787-skeletal-muscle [.24] [&27]
+
+
+
+
+https://www.ncbi.nlm.nih.gov/books/NBK526132/ [.25] [&28]
+

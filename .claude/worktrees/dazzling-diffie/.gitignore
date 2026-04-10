@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local tooling and non-website reference material
+/CIV Bridge Context/
+/Praxis I Assignment Requirement Context/
+/Praxis I Context/
+/Praxis II Context/
+/F1 Theme/
+/ESC102 20261 -- Student Engineer Design Portfolio (1).pdf
+/ESC102 20261 -- Student Engineer Design Portfolio Independent Assessment Tool (1).pdf

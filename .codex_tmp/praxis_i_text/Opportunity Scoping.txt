@@ -1,0 +1,92 @@
+Need: First year EngSci students need a way to rest in campus buildings in between classes
+Goals:
+  -​ Private
+          -​ Decrease sound by x decibels
+          -​ The amount of light that can go through is x lumens?
+          -​
+  -​ Portable
+          -​ Mass is less than x kg
+          -​ Volume is less than x m^3
+          -​ Can be taken out in x seconds/minutes
+          -​ Can be put back in x seconds/minutes
+  -​ Comfortable
+          -​ Maximum pressure at any point on human body is less than x Pa
+          -​ Conforms to human body shape, reference anthropomorphic data
+  -​ Should have a way to wake up user before class
+          -​ Decibel of alarm
+          -​ Failure rate of alarm %?
+  -​ Protected from water, dust, etc.
+          -​ IP standards
+
+Reference Designs:
+   -​ Inflatable pillows
+   -​ Clip on headrest
+   -​ Small tents
+   -​ Nap pods
+   -​ Blanket jackets
+
+Need: First Year EngSci students need a reliable umbrella to stay dry when traveling to class
+when it is rainy and windy.
+
+Goals:
+  -​ It should not flip inside out when it is windy
+         -​ Withstand x speed winds
+  -​ Should still be portable and easy to carry
+         -​ Objective: dimensions
+         -​ Objective: cannot have multiple pieces
+  -​ Should be deployable and usable by all users, no matter muscle strength and height.
+         -​ Objective: mass
+         -​ Objective: when it catches wind, a user with general muscle mass should be able
+             to hold the umbrella still
+                 -​ Usually if you're traveling against the wind, and angle the umbrella so that
+                     the rain doesn’t hit your face, the wind is too strong, and pushes back on
+                     the umbrella due to its shape. This wind pushing back on the umbrella
+                     makes it harder to hold in place.
+  -​ Should not store water, it must not make the surroundings it is put onto wet after use
+Objectives:
+
+Reference Designs:
+   -​ Inverted Umbrellas
+         -​ Issue: I have this umbrella, and from personal experience, it don’t work, the
+             classroom tables still get wet
+   -​ Carbon fibre umbrellas -> expensive EngSci’s aint got that much money
+
+
+Need: To store papers efficiently and easy access
+Goals:
+   -​ Papers should not fall out
+          -​ Be able to store an x amount of papers without the binder rings popping open
+   -​ Papers should not tear
+          -​ Paper should not experience more than 1 kg of force where the rings are in
+              contact with the paper
+          -​ Paper should not get caught in the zipper of the binder
+   -​ Environmental protection of paper
+          -​ Sealed binder with an ip rating of ipx6
+   -​ Easy to insert and extract papers
+          -​ Have a higher minimum force to open the binder ring to prevent accidental
+              “pops”
+Reference Designs:
+   -​ Clicking button to open and close the binder ring instead of applying force on the rings
+       themselves
+   -​ Use of waterproof material on the outside of the binder and sealed off by a zipper
+   -​ Instead of round rings, use a flat edge ring to be in contact with the paper to increase the
+       contact surface area and distribute the force experienced by the paper over a larger area
+   -​ Set a clear point for which the user can know that their binder is now full, max line or
+       something like that
+
+
+Need: Portable chargers are often slow to recharge and run out quickly → inefficiency and
+inconvenient.
+Goals:
+    ●​ Solar-powered charger with foldable panels
+    ●​ Constant automatic charging
+    ●​ Sufficient charging speed for smartphones
+    ●​ Solar panel efficiency: X amount of recharge per minute
+    ●​ providing power without ever dying out. No manual recharge needed
+    ●​ Fast and sustainable energy
+    ●​ Portable → under x kg
+    ●​ Easy storage → x dimensions
+    ●​ Wireless for easy use
+Reference Designs
+   -​ Small wireless charging that sticks to back of phone with same dimensions with phone
+

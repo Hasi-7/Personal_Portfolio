@@ -1,0 +1,435 @@
+READ THIS
+   -​   Questions are from these four sections \\
+
+
+What's your design brief/opportunity
+   -​ Explain it well and solid
+Questions about diverging
+Question about prototype
+   -​ Which prototype do you think is the worst and why?
+   -​ Now what's the best and why
+   -​ Question could be anything related to the prototypes
+Did you rescope
+   -​ We have to have rescoped, make something up
+   -​ If we don’t rescope, its saying the design brief was perfect, which they are definitely not
+       based on the marks they gave it (they marked them already)
+   -​ Why did you rescope, what did you rescope, based on what did you rescope
+What research have you done
+   -​ Any type of research
+   -​ Reference design
+Some TA’s don’t direct questions to a specific person or look at a specific person, they address
+the team
+    -​ IT LOOKS BAD IF WE LOOK AT EACH OTHER
+    -​ OR TALK OVER EACH OTHER
+
+TIPS
+   -​ Say WE never I
+         -​ “WE did this, WE realized this, WE thought this”
+   -​ Speak formally, no like, um, etc
+   -​ They like cohesion
+         -​ EVERYONE IS ON THE SAME PAGE
+         -​ Wear the same colours WE ARE WEARING BLACK TOP AND BOTTOM
+         -​ DONT TALK OVER EACH OTHER
+         -​ Everyone has to talk EQUALLY
+   -​ They care about group dynamics ASK ABOUT HOW THE TEAM WORKED TOGETHER
+         -​ Glaze each other up when talking about the work experience
+
+Questions
+  -​ Most important requirement
+  -​ Least important requirement
+  -​ Most used diverging tool
+  -​ Least used diverging tool
+  -​ Favorite diverging tool
+  -​ Least favourite diverging tool
+        -​ The tool didn’t help with brainstorming but helped bond as a group, etc
+        -​ SOMETHING POSITIVE
+  -​ Summarize your design brief in two sentences
+  -​ Summarize your opportunity in two sentences
+  -​ Demonstrate how to use each prototype ​
+        -​ MAKE IT ENGAGING
+  -​ Which prototype do you think will work the best
+To Do
+   -​   Finish editing design brief
+   -​   Finish making the requirements/evaluation criteria
+
+Figure out which prototype is the best and which is the worst, why and based on
+what criteria?
+   -​ Best: the dummy marker
+          -​ Because it does not restrict the range of angles of the user's grip and allows them
+              to keep writing in their comfortable positions (1.2) and accommodating for
+              various grip styles on the pen(1.3). It is also able to rest comfortably in a 4.9cm by
+              5.5cm marker tray for convenience (2.1). Additionally, there are no portions of
+              the design that obstruct the writing area within the user’s line of sight (from eye
+              level to hand position)(2.2). It does not produce any sound disturbance to
+              room(2.3). There is no unintentionally smudged ink at the written location due to
+              the position of the real marker placed behind the hand(3.1, 4.1). There will be no
+              nicks made on the whiteboard as marker strokes are written with a white board
+              marker(5.1). No stains are left on the whiteboard surface as whiteboard markers
+              are dry erase(5.2).
+   -​ Second place: roller?
+   -​ Worst: platform
+          -​ Might induce wrist strain as the hard rigid platform might restrict the range of
+              angles of wrist movement/grip styles(1.2, 1.3). The design will need
+              disassembling the platform to fit on the marker tray(2.1). The platform might
+              cause unintentionally smudged ink(3.1).
+
+What diverging tools did we use? Evidence of the diverging process.
+  -​ We are supposed to have multiple iterations of diverging with proof
+        -​ Used the SCAMPER model, freewriting, wishing.
+        -​ Evidence is on chart paper and printed paper
+  -​ Combinations of free writing and wishing is the best
+
+   -​   Best to worst: wishing & freewriting, 635, SCAMPER
+
+Which diverging tool was the best? Worst? Why?
+  -​ The best was the wishing/free writing
+        -​ Similar to free writing in class, which we had practice with
+        -​ Most of our ideas come from here
+  -​ Worst was SCAMPER
+
+What did we rescope and why did we rescope
+  -​ Rescoped requirement of no accidental contact with surface of whiteboard into no
+     accidental contact with marker ink. because
+
+What research did we do
+Reference Designs
+   -​ Airhockey table (fan)
+    -​ Drawing compass (dummy marker)
+    -​
+Chemical formula of permanent markers (various alcohols such as isopropanol)→ chemicals
+(isopropyl/ethanol alcohol, acetone, acetic acid) that could be solvent(dissolving the ink and
+breaking its cohesive forces with whiteboard).
+
+   -​   Researched used when making our prototypes
+
+Which requirement is the most important? Which is the least important?
+  -​ 3.1 → no smudge writing
+
+How did we ensure equitable contributions from each member?
+  -​ diverging /converging together
+  -​ Dividing work and
+
+Biggest questions about each design concept:
+   -​ Dummy marker
+          -​ What’s the optimal angle?
+          -​ What material can we use on the bottom of the marker that the user holds to not
+             damage the whiteboard?
+   -​ Platform
+          -​ What size of platform will accommodate all grip styles?
+          -​ How strong does the platform have to be?
+          -​ How would we make the platform detachable?
+   -​ Roller
+          -​ What is the coefficient of static friction between materials and the whiteboard?
+Actual Opportunity Brainstorming
+Kind of plausible ideas (Inspired by Wishing Diverging Method and free writing)
+   1.​ Improved material (stain + sweat resistence) for the glove so that there is no smear at all
+       (whatever the criteria is for an improvement on the smearing)
+   2.​ Quick drying markers that requires special eraser to be erased so hands can’t erase the
+       marker -> change the chemical composition of the ink
+           a.​ Reference design: Eraseable pens
+   3.​ Repelling magnet → magnetic levitation
+           a.​ Could also use electromagnets
+   4.​ Air cushion attachment
+           a.​ Get exact values later from reputable sources but roughly the following:
+                   i.​ The average person exert 1.5N of force on the table while writing at a
+                       normal speed
+                  ii.​ A rough estimate of the area of contact is 30cm^2
+                iii.​ A rough pressure exerted by the hand is 50 Pa
+                 iv.​ Figure out how much air flow rate is needed to exert an equivalent
+                       opposite pressure of 50 Pa
+           b.​ The fan cannot be too loud nor can the attachment be too heavy
+           c.​ Porous surface at the bottom for which the air can go through
+   5.​ Plastic attachment to hand to contact board
+           a.​ Rolling ball?
+   6.​ Digital board (can just busy)
+   7.​ Make a supporting section/anchor/platform on the marker that the palm rests on
+       instead of the board.
+   8.​ Bent marker that writes to the left of it instead of where it’s pointed?
+           a.​ Can be held just like a normal marker
+           b.​ Solution one: over the hand attachment
+           c.​ Solution two: around the hand attachment
+   9.​ Dummy marker (basically have a second marker to the left of the real one that is the one
+       that actually draws)
+Absurd ideas (Wishing Diverging Method):
+  1.​ I wish people would just write with the right hand
+  2.​ I wish I could change english to be written from right to left and force all righties to write
+       with left hand
+  3.​ I wish I could invert the physical properties of the universe so that left now becomes
+       right for specific people
+  4.​ I wish I could write a sentence from the end to the start
+  5.​ Reverse time locally on the board/delay time on the whiteboard
+  6.​ Biomedical engineering so that all babies are born right handed/ambidextrous
+  7.​ Marker that communicates with a second robot marker. The real marker won’t draw
+       anything, but it’ll tell the robot marker to draw that thing a few seconds after the real
+       marker draws it -> maybe a dummy marker physically attached instead of wirelessly
+       connected?
+  8.​ Hire another person to draw for you
+  9.​ Make schools to force left handed people to write right handed
+  10.​Transfer what wants to be drawn in brainwaves to the whiteboard
+  11.​ Talk to an AI model that controls a robot marker
+Reference for rolling wheel design
+Preconverge (n+1):
+   1.​ Quick drying markers that requires special eraser to be erased so hands can’t erase the
+       marker -> change the chemical composition of the ink
+           a.​ Reference design: Eraseable pens (heat erase) + heating eraser (60 c)
+           b.​ Permanent ink + alcohol spray eraser
+   2.​ Dummy marker (basically have a second marker to the left of the real one that is the one
+       that actually draws)
+           a.​ Reference design: compass drawing tool
+   3.​ Fan thing
+           a.​ Reference design: air hockey machine
+   4.​ Make a supporting section/anchor/platform on the marker that the palm rests on
+       instead of the board.
+           a.​ Reference design: Gimbal, camera stabilization
+   5.​ Rolling ball hand support -> sphere with rollers on the sides in all three axis like the
+       mechanical mouse.
+
+Drawings:
+
+
+
+
+Reference Designs
+   -​ Air Hockey Table levitation mechanism
+          -​ https://www.gettrampoline.com/air-hockey/how-air-hockey-table-work-parts-p
+             hysics/
+   -​ Air Hockey DIY design:
+          -​ https://www.instructables.com/Desktop-Air-Hockey-Table/
+          -​ Uses computer fans
+   -​ Magnetic levitation
+
+
+
+           -​
+           -​   https://coertvonk.com/physics/electromagnetism/magnetism/levitation-30367
+https://www.libertygames.co.uk/store/air_hockey_tables/buying-advice/what-is-
+air-hockey/?srsltid=AfmBOoq6nGj-UC6qztCu0jMsVg6kT71pL1uUNangqxERKhylU
+pTUdioV -> says that pucks float on air hockey table, not touching the table.
+Mathematical Model for Roller Design
+
+
+
+
+Let Fs be the force of static friction
+Fs = μsFn
+If Fapply < Fs, no slipping will occur
+Materials like polystyrene have μs = 0.5 [1][2], and FN is estimated to be 10 N. Fs = 0.5 * 10 N = 5
+N.
+
+Average handwriting speed maximum of around 15 words per minute [3][6] = 1 word/4 seconds.
+Average word has 4.7 characters in it [4][5], and if they are writing in font size of 10 cm in
+height, then we have approximation of 4.7*10*2 = 94 cm / 4 seconds, or 23.5 cm / second =
+0.235m/s. Assuming a time of acceleration of 0.1 seconds, we have 0.235 m/s = aΔt, so a =
+0.235 / 0.1 = 2.35 m/s2 of acceleration for Fapply
+Fapply = ma = 2kg * 2.35 m/s2 = 4.7 N.
+Since 4.7N < Fsmax of 5 N, this design has the potential to work
+
+We would use ASTM D1894 to measure the coefficients of static friction of materials to be
+tested. https://www.instron.com/en/testing-solutions/astm-standards/astm-d1894/
+ISO 8295-1995 could also be used
+https://cdn.standards.iteh.ai/samples/20760/7ef70177b6af4ae4bc307a612858d017/ISO-8295-
+1995.pdf.
+
+[1] https://www.engineeringtoolbox.com/friction-ths-d_778.html
+[2] https://www.engineersedge.com/coeffients_of_friction.htm
+[3]
+https://tctecinnovation.com/blogs/daily-blog/comparing-handwriting-speeds-among-different-
+age-groups?srsltid=AfmBOopowQraPUd5GZk0SOpLu1qFuyz9BbhOJRIjf3HYk7_gS24Engb9
+[4]
+https://www.researchgate.net/figure/Average-word-length-in-the-English-language-Different-c
+olours-indicate-the-results-for_fig1_230764201
+[5]https://norvig.com/mayzner.html ​
+[6]https://www.montgomeryschoolsmd.org/siteassets/district/departments/hiat/resources/ha
+ndwriting_speeds.pdf
+Goals:
+Design must not affect the user’s baseline writing ability
+Design must be comfortable to use and have around the commons.
+Ensure no unintentional movement of the ink on the surface of the whiteboard occurs
+Ensure no ink residue is left on the hand after use of the device
+Design must not damage the whiteboard
+
+Requirements:
+  1.​ Cannot inhibit the users baseline DASH-2 score by more than 15 points
+  2.​ Ensure there is no risk of strain injury caused by wrist extended by >90o, wrist radial
+       abduction, >20o, and wrist ulnar abduction, >30o, outlined in ISO 11226-2000
+  3.​ Accommodate for various grip styles on the pen, namely tripod and quadropod grip
+       styles
+  4.​ Design width of at most 4.9cm.
+  5.​ Design colours are distinguishable, colour difference between the design and the marker
+       rail (silver, #C0C0C0) must have a perceptual ΔE * ≥ 20 according to ISO/CIE 11664-
+  6.​ Reduce disturbance by maintaining the common room’s sound pressure level to under
+       60 dB.​
+  7.​ No contact between design and ink that removes ink unintentionally
+            a.​ USED TO BE: No accidental contact between design and surface of the
+                whiteboard within 27.73s [19] of the ink being applied.
+            b.​ ADD REASONING
+  8.​ No accidental contact between design and surface of the whiteboard after 27.73s of the
+       ink being applied.
+  9.​ Zero points of contact between the hand of the user and the surface of the whiteboard.
+  10.​Any nicks on the whiteboard surface must be “no greater than 0.005″ (0.01270 cm) in
+       depth and 0.010″ (0.0254 cm) in width.”
+  11.​ Any staining from the design should have ΔE* ≤ 1.9 with whiteboard surface.
+Potential Opportunities
+1.​ An Acoustically Optimized Depressurization Device.pdf
+2.​ Backpack Weight Reduction System for Bicycles.pdf
+3.​ Bathroom Stall Storage.pdf
+4.​ Commuter Students Studying on the Go.pdf
+5.​ Design Optimization of a Hand-Held Broom for Users with Mobility
+    Restrictions.pdf
+6.​ Difficulty in Peeling Bananas.pdf
+7.​ Inconvenience of Bike Security.pdf
+8.​ Inconveniences of Near-Empty Pump Dispensers.pdf
+9.​ Individually Adhering and Aligning Posters Mechanism.pdf
+10.​Left-Handed Whiteboard Use in EngSci Common Room.pdf
+        a.​ Improved material (stain + sweat resistence) for the glove so that there is
+            no smear at all (whatever the criteria is for an improvement on the
+            smearing)
+        b.​ Quick drying markers that requires special eraser to be erased so hands
+            can’t erase the marker
+              i.​ Reference design: Eraseable pens
+        c.​ Repelling magnet → magnetic levitation
+        d.​ Air stream air hockey thing
+        e.​ Plastic attachment to hand to contact board
+              i.​ Rolling ball?
+        f.​ Digital board (can js buy)
+11.​Making Fitness Accessible - Improving the Ergonomics and Accessibility of
+    Weight Loading Systems in Gyms.pdf
+12.​Reducing Light and Noise for Sleep in a Shared Dorm Room.pdf
+13.​Tool for Removing Hair from Casters on Rolling Chairs.pdf
+Eliminating Opportunities
+Addressing the Inconvenience of Carrying a Spring Jacket in Dynamic Urban
+Environments.pdf
+
+Addressing the Presence of Excess Backpack Strap Length.pdf
+
+An Acoustically Optimized Depressurization Device.pdf
+
+An Opportunity to Enhance the Kawasaki Ninja 400 Motorcycle Ignition Slot Interface.pdf
+
+Backpack Handling on TTC Subway Trains During Peak Hours of Service.pdf
+
+Backpack Weight Reduction System for Bicycles.pdf
+
+Backpacks Slip Off the Backs of Robarts Library Chairs.pdf
+
+Bathroom Stall Storage.pdf
+
+Better Water Bottle Washing and Filling at Chestnut Residence.pdf
+
+Broken or missing locks in UTSG washrooms.pdf
+
+Challenges in One-Handed Keycard Retrieval at Chestnut Residence.pdf
+
+Chestnut Upper Dryers Accessibility Issue.pdf
+
+Cleaning Dirty Keyboards.pdf
+
+Commuter Students Studying on the Go.pdf
+
+
+Creating Better Pre-sleep and Awakening Windows for Engineering Students.pdf
+
+Design of a Reliable Wake-Up Device to Prevent Oversleeping in Engineering Science
+Students .pdf
+
+Design Optimization of a Hand-Held Broom for Users with Mobility Restrictions.pdf
+
+Difficulty Biking in the Rain.pdf
+
+Difficulty in Peeling Bananas.pdf
+
+Doffing Disposable Gloves.pdf
+
+Enhanced Eating Experience of Wrapped Takeout Food.pdf
+Enhancing Plug Stability for Portable Charger Connections.pdf
+
+Ergonomic Grocery Bags.pdf
+
+From Lecture to Lecture - Footwear for Rainy Campus Days.pdf
+
+Getting a Bike To and:or From Chestnut’s Bike Parking Lot .pdf
+
+Hard-To-Reach Backpacks.pdf
+
+Improving Ergonomics and Comfort of Napping in EngSci Common Room Chairs.pdf
+
+Improving Rolling Chair Safety.pdf
+
+Inconvenience of Bike Security.pdf
+
+Inconveniences of Near-Empty Pump Dispensers.pdf
+
+Individually Adhering and Aligning Posters Mechanism.pdf
+
+Investigating Inadequate Paintbrush Cleaning for the Tired EngSci Artist.pdf
+
+Lack of Security for Personal Belongings in the Engineering Science Common Room.pdf
+
+Laptop Hinge.pdf
+
+Laundry Process Inefficiency at Chestnut Residence.pdf
+
+Leaking Cafeteria Lunchboxes .pdf
+
+Left-Handed Whiteboard Use in EngSci Common Room.pdf
+
+Left-Side Toilet Paper Dispenser Placement in New College Accessibility Washrooms.pdf
+
+Lighting in Chestnut Residence.pdf
+
+Making Fitness Accessible - Improving the Ergonomics and Accessibility of Weight
+Loading Systems in Gyms.pdf
+
+Maximizing Ink Usage of Whiteboard Markers.pdf
+
+Music Stand for Convenient and Uninterrupted Practice .pdf
+On the Issues Associated with Locks in Jack-and-Jill Bathrooms at the Oak House
+Residence.pdf
+
+Optimising Backpack Cable Storage .pdf
+
+Optimizing Key Holder Efficiency for First-Year U of T Students.pdf
+
+Preserving Bicycle Brake Reliability Under Wet Conditions.pdf
+
+Preventing Aqueous Residues' Deposition onto Tabletop Surfaces.pdf.pdf
+
+Putting an Issue to Rest - Sleeping on the TTC.pdf
+
+Reducing Light and Noise for Sleep in a Shared Dorm Room.pdf
+
+Reducing Noise of Ice Cubes In Reusable Water Bottles.pdf
+
+Removal of Liquid for Disposable Cup Recycling.pdf
+
+Soggy Sandwiches.pdf
+
+Splashes from Chestnut Water Refill Stations.pdf
+
+Suitcase to Minimize Jostling While in Transit.pdf
+
+Tall Library Bookshelves.pdf
+
+The Hunger Games - Improving SF Vending Machine Product Retrieval Accessibility.pdf
+
+The Need for Fast-Drying Umbrellas.pdf
+
+The problem of backpacks causing pain.pdf
+
+Theft in the Chestnut gym.pdf
+
+Tool for Removing Hair from Casters on Rolling Chairs.pdf
+
+Unnecessary Hassle of Taking Supplements in the Morning.pdf
+
+Wear of Shoe Heels Caused by Heel Dragging.pdf
+
+Wet Folding Umbrellas Dripping Water onto the Floor.pdf
+
+Wet umbrella causing indoor mess.pdf
+Tab 4
+What is a diverging tool that helped you overcome a cognitive anchor?​
+​
+Why and how did it disrupt your thinking?
+Tab 7
+

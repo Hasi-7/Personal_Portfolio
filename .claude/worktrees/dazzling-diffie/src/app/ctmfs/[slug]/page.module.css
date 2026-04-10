@@ -33,7 +33,13 @@
 }
 .projectLink:hover { background-color: rgba(88, 166, 255, 0.1); }
 
-.content { max-width: 800px; }
+.content { max-width: 1040px; }
+
+.content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 .field {
   padding: var(--space-xl) 0;
@@ -64,7 +70,44 @@
   margin-bottom: 0;
 }
 
-.backLink { padding-top: var(--space-xl); }
+.fieldBody :global(.ctmf-figure-right) {
+  float: right;
+  clear: right;
+  width: clamp(240px, 42%, 420px);
+  margin: 0 0 var(--space-md) var(--space-md);
+}
+
+.fieldBody :global(.ctmf-figure-right img) {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.fieldBody :global(.ctmf-figure-right figcaption) {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .fieldBody :global(.ctmf-figure-right) {
+    float: none;
+    clear: none;
+    width: min(100%, 420px);
+    margin: var(--space-md) auto;
+  }
+}
+
+.backLink {
+  padding-top: var(--space-xl);
+  clear: both;
+}
 .backLink a {
   font-family: var(--font-mono);
   font-size: 0.875rem;

@@ -5,7 +5,11 @@ strand: "represent"
 projects:
   - civ102-bridge
 explanation: "Technical drawing is the practice of creating precise, standardised visual representations of a design — including dimensioned orthographic views, cross-sections, and detail drawings. These drawings communicate exact geometry, materials, tolerances, and assembly information to anyone who needs to build, evaluate, or modify the design."
-evidence: "For the CIV102 bridge project, I created detailed technical drawings including a plan view, elevation view, and critical cross-sections at key structural locations. These drawings included dimensions, material specifications, and annotations explaining design decisions. They served as both construction guides and documentation for our design report."
+evidence: |
+  For the CIV102 bridge project, I created detailed technical drawings including plan, elevation, and cross-sectional views with dimensions and assembly details. These drawings were used to communicate geometry clearly before construction and to keep team fabrication aligned with the analysed design.
+
+  ![Final bridge technical drawing](/images/projects/civ102-bridge/figure-3.png)
+  *Figure 1: Final Bridge Technical Drawing*
 utilityAssessment: "Essential for any design that needs to be physically constructed or manufactured. Technical drawings impose a discipline of precision that catches errors — you can't dimension something without deciding exactly how big it is, which often reveals decisions you haven't actually made yet."
 fitAssessment: "Good fit, particularly for hardware projects. I find the process of creating technical drawings forces a level of design resolution that improves the final outcome. I want to continue developing my CAD and technical drawing skills as I take on more complex projects."
 ---
