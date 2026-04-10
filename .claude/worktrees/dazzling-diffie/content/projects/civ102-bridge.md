@@ -52,7 +52,7 @@ Key design decisions included:
 - Analysis and coding workflow supported evidence-based elimination of weaker iterations and convergence on a design that met project constraints [8]
 - Team construction process translated the analytical design into a physical bridge using controlled gluing, staged drying/clamping, and documented quality-control adjustments [9]
 
-## Reflection
+## Process Annotations
 
 What I am most proud of is our final build quality with limited resources. Our bridge failed earlier than predicted because we underestimated splice weakness and did not reinforce that region enough, but outside of that oversight, the build quality was strong and the overall geometry performed as intended [8], [9].
 

@@ -1,6 +1,6 @@
 ---
 name: "Freewriting"
-slug: "brainstorming"
+slug: "freewriting"
 strand: "diverge"
 projects:
   - praxis-i

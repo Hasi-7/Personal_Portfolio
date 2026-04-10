@@ -80,7 +80,7 @@ export default async function ProjectPage({ params }) {
           <div className={styles.annotationSection}>
             <div className={styles.divider}>
               <div className={styles.dividerLine} />
-              <span className={styles.dividerLabel}>Process &amp; Reflection</span>
+                <span className={styles.dividerLabel}>Process Annotations</span>
               <div className={styles.dividerLine} />
             </div>
             <MarkdownContent html={project.htmlContent} />

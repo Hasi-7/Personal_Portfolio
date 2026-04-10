@@ -46,7 +46,7 @@ During convergence, we compared this concept against vibration-based analysis (b
 - Verified that the integrated app and diagnostic pipeline could run end-to-end within the project's practical time constraints [10], [15]
 - Identified the main remaining gap as fault-verification rigor, with future work focused on larger labeled datasets and stronger repeatability/fault-injection testing [15]
 
-## Reflection
+## Process Annotations
 
 The biggest turning point for me was when our final app worked end-to-end and integrated all of our ideas into a single prototype. That moment made the project feel real. Up to that point, a lot of our work was still fragmented across separate analyses and partial tests, but once the full pipeline ran cleanly, we could finally evaluate the concept as an actual tool rather than disconnected parts [10], [15].
 

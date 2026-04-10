@@ -55,7 +55,7 @@ In testing, the roller support and dummy marker both performed well on smudging 
 - Eliminated weaker concepts through proxy testing, Pairwise comparison, and Pugh charts [6], [7]
 - Demonstrated that the roller preserved writing speed better than the dummy marker while still reducing smudging and discomfort [6]
 
-## Reflection
+## Process Annotations
 
 What stands out most to me in this project is how much our team improved through the process, especially by Alpha. I am most proud of our Alpha release because we had four real prototype directions with actual reasoning behind each one [7]. A big moment for me was the night before Alpha when we still needed a fourth concept. I went back to the roller-ball idea from our brainstorming notes and realized it had real merit. We had just discussed friction in physics, so I connected that to the idea: if the ball rolls without slipping, it should not drag and displace marker ink the same way. That turned the roller concept from a rough brainstorm into something physically justifiable and testable [6], [7].
 
