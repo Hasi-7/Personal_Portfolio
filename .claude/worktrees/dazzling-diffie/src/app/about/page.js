@@ -12,38 +12,51 @@ export default async function AboutPage() {
   const about = await getAbout();
   const technicalSkills = [
     {
-      title: 'AI/ML Core',
-      items: [
-        'Supervised & Unsupervised Learning',
-        'Deep Learning (Transformers, CNNs, RLHF)',
-        'LLM Fine-Tuning (LLaMA 2, Mistral)',
-        'Retrieval-Augmented Generation (RAG)',
-        'Hyperparameter Tuning (Optuna)',
-        'AI Agent Development',
-      ],
-    },
-    {
-      title: 'AI Frameworks & Tools',
-      items: [
-        'LangChain',
-        'LangGraph',
-        'Hugging Face',
-        'OpenAI API',
-        'CrewAI',
-        'MLflow',
-        'Cursor IDE',
-      ],
-    },
-    {
-      title: 'Programming & Deployment',
+      title: 'Languages',
       items: [
         'Python',
+        'C++',
         'C',
-        'SQL',
-        'FastAPI',
-        'Docker',
+        'Java',
+        'C#',
+        'MATLAB',
+      ],
+    },
+    {
+      title: 'Tools & Platforms',
+      items: [
         'Git',
-        'Model Deployment',
+        'Docker',
+        'Google Cloud',
+        'Jira',
+        'Slack',
+        'Raspberry Pi',
+        'ROS',
+        'Fusion 360',
+        'Microsoft Office',
+      ],
+    },
+    {
+      title: 'Libraries & Frameworks',
+      items: [
+        'FastAPI',
+        'NumPy',
+        'OpenCV',
+        'TensorRT',
+        'NVIDIA DeepStream',
+        'MediaPipe',
+        'React',
+      ],
+    },
+    {
+      title: 'Core Competencies',
+      items: [
+        'Testing',
+        'Debugging',
+        'API Integration',
+        'Data Analysis',
+        'Documentation',
+        'Cross-Functional Collaboration',
       ],
     },
   ];
