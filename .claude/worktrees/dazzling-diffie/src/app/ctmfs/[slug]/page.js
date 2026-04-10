@@ -35,7 +35,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const ctmf = await getCtmfBySlug(params.slug);
+  const { slug } = await params;
+  const ctmf = await getCtmfBySlug(slug);
   if (!ctmf) return {};
   return {
     title: `${ctmf.name} — CTMFs — Engineering Portfolio`,
@@ -44,7 +45,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CtmfPage({ params }) {
-  const ctmf = await getCtmfBySlug(params.slug);
+  const { slug } = await params;
+  const ctmf = await getCtmfBySlug(slug);
   if (!ctmf) notFound();
 
   const fields = await Promise.all(

@@ -73,8 +73,12 @@
 .fieldBody :global(.ctmf-figure-right) {
   float: right;
   clear: right;
-  width: clamp(240px, 42%, 420px);
-  margin: 0 0 var(--space-md) var(--space-md);
+  width: clamp(340px, 58%, 640px);
+  margin: -10px 0 var(--space-md) var(--space-md);
+}
+
+.fieldBody :global(figure.ctmf-figure-right:has(img[src*="/images/projects/praxis-i/figure-7.png"])) {
+  width: clamp(420px, 70%, 760px);
 }
 
 .fieldBody :global(.ctmf-figure-right img) {
@@ -99,8 +103,12 @@
   .fieldBody :global(.ctmf-figure-right) {
     float: none;
     clear: none;
-    width: min(100%, 420px);
+    width: min(100%, 640px);
     margin: var(--space-md) auto;
+  }
+
+  .fieldBody :global(figure.ctmf-figure-right:has(img[src*="/images/projects/praxis-i/figure-7.png"])) {
+    width: min(100%, 760px);
   }
 }
 

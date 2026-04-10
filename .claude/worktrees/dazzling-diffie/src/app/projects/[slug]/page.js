@@ -11,7 +11,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const project = await getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = await getProjectBySlug(slug);
   if (!project) return {};
   return {
     title: `${project.title} — Engineering Portfolio`,
@@ -20,8 +21,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ProjectPage({ params }) {
+  const { slug } = await params;
   const [project, allCtmfs] = await Promise.all([
-    getProjectBySlug(params.slug),
+    getProjectBySlug(slug),
     getAllCtmfs(),
   ]);
 
