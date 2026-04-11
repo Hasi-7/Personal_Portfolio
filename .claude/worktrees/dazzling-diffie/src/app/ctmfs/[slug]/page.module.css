@@ -46,12 +46,6 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-.field::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .field:last-child { border-bottom: none; }
 
 .fieldTitle {
