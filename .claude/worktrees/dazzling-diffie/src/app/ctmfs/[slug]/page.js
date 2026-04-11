@@ -57,7 +57,7 @@ export default async function CtmfPage({ params }) {
       { num: '04', label: 'Fit with My Practice', body: ctmf.fitAssessment },
     ].map(async ({ num, label, body }) => {
       const wrappedHtml = wrapCtmfFigures(await markdownToHtml(body || ''));
-      const positionedHtml = label === 'Evidence of Use'
+      const positionedHtml = (label === 'Evidence of Use' || label === 'Explanation')
         ? moveFiguresToTop(wrappedHtml)
         : wrappedHtml;
 
